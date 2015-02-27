@@ -1,0 +1,24 @@
+import java.io.*;
+
+//lab 1, 2, 3
+public class RegExpressions {
+
+	public static void interpreter(){
+	boolean reading = true;
+	while(reading){
+		try{
+			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+			String input = reader.readLine("-> ");
+			
+		}catch(Exception e){
+		 //catch something idk fuck this	
+		}
+		
+		
+	}
+		
+	}
+	
+	
+
+}

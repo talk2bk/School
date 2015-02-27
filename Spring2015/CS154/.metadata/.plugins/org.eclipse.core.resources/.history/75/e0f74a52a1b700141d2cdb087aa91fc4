@@ -1,0 +1,14 @@
+//lab 1, 2, 3
+public class RegExpressions {
+
+	public static void interpreter(){
+	boolean reading = true;
+	while(reading){
+		
+	}
+		
+	}
+	
+	
+
+}
