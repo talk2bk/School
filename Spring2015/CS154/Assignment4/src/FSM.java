@@ -1,19 +1,28 @@
 
-import java.util.HashMap;
+import java.util.*;
 
 public class FSM {
     private static int state;
-    private static HashMap transitions;
+    private static int numberOfStates;
+    private static HashMap states;
+    //make a hashset for each state???
     private static boolean finalState;
     //state -1 is the implicit dead state
     public FSM() {
+        this.numberOfStates = 1;
         this.state = 0;
-        this.transitions = new HashMap();
         this.finalState = false;
+        this.states = new HashMap();
     }
     
     public static void addTransition(char token, int state, int newState){
         //if it matches this token, move state from state to newState
+        HashMap transitions = new HashMap();//create a new map of transitions from this a State state.
+        transitions.put(token, newState); //put in a mapping from key Char token to value State newState.
+        states.put(state,transitions); //associate this state with that transition.
+//to transition from state to state.        
+//go into states, go to the state we are currently in, check the transitions in that for the key char token and then go to that state associate.
+        
     }
     
     public static void addFinalState(int finalNode){
@@ -30,6 +39,11 @@ public class FSM {
     public static void reset(){
         //reset finalstate and transitions.
     }
+    
+    /**
+     * things to do:
+     * set up how states actually work. right now they are just a map of different maps that lead to a specific state. how do i set a state for each?
+     */
     
 public static void test(){
 FSM m = new FSM();
