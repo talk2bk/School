@@ -39,12 +39,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\include;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\lib;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\include;C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\lib;C:\Users\SWAGpad\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;D:\Dropbox\School\Classes\Spring2015\CS134\GameWindow\GameWindow\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
