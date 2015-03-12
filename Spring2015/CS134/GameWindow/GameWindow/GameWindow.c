@@ -6,39 +6,19 @@
 #include <stdio.h>
 #include "DrawUtils.h"
 #include <stdlib.h>
-#include <stdbool.h>
 
-GLuint textures[20];
-
-typedef struct AnimFrameDef{
-	int frameNum;
-	float frameTime;
-}AnimFrameDef;
-
-typedef struct AnimDef{
-	const char* name;
-	AnimFrameDef frames[20];
-	int numFrames;
-}AnimDef;
-
-typedef struct AnimData{
-	AnimDef* def;
-	int curFrame;
-	float timeToNextFrame;
-	bool isPlaying;
-}AnimData;
+typedef enum {false,true} bool;
 
 typedef struct {
 	int x, y, w, h;
-	AnimData data;
 	GLuint image;
 }AABB;
 
 //change all tiles to this format
-typedef struct Character{
+typedef struct{
 	AABB bounds;
-	AnimData data;
-}Character;
+	GLuint image;
+}Tile;
 
 unsigned int randr(unsigned int min, unsigned int max)
 {
@@ -77,45 +57,6 @@ bool AABBIntersect(const AABB* box1, const AABB* box2)
 		return false;
 	}
 	return true;
-}
-
-void animSet(AnimData* anim, AnimDef* toPlay){
-	anim->def = toPlay;
-	anim->curFrame = 0;
-	anim->timeToNextFrame = toPlay->frames[0].frameTime;
-	anim->isPlaying = true;
-}
-
-void animDraw(AnimData* anim, int x, int y, int w, int h){
-	AnimDef* def = anim->def;
-	int curFrameNum = def->frames[anim->curFrame].frameNum;
-	GLuint tex = textures[curFrameNum];
-	glDrawSprite(tex, x, y, w, h);
-}
-
-void animReset(AnimData*anim){
-	animSet(anim, anim->def);
-}
-
-void animTick(AnimData* data, float dt){
-	if (!data->isPlaying){
-		return;
-	}
-	int numFrames = data->def->numFrames;
-	data->timeToNextFrame -= dt;
-	if (data->timeToNextFrame < 0){
-		++data->curFrame;
-		if (data->curFrame >= numFrames){
-			//end of animation, stop it
-			data->curFrame = numFrames - 1;
-			data->timeToNextFrame = 0;
-			data->isPlaying = false;
-		}
-		else{
-			AnimFrameDef* curFrame = &data->def->frames[data->curFrame];
-			data->timeToNextFrame += curFrame->frameTime;
-		}
-	}
 }
 
 int main(void)
@@ -181,6 +122,7 @@ int main(void)
 	items[1] = glTexImageTGAFile("skull.tga", NULL, NULL);
 	items[2] = glTexImageTGAFile("slow.tga", NULL, NULL);
 
+<<<<<<< HEAD
 	textures[0] = tiles[0];
 	textures[1] = tiles[1];
 	textures[2] = items[0];
@@ -189,6 +131,9 @@ int main(void)
 
 
 	AABB mush; int itemHeight = 16, itemWidth = 16;
+=======
+	AABB mush; int itemHeight = 16, itemWidth = 16; 
+>>>>>>> parent of e38aa6c... updates to enable animation
 	int itemX = randr(0, 100), itemY = randr(0, 100);
 	mush.x = randr(100, 400); mush.y = randr(100, 400);
 	mush.h = itemHeight; mush.w = itemWidth;
