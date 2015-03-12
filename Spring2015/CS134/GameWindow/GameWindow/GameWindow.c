@@ -1,13 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define SDL_MAIN_HANDLED
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdio.h>
 
 #include <GL/glew.h>
 #include <SDL.h>
+#include <stdio.h>
 #include "DrawUtils.h"
-
+#include <stdlib.h>
+#include <stdbool.h>
 
 GLuint textures[20];
 
@@ -189,9 +188,9 @@ int main(void)
 	textures[4] = items[2];
 
 
-	AABB mush; int itemHeight = 16, itemWidth = 16; 
+	AABB mush; int itemHeight = 16, itemWidth = 16;
 	int itemX = randr(0, 100), itemY = randr(0, 100);
-	mush.x = randr(100,400); mush.y = randr(100,400);
+	mush.x = randr(100, 400); mush.y = randr(100, 400);
 	mush.h = itemHeight; mush.w = itemWidth;
 	mush.image = glTexImageTGAFile("mush.tga", NULL, NULL);
 	bool collided = false;
@@ -223,8 +222,8 @@ int main(void)
 			worldArray[i][j].w = tileWidth; worldArray[i][j].h = tileHeight;
 			worldArray[i][j].x = i * 16; worldArray[i][j].y = j * 16;
 
-			if (i % 2 == 0 || j % 2 == 0){ 
-				worldArray[i][j].image = tiles[0]; 
+			if (i % 2 == 0 || j % 2 == 0){
+				worldArray[i][j].image = tiles[0];
 			}
 			else {
 				worldArray[i][j].image = tiles[1];
@@ -232,109 +231,110 @@ int main(void)
 
 		}
 	}
- 	//max world size is 640x640
+	//max world size is 640x640
 
 	Uint32 lastFrameMs;
 	Uint32 currentFrameMs = SDL_GetTicks();
 
-		/* The game loop */
-		while (!shouldExit) {
-			//save last frame's values
-			lastFrameMs = currentFrameMs;
-			/* kbState is updated by the message pump. Copy over the old state before the pump! */
-			memcpy(kbPrevState, kbState, sizeof(kbPrevState));
+	/* The game loop */
+	while (!shouldExit) {
+		//save last frame's values
+		lastFrameMs = currentFrameMs;
+		/* kbState is updated by the message pump. Copy over the old state before the pump! */
+		memcpy(kbPrevState, kbState, sizeof(kbPrevState));
 
-			// Handle OS message pump
-			SDL_Event event;
-			while (SDL_PollEvent(&event)) {
-				switch (event.type) {
-				case SDL_QUIT:
-					shouldExit = 1;
+		// Handle OS message pump
+		SDL_Event event;
+		while (SDL_PollEvent(&event)) {
+			switch (event.type) {
+			case SDL_QUIT:
+				shouldExit = 1;
+			}
+		}
+
+		//get keyboard state
+		kbState = SDL_GetKeyboardState(NULL);
+
+		glClearColor(0, 0, 0, 1);
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		currentFrameMs = SDL_GetTicks();
+		//use for time since last frame
+		float deltaTime = (currentFrameMs - lastFrameMs) / 1000.0f;
+
+		//if esc quit game
+		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
+
+		//character controls
+		if (!kbState[SDL_SCANCODE_LEFT] && kbPrevState[SDL_SCANCODE_LEFT]){
+			if (character.x > 0) character.x -= 16;
+		}
+		else if (!kbState[SDL_SCANCODE_RIGHT] && kbPrevState[SDL_SCANCODE_RIGHT]){
+			if (character.x < 640 - tileWidth) character.x += 16;
+		}
+		if (!kbState[SDL_SCANCODE_UP] && kbPrevState[SDL_SCANCODE_UP]){
+			if (character.y > 0) character.y -= 16;
+		}
+		else if (!kbState[SDL_SCANCODE_DOWN] && kbPrevState[SDL_SCANCODE_DOWN]){
+			if (character.y < 480 - tileHeight * 2)character.y += 16;
+		}
+		//character controls end
+
+		//camera controls
+		if (kbState[SDL_SCANCODE_A]){
+			if (mush.x > 0) mush.x -= 8;
+		}
+		else if (kbState[SDL_SCANCODE_D]){
+			if (mush.x < 640 - tileWidth) mush.x += 8;
+		}
+		if (kbState[SDL_SCANCODE_W]){
+			if (mush.y > 0) mush.y -= 8;
+		}
+		else if (kbState[SDL_SCANCODE_S]){
+			if (mush.y < 480 - tileHeight * 2)mush.y += 8;
+		}
+		//camera controls end
+
+		//mush controls
+		if (kbState[SDL_SCANCODE_J]){
+			if (camera.x > 0) camera.x -= 8;
+		}
+		else if (kbState[SDL_SCANCODE_L]){
+			if (camera.x < 640 - tileWidth) camera.x += 8;
+		}
+		if (kbState[SDL_SCANCODE_I]){
+			if (camera.y > 0) camera.y -= 8;
+
+		}
+		else if (kbState[SDL_SCANCODE_K]){
+			if (camera.y < 480 - tileHeight * 2)camera.y += 8;
+		}
+		//mush controls end
+
+
+		for (int i = 0; i <= 40; i++){
+			for (int j = 0; j <= 40; j++){
+				if (AABBIntersect(&camera, &worldArray[i][j])){
+					glDrawSprite(worldArray[i][j].image, worldArray[i][j].x - camera.x, worldArray[i][j].y - camera.y, tileHeight, tileWidth);
 				}
+
 			}
 
-			//get keyboard state
-			kbState = SDL_GetKeyboardState(NULL);
-			
-			glClearColor(0, 0, 0, 1);
-			glClear(GL_COLOR_BUFFER_BIT);
-
-			currentFrameMs = SDL_GetTicks();
-			//use for time since last frame
-			float deltaTime = (currentFrameMs - lastFrameMs) / 1000.0f;
-
-			//if esc quit game
-			if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-			
-			//character controls
-			if (!kbState[SDL_SCANCODE_LEFT] && kbPrevState[SDL_SCANCODE_LEFT]){
-				if (character.x > 0) character.x -= 16;
-			}
-			else if (!kbState[SDL_SCANCODE_RIGHT] && kbPrevState[SDL_SCANCODE_RIGHT]){
-				if (character.x < 640 - tileWidth) character.x += 16;
-			}
-			if (!kbState[SDL_SCANCODE_UP] && kbPrevState[SDL_SCANCODE_UP]){
-				if (character.y > 0) character.y -= 16;
-			}
-			else if (!kbState[SDL_SCANCODE_DOWN] && kbPrevState[SDL_SCANCODE_DOWN]){
-				if (character.y < 480 - tileHeight * 2)character.y += 16;
-			}
-			//character controls end
-			
-			//camera controls
-			if (kbState[SDL_SCANCODE_A]){
-				if (mush.x > 0) mush.x -= 8;
-			}
-			else if (kbState[SDL_SCANCODE_D]){
-				if (mush.x < 640 - tileWidth) mush.x += 8;
-			}
-			if (kbState[SDL_SCANCODE_W]){
-				if (mush.y > 0) mush.y -= 8;
-			}
-			else if (kbState[SDL_SCANCODE_S]){
-				if (mush.y < 480 - tileHeight * 2)mush.y += 8;
-			}
-			//camera controls end
-
-			//mush controls
-			if (kbState[SDL_SCANCODE_J]){
-				if (camera.x > 0) camera.x -= 8;
-			}
-			else if (kbState[SDL_SCANCODE_L]){
-				if (camera.x < 640 - tileWidth) camera.x += 8;
-			}
-			if (kbState[SDL_SCANCODE_I]){
-				if (camera.y > 0) camera.y -= 8;
-				
-			}
-			else if (kbState[SDL_SCANCODE_K]){
-				if (camera.y < 480 - tileHeight * 2)camera.y += 8;
-			}
-			//mush controls end
-
-
-			for (int i = 0; i <= 40; i++){
-				for (int j = 0; j <= 40; j++){
-					if (AABBIntersect(&camera, &worldArray[i][j])){ 
-						glDrawSprite(worldArray[i][j].image, worldArray[i][j].x - camera.x, worldArray[i][j].y - camera.y, tileHeight, tileWidth); 
-					}
-					
-				}
-				
-			}
-			if (AABBIntersect(&character, &mush)){ collided = true; }
-			if (collided){ mush.x = randr(0, 600); mush.y = randr(0, 400); collided = false; 
+		}
+		if (AABBIntersect(&character, &mush)){ collided = true; }
+		if (collided){
+			mush.x = randr(0, 600); mush.y = randr(0, 400); collided = false;
 			switch (randr(0, 1)){
 			case 0: mush.image = items[1]; break;
 			case 1: mush.image = items[2]; break;
 			default: mush.image = items[0]; break;
 			}
-			}
-			glDrawSprite(mush.image, mush.x, mush.y, mush.w, mush.h);
-			glDrawSprite(character.image, character.x, character.y, character.h, character.w);
-			
-			SDL_GL_SwapWindow(window);
 		}
+		glDrawSprite(mush.image, mush.x, mush.y, mush.w, mush.h);
+		glDrawSprite(character.image, character.x, character.y, character.h, character.w);
+
+		SDL_GL_SwapWindow(window);
+	}
 	SDL_Quit();
 	return 0;
 }
