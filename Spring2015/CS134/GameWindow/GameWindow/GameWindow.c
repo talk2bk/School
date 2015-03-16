@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define SDL_MAIN_HANDLED
+
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
