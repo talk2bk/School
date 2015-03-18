@@ -338,9 +338,9 @@
       <compileType>
         <cTool>
           <developmentMode>0</developmentMode>
+          <commandlineTool>gcc</commandlineTool>
           <incDir>
-            <pElem>include</pElem>
-            <pElem>lib</pElem>
+            <pElem>C:/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/include</pElem>
           </incDir>
         </cTool>
         <ccTool>
@@ -353,8 +353,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
         <linkerTool>
+          <linkerAddLib>
+            <pElem>C:/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/lib</pElem>
+          </linkerAddLib>
           <additionalDep>SDL2.lib opengl32.lib glu32.lib glew32.lib</additionalDep>
-          <commandLine>SDL2.lib opengl32.lib glu32.lib glew32.lib</commandLine>
         </linkerTool>
       </compileType>
       <item path="DrawUtils.c" ex="false" tool="0" flavor2="0">

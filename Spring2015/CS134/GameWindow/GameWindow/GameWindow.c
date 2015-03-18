@@ -283,5 +283,3 @@ int main(void)
 	SDL_Quit();
 	return 0;
 }
-
-

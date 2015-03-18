@@ -54,7 +54,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L/C/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/lib
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -70,22 +70,22 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gameengine.exe: glew32.lib
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gameengine.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gameengine ${OBJECTFILES} ${LDLIBSOPTIONS} SDL2.lib opengl32.lib glu32.lib glew32.lib
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gameengine ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/DrawUtils.o: DrawUtils.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -Iinclude -Ilib -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DrawUtils.o DrawUtils.c
+	$(COMPILE.c) -I/C/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DrawUtils.o DrawUtils.c
 
 ${OBJECTDIR}/GameWindow.o: GameWindow.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -Iinclude -Ilib -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GameWindow.o GameWindow.c
+	$(COMPILE.c) -I/C/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GameWindow.o GameWindow.c
 
 ${OBJECTDIR}/include/DrawUtils.o: include/DrawUtils.c 
 	${MKDIR} -p ${OBJECTDIR}/include
 	${RM} "$@.d"
-	$(COMPILE.c) -Iinclude -Ilib -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/include/DrawUtils.o include/DrawUtils.c
+	$(COMPILE.c) -I/C/Users/SWAGpad/Documents/GitHub/School/Spring2015/CS134/GameEngine/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/include/DrawUtils.o include/DrawUtils.c
 
 # Subprojects
 .build-subprojects:
