@@ -28,7 +28,7 @@ typedef struct AnimData{
 	bool isPlaying;
 }AnimData;
 
-typedef struct {
+typedef struct AABB{
 	int x, y, w, h;
 	AnimData data;
 	GLuint image;
