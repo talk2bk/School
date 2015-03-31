@@ -331,7 +331,8 @@ int main(void)
 			}
 		}
 		glDrawSprite(mush.image, mush.x, mush.y, mush.w, mush.h);
-		glDrawSprite(character.image, character.x, character.y, character.h, character.w);
+		
+		animDraw(&character.data, character.x, character.y, character.w, character.h);
 
 		SDL_GL_SwapWindow(window);
 	}
