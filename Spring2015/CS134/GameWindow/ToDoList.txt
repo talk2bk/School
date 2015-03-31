@@ -1,0 +1,8 @@
+TO DO:
+-Get animations for items
+-Setup player animations
+-Setup item animations
+-check for graphical optimizations
+-draw items and players
+-figure out physics.
+-collision/collision resolution
