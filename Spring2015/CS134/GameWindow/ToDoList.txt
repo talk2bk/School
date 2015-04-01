@@ -1,11 +1,8 @@
 TO DO:
-
--Setup player animations
--Setup item animations
--draw items and players
+-Setup item animations? technically setup, but doesnt draw
+-draw items
 
 -Get animations for items
--check for graphical optimizations
 
 -figure out physics.
 -collision/collision resolution

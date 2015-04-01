@@ -237,17 +237,19 @@ int main(void)
 	/*to do: set up animation stuff*/
 	AnimData playerAnimData;
 	playerAnimData.curFrame = 0;
-	playerAnimData.timeToNextFrame = 0.5f;
+	playerAnimData.timeToNextFrame = 1.0f;
 	playerAnimData.isPlaying = false;
 	AnimDef walk;
 	walk.name = "walk";
 	walk.numFrames = 3;
-	walk.frames[0].frameNum = 6;
-	walk.frames[0].frameTime = 0.5f;
-	walk.frames[1].frameNum = 5;
-	walk.frames[1].frameTime = 0.5f;
-	walk.frames[2].frameNum = 7;
-	walk.frames[2].frameTime = 0.5f;
+	walk.frames[0].frameNum = 5;
+	walk.frames[0].frameTime = 1.0f;
+	walk.frames[1].frameNum = 7;
+	walk.frames[1].frameTime = 1.0f;
+	walk.frames[2].frameNum = 6;
+	walk.frames[2].frameTime = 1.0f;
+	walk.frames[3].frameNum = 5;
+	walk.frames[3].frameTime = 1.0f;
 	playerAnimData.def = &walk;
 	player.data = playerAnimData;
 
@@ -263,39 +265,45 @@ int main(void)
 	/*to do: set up mush animation stuff*/
 	AnimData mushAnimData;
 	mushAnimData.curFrame = 0;
-	mushAnimData.timeToNextFrame = 0.1f;
-	mushAnimData.isPlaying = false;
+	mushAnimData.timeToNextFrame = 1.0f;
+	mushAnimData.isPlaying = true;
 	AnimDef mushIdle;
 	mushIdle.name = "idle";
-	mushIdle.numFrames = 1;
+	mushIdle.numFrames = 2;
 	mushIdle.frames[0].frameNum = 2;
-	mushIdle.frames[0].frameTime = 0.1f;
+	mushIdle.frames[0].frameTime = 1.0f;
+	mushIdle.frames[1].frameNum = 2;
+	mushIdle.frames[1].frameTime = 1.0f;
 	mushAnimData.def = &mushIdle;
 	mush.data = mushAnimData;
 
 	/*to do: set up skull animation stuff*/
 	AnimData skullAnimData;
 	skullAnimData.curFrame = 0;
-	skullAnimData.timeToNextFrame = 0.1f;
-	skullAnimData.isPlaying = false;
+	skullAnimData.timeToNextFrame = 1.0f;
+	skullAnimData.isPlaying = true;
 	AnimDef skullIdle;
 	skullIdle.name = "idle";
-	skullIdle.numFrames = 1;
+	skullIdle.numFrames = 2;
 	skullIdle.frames[0].frameNum = 3;
-	skullIdle.frames[0].frameTime = 0.1f;
+	skullIdle.frames[0].frameTime = 1.0f;
+	skullIdle.frames[1].frameNum = 3;
+	skullIdle.frames[1].frameTime = 1.0f;
 	skullAnimData.def = &skullIdle;
 	skull.data = skullAnimData;
 
 	/*to do: set up slow animation stuff*/
 	AnimData slowAnimData;
 	slowAnimData.curFrame = 0;
-	slowAnimData.timeToNextFrame = 0.1f;
-	slowAnimData.isPlaying = false;
+	slowAnimData.timeToNextFrame = 1.0f;
+	slowAnimData.isPlaying = true;
 	AnimDef slowIdle;
 	slowIdle.name = "idle";
-	slowIdle.numFrames = 1;
+	slowIdle.numFrames = 2;
 	slowIdle.frames[0].frameNum = 4;
-	slowIdle.frames[0].frameTime = 0.1f;
+	slowIdle.frames[0].frameTime = 1.0f;
+	slowIdle.frames[1].frameNum = 4;
+	slowIdle.frames[1].frameTime = 1.0f;
 	slowAnimData.def = &slowIdle;
 	slow.data = slowAnimData;
 
@@ -310,11 +318,9 @@ int main(void)
 			background[i][j].bounds.x = i * tileWidth;
 			background[i][j].bounds.y = j * tileHeight;
 
-			if (randr(0,1) == 0){
-				background[i][j].image = textures[0];
-			}
-			else{
-				background[i][j].image = textures[1];
+			switch (randr(0, 1)){
+			case 0: background[i][j].image = textures[0]; break;
+			default: background[i][j].image = textures[1]; break;
 			}
 		}
 	}
@@ -350,8 +356,8 @@ int main(void)
 		float deltaTime = (currentFrameMs - lastFrameMs) / 1000.0f;
 
 		//update and draw game
-		for (int i = 0; i < 41; i++){
-			for (int j = 0; j < 41; j++){
+		for (int i = 0; i < 40; i++){
+			for (int j = 0; j < 40; j++){
 				if (AABBIntersect(&camera.bounds, &background[i][j].bounds)){
 					glDrawSprite(background[i][j].image, background[i][j].bounds.x - camera.bounds.x, background[i][j].bounds.y - camera.bounds.y, background[i][j].bounds.h, background[i][j].bounds.w);
 				}
@@ -366,10 +372,13 @@ int main(void)
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
 			if (player.bounds.x > 0) player.bounds.x -= 16;
+			if (player.bounds.w < 0) player.bounds.w = -player.bounds.w;
 			player.data.isPlaying = true;
+			
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT] && !kbPrevState[SDL_SCANCODE_RIGHT]){
-			if (player.bounds.x < 640 - tileWidth) player.bounds.x += 16;
+			if (player.bounds.x < (40*16) - tileWidth) player.bounds.x += 16;
+			if(player.bounds.w>0) player.bounds.w = -player.bounds.w;
 			player.data.isPlaying = true;
 		}
 		if (kbState[SDL_SCANCODE_UP] && !kbPrevState[SDL_SCANCODE_UP]){
@@ -377,25 +386,26 @@ int main(void)
 			player.data.isPlaying = true;
 		}
 		else if (kbState[SDL_SCANCODE_DOWN] && !kbPrevState[SDL_SCANCODE_DOWN]){
-			if (player.bounds.y < 480 - tileHeight * 2) player.bounds.y += 16;
+			if (player.bounds.y < (40*16)- tileWidth*2) player.bounds.y += 16;
 			player.data.isPlaying = true;
 		}
 
-		if (player.data.curFrame == 2){ animReset(&player.data); }
+		if (player.data.curFrame == 3){ animReset(&player.data); }
 		else{ animTick(&player.data, deltaTime); }
+		
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
 		if (kbState[SDL_SCANCODE_A]){
-			if (camera.bounds.x > 0) camera.bounds.x -= tileWidth;
+			if (camera.bounds.x > 0) camera.bounds.x -= tileWidth/4;
 		}
 		else if (kbState[SDL_SCANCODE_D]){
-			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += tileWidth;
+			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += tileWidth/4;
 		}
 		if (kbState[SDL_SCANCODE_W]){
-			if (camera.bounds.y > 0) camera.bounds.y -= tileHeight;
+			if (camera.bounds.y > 0) camera.bounds.y -= tileHeight/4;
 		}
 		else if (kbState[SDL_SCANCODE_S]){
-			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += tileHeight;
+			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += tileHeight/4;
 		}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
@@ -414,13 +424,11 @@ int main(void)
 		//} while(lastPhysicsFrameMs + physicsDeltaMs < curFrameMs);
 
 		//draw the current state of everything. playerDraw(&player);
-		/*to do: draw items, then draw character.
+		/*to do: draw items, then draw character.*/
 		for (int i = 0; i < 3; i++){
 			animDraw(&items[i].data, items[i].bounds.x, items[i].bounds.y, items[i].bounds.w, items[i].bounds.h);
-		}*/
-		animDraw(&player.data, player.bounds.x, player.bounds.y, player.bounds.w, player.bounds.h);
-		
-
+		}
+		animDraw(&player.data, player.bounds.x-camera.bounds.x, player.bounds.y-camera.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
 	}
