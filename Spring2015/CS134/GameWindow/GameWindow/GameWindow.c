@@ -9,8 +9,7 @@
 #include <stdbool.h>
 
 //array of textures for everything
-GLuint textures[30];
-int numItems = 3;
+GLuint textures[8];
 //structs
 
 //holds frame number and how long that frame exists
@@ -60,15 +59,6 @@ typedef struct Tile{
 	int image;
 	AABB bounds;
 }Tile;
-
-Tile background[40][40];
-Player player;
-Camera camera;
-Item mush;
-Item skull;
-Item slow;
-//number of items is 3.
-Item items[2];
 
 //methods
 
@@ -163,18 +153,20 @@ void resetPos(Item *item){
 
 int main(void)
 {
+	
 	//*******************************************************************************************************
 	char shouldExit = 0;
 
-	/* Initialize SDL *l
+	/* Initialize SDL */
 	if( SDL_Init( SDL_INIT_VIDEO ) < 0 ) {
 	return 1;
 	}
+
 	/* Create the window, OpenGL context */
 	SDL_GL_SetAttribute(SDL_GL_BUFFER_SIZE, 32);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_Window* window = SDL_CreateWindow(
-		"Space. SPACE. SPAAAAAAAAAACE.",
+		"New and Improved and New",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		640, 480,
 		SDL_WINDOW_OPENGL);
@@ -212,6 +204,15 @@ int main(void)
 	/* Keep a pointer to SDL's internal keyboard state */
 	kbState = SDL_GetKeyboardState(NULL);
 	//*********************************************************************************************************
+	Tile background[40][40];
+	Player player;
+	Camera camera;
+	Item mush;
+	Item skull;
+	Item slow;
+	//number of items is 3.
+	Item items[2];
+
 	int charHeight = 16;
 	int charWidth = 32;
 	int tileHeight = 16; 
@@ -226,9 +227,7 @@ int main(void)
 	textures[6] = glTexImageTGAFile("walkOne.tga", &charWidth, &charHeight);
 	textures[7] = glTexImageTGAFile("walkTwo.tga", &charWidth, &charHeight);
 
-	items[0] = mush;
-	items[1] = skull;
-	items[2] = slow;
+	
 
 	//player
 	player.bounds.x = 0;
@@ -236,6 +235,21 @@ int main(void)
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
 	/*to do: set up animation stuff*/
+	AnimData playerAnimData;
+	playerAnimData.curFrame = 0;
+	playerAnimData.timeToNextFrame = 0.5f;
+	playerAnimData.isPlaying = false;
+	AnimDef walk;
+	walk.name = "walk";
+	walk.numFrames = 3;
+	walk.frames[0].frameNum = 6;
+	walk.frames[0].frameTime = 0.5f;
+	walk.frames[1].frameNum = 5;
+	walk.frames[1].frameTime = 0.5f;
+	walk.frames[2].frameNum = 7;
+	walk.frames[2].frameTime = 0.5f;
+	playerAnimData.def = &walk;
+	player.data = playerAnimData;
 
 	//camera
 	camera.bounds.x = 0; 
@@ -247,19 +261,56 @@ int main(void)
 		resetPos(&items[i]);
 	}
 	/*to do: set up mush animation stuff*/
-	
-	/*to do: set up skull animation stuff*/
-	
-	/*to do: set up slow animation stuff*/
+	AnimData mushAnimData;
+	mushAnimData.curFrame = 0;
+	mushAnimData.timeToNextFrame = 0.1f;
+	mushAnimData.isPlaying = false;
+	AnimDef mushIdle;
+	mushIdle.name = "idle";
+	mushIdle.numFrames = 1;
+	mushIdle.frames[0].frameNum = 2;
+	mushIdle.frames[0].frameTime = 0.1f;
+	mushAnimData.def = &mushIdle;
+	mush.data = mushAnimData;
 
-	for (int i = 0; i <= 40; i++){
-		for (int j = 0; j <= 40; j++){
+	/*to do: set up skull animation stuff*/
+	AnimData skullAnimData;
+	skullAnimData.curFrame = 0;
+	skullAnimData.timeToNextFrame = 0.1f;
+	skullAnimData.isPlaying = false;
+	AnimDef skullIdle;
+	skullIdle.name = "idle";
+	skullIdle.numFrames = 1;
+	skullIdle.frames[0].frameNum = 3;
+	skullIdle.frames[0].frameTime = 0.1f;
+	skullAnimData.def = &skullIdle;
+	skull.data = skullAnimData;
+
+	/*to do: set up slow animation stuff*/
+	AnimData slowAnimData;
+	slowAnimData.curFrame = 0;
+	slowAnimData.timeToNextFrame = 0.1f;
+	slowAnimData.isPlaying = false;
+	AnimDef slowIdle;
+	slowIdle.name = "idle";
+	slowIdle.numFrames = 1;
+	slowIdle.frames[0].frameNum = 4;
+	slowIdle.frames[0].frameTime = 0.1f;
+	slowAnimData.def = &slowIdle;
+	slow.data = slowAnimData;
+
+	items[0] = mush;
+	items[1] = skull;
+	items[2] = slow;
+
+	for (int i = 0; i < 41; i++){
+		for (int j = 0; j < 41; j++){
 			background[i][j].bounds.w = tileWidth;
 			background[i][j].bounds.h = tileHeight;
 			background[i][j].bounds.x = i * tileWidth;
 			background[i][j].bounds.y = j * tileHeight;
 
-			if ((i * 16) % 2 == 0 || (j * 16) % 2 == 0){
+			if (i % 2 == 0 || j % 2 == 0){
 				background[i][j].image = textures[0];
 			}
 			else{
@@ -292,18 +343,16 @@ int main(void)
 
 		//get keyboard state
 		kbState = SDL_GetKeyboardState(NULL);
-
+		glClearColor(1, 1, 1, 1);
+		glClear(GL_COLOR_BUFFER_BIT);
 		currentFrameMs = SDL_GetTicks();
 		//use for time since last frame
 		float deltaTime = (currentFrameMs - lastFrameMs) / 1000.0f;
 
-		//if esc quit game
-		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-
 		//update and draw game
-		for (int i = 0; i <= 40; i++){
-			for (int j = 0; j <= 40; j++){
-				if (AABBIntersect(&camera, &background[i][j].bounds)){
+		for (int i = 0; i < 41; i++){
+			for (int j = 0; j < 41; j++){
+				if (AABBIntersect(&camera.bounds, &background[i][j].bounds)){
 					glDrawSprite(background[i][j].image, background[i][j].bounds.x - camera.bounds.x, background[i][j].bounds.y - camera.bounds.y, background[i][j].bounds.h, background[i][j].bounds.w);
 				}
 
@@ -311,31 +360,42 @@ int main(void)
 
 		}
 
+		//if esc quit game
+		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
+
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
 			if (player.bounds.x > 0) player.bounds.x -= 16;
+			player.data.isPlaying = true;
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT] && !kbPrevState[SDL_SCANCODE_RIGHT]){
 			if (player.bounds.x < 640 - tileWidth) player.bounds.x += 16;
+			player.data.isPlaying = true;
 		}
 		if (kbState[SDL_SCANCODE_UP] && !kbPrevState[SDL_SCANCODE_UP]){
 			if (player.bounds.y > 0) player.bounds.y -= 16;
+			player.data.isPlaying = true;
 		}
 		else if (kbState[SDL_SCANCODE_DOWN] && !kbPrevState[SDL_SCANCODE_DOWN]){
 			if (player.bounds.y < 480 - tileHeight * 2) player.bounds.y += 16;
+			player.data.isPlaying = true;
 		}
+
+		if (player.data.curFrame == 2){ animReset(&player.data); }
+		else{ animTick(&player.data, deltaTime); }
+
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
 		if (kbState[SDL_SCANCODE_A]){
-			if (camera.bounds.x > 0) camera.bounds.x -= 8;
+			if (camera.bounds.x > 0) camera.bounds.x -= tileWidth;
 		}
 		else if (kbState[SDL_SCANCODE_D]){
-			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += 8;
+			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += tileWidth;
 		}
 		if (kbState[SDL_SCANCODE_W]){
-			if (camera.bounds.y > 0) camera.bounds.y -= 8;
+			if (camera.bounds.y > 0) camera.bounds.y -= tileHeight;
 		}
 		else if (kbState[SDL_SCANCODE_S]){
-			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += 8;
+			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += tileHeight;
 		}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
@@ -354,16 +414,14 @@ int main(void)
 		//} while(lastPhysicsFrameMs + physicsDeltaMs < curFrameMs);
 
 		//draw the current state of everything. playerDraw(&player);
-		/*to do: draw items, then draw character.*/
-		/*
-		for(int i = 0; i < 3; i++){
-		animDraw(&items[i], items[i].bounds.x, items[i].bounds.y, items[i].bounds.w, items[i].bounds.h);
-		*/
-		//animDraw(&player, player.bounds.x, player.bounds.y, player.bounds.w, player,bounds.h);
+		/*to do: draw items, then draw character.
+		for (int i = 0; i < 3; i++){
+			animDraw(&items[i].data, items[i].bounds.x, items[i].bounds.y, items[i].bounds.w, items[i].bounds.h);
+		}*/
+		animDraw(&player.data, player.bounds.x, player.bounds.y, player.bounds.w, player.bounds.h);
+		
 
-
-		glClearColor(0, 0, 0, 1);
-		glClear(GL_COLOR_BUFFER_BIT);
+		
 		SDL_GL_SwapWindow(window);
 	}
 	SDL_Quit();
