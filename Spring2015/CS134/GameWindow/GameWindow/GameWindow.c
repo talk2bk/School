@@ -211,7 +211,7 @@ int main(void)
 	Item skull;
 	Item slow;
 	//number of items is 3.
-	Item items[2];
+	Item items[6];
 
 	int charHeight = 16;
 	int charWidth = 32;
@@ -303,14 +303,14 @@ int main(void)
 	items[1] = skull;
 	items[2] = slow;
 
-	for (int i = 0; i < 41; i++){
-		for (int j = 0; j < 41; j++){
+	for (int i = 0; i < 40; i++){
+		for (int j = 0; j < 40; j++){
 			background[i][j].bounds.w = tileWidth;
 			background[i][j].bounds.h = tileHeight;
 			background[i][j].bounds.x = i * tileWidth;
 			background[i][j].bounds.y = j * tileHeight;
 
-			if (i % 2 == 0 || j % 2 == 0){
+			if (randr(0,1) == 0){
 				background[i][j].image = textures[0];
 			}
 			else{
