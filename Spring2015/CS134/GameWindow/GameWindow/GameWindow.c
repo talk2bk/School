@@ -146,8 +146,8 @@ unsigned int randr(unsigned int min, unsigned int max)
 }
 
 void resetPos(Item *item){
-	item->bounds.x = randr(0, 600);
-	item->bounds.y = randr(0, 400);
+	item->bounds.x = randr(0, 640%16)*16;
+	item->bounds.y = randr(0, 480%16)*16;
 	item->collided = false;
 }
 
@@ -219,6 +219,8 @@ int main(void)
 	int tileWidth = 16;
 	textures[0] = glTexImageTGAFile("enderStone.tga", &tileWidth,&tileHeight);
 	textures[1] = glTexImageTGAFile("obsidian.tga", &tileWidth, &tileHeight);
+	textures[8] = glTexImageTGAFile("sandStone.tga", &tileWidth, &tileHeight);
+
 	textures[2] = glTexImageTGAFile("mush.tga", &tileWidth, &tileHeight);
 	textures[3] = glTexImageTGAFile("skull.tga", &tileWidth, &tileHeight);
 	textures[4] = glTexImageTGAFile("slow.tga", &tileWidth, &tileHeight);
@@ -258,10 +260,17 @@ int main(void)
 	camera.bounds.y = 0;
 	camera.bounds.w = 640;
 	camera.bounds.h = 480;
-
+	/*
 	for (int i = 0; i < 3; i++){
 		resetPos(&items[i]);
 	}
+	*/
+	mush.bounds.x = 100;
+	mush.bounds.y = 100;
+	mush.bounds.w = 16;
+	mush.bounds.h = 16;
+	mush.collided = false;
+
 	/*to do: set up mush animation stuff*/
 	AnimData mushAnimData;
 	mushAnimData.curFrame = 0;
@@ -318,8 +327,9 @@ int main(void)
 			background[i][j].bounds.x = i * tileWidth;
 			background[i][j].bounds.y = j * tileHeight;
 
-			switch (randr(0, 1)){
+			switch (randr(0, 2)){
 			case 0: background[i][j].image = textures[0]; break;
+			case 1: background[i][j].image = textures[8]; break;
 			default: background[i][j].image = textures[1]; break;
 			}
 		}
@@ -371,23 +381,23 @@ int main(void)
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
-			if (player.bounds.x > 0) player.bounds.x -= 16;
-			if (player.bounds.w < 0) player.bounds.w = -player.bounds.w;
 			player.data.isPlaying = true;
+			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; player.bounds.x -= 16; }
+			player.bounds.x -= 16;
 			
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT] && !kbPrevState[SDL_SCANCODE_RIGHT]){
-			if (player.bounds.x < (40*16) - tileWidth) player.bounds.x += 16;
-			if(player.bounds.w>0) player.bounds.w = -player.bounds.w;
 			player.data.isPlaying = true;
+			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; player.bounds.x += 16; }
+			player.bounds.x += 16;
 		}
 		if (kbState[SDL_SCANCODE_UP] && !kbPrevState[SDL_SCANCODE_UP]){
-			if (player.bounds.y > 0) player.bounds.y -= 16;
 			player.data.isPlaying = true;
+			player.bounds.y -= 16;
 		}
 		else if (kbState[SDL_SCANCODE_DOWN] && !kbPrevState[SDL_SCANCODE_DOWN]){
-			if (player.bounds.y < (40*16)- tileWidth*2) player.bounds.y += 16;
 			player.data.isPlaying = true;
+			 player.bounds.y += 16;
 		}
 
 		if (player.data.curFrame == 3){ animReset(&player.data); }
@@ -396,13 +406,13 @@ int main(void)
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
 		if (kbState[SDL_SCANCODE_A]){
-			if (camera.bounds.x > 0) camera.bounds.x -= tileWidth/4;
+			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
 		}
 		else if (kbState[SDL_SCANCODE_D]){
 			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += tileWidth/4;
 		}
 		if (kbState[SDL_SCANCODE_W]){
-			if (camera.bounds.y > 0) camera.bounds.y -= tileHeight/4;
+			if (camera.bounds.y > -480) camera.bounds.y -= tileHeight/4;
 		}
 		else if (kbState[SDL_SCANCODE_S]){
 			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += tileHeight/4;
@@ -424,10 +434,12 @@ int main(void)
 		//} while(lastPhysicsFrameMs + physicsDeltaMs < curFrameMs);
 
 		//draw the current state of everything. playerDraw(&player);
-		/*to do: draw items, then draw character.*/
+		/*to do: draw items, then draw character.
 		for (int i = 0; i < 3; i++){
-			animDraw(&items[i].data, items[i].bounds.x, items[i].bounds.y, items[i].bounds.w, items[i].bounds.h);
+			animDraw(&items[i].data, items[i].bounds.x - camera.bounds.x, items[i].bounds.y - camera.bounds.y, items[i].bounds.w, items[i].bounds.h);
 		}
+		*/
+		animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y-camera.bounds.y, mush.bounds.w, mush.bounds.h);
 		animDraw(&player.data, player.bounds.x-camera.bounds.x, player.bounds.y-camera.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
