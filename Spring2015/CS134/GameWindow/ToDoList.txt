@@ -1,8 +1,5 @@
 TO DO:
--Setup item animations? technically setup, but doesnt draw
--draw items
-
--Get animations for items
-
 -figure out physics.
 -collision/collision resolution
+- fix character flipping
+- fix collision to be 100% working

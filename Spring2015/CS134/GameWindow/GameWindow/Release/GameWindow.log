@@ -1,20 +1,37 @@
-﻿Build started 4/1/2015 5:09:48 PM.
-     1>Project "C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\GameWindow.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/1/2015 11:49:37 PM.
+     1>Project "D:\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\GameWindow.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt GameWindow.c
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt DrawUtils.c GameWindow.c
+         DrawUtils.c
          GameWindow.c
-     1>GameWindow.c(137): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>GameWindow.c(139): warning C4018: '<=' : signed/unsigned mismatch
-     1>GameWindow.c(139): warning C4018: '>=' : signed/unsigned mismatch
-     1>GameWindow.c(350): warning C4101: 'lastPhysicsFrameMs' : unreferenced local variable
+     1>GameWindow.c(149): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>GameWindow.c(151): warning C4018: '<=' : signed/unsigned mismatch
+     1>GameWindow.c(151): warning C4018: '>=' : signed/unsigned mismatch
+     1>GameWindow.c(309): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(310): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(315): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(316): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(321): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(322): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(466): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(467): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(470): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(471): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(474): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(475): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>GameWindow.c(250): warning C4101: 'items' : unreferenced local variable
+     1>GameWindow.c(384): warning C4101: 'lastPhysicsFrameMs' : unreferenced local variable
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.exe" /NOLOGO SDL2.lib opengl32.lib glu32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.lib" /MACHINE:X86 /SAFESEH Release\DrawUtils.obj
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.exe" /NOLOGO SDL2.lib opengl32.lib glu32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.lib" /MACHINE:X86 /SAFESEH Release\DrawUtils.obj
          Release\GameWindow.obj
          Generating code
+     1>d:\github\school\spring2015\cs134\gamewindow\gamewindow\gamewindow.c(171): warning C4715: 'checkRight' : not all control paths return a value
+     1>d:\github\school\spring2015\cs134\gamewindow\gamewindow\gamewindow.c(168): warning C4715: 'checkLeft' : not all control paths return a value
+     1>d:\github\school\spring2015\cs134\gamewindow\gamewindow\gamewindow.c(188): warning C4715: 'checkMovement' : not all control paths return a value
          Finished generating code
-         GameWindow.vcxproj -> C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.exe
-     1>Done Building Project "C:\Users\SWAGpad\Documents\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\GameWindow.vcxproj" (Build target(s)).
+         GameWindow.vcxproj -> D:\GitHub\School\Spring2015\CS134\GameWindow\Release\GameWindow.exe
+     1>Done Building Project "D:\GitHub\School\Spring2015\CS134\GameWindow\GameWindow\GameWindow.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:00.47

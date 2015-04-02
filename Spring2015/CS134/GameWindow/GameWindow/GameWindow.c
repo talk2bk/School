@@ -10,6 +10,15 @@
 
 //array of textures for everything
 GLuint textures[8];
+
+
+
+enum Direction{
+	up,
+	down,
+	left,
+	right
+};
 //structs
 
 //holds frame number and how long that frame exists
@@ -46,6 +55,7 @@ typedef struct Camera{
 typedef struct Player{
 	AABB bounds;
 	AnimData data;
+	enum Direction facing;
 }Player;
 
 //any of the three items, mush, skull, or evilmush.
@@ -58,8 +68,10 @@ typedef struct Item{
 typedef struct Tile{
 	int image;
 	AABB bounds;
+	bool passable;
 }Tile;
 
+Tile background[40][40];
 //methods
 
 //set which animation is running
@@ -146,9 +158,33 @@ unsigned int randr(unsigned int min, unsigned int max)
 }
 
 void resetPos(Item *item){
-	item->bounds.x = randr(0, 640);
-	item->bounds.y = randr(0, 480);
+	item->bounds.x = randr(0,640);
+	item->bounds.y = randr(0,640);
 	item->collided = false;
+}
+
+bool checkLeft(int x, int y){
+	if (background[(x - 16) / 16][y / 16].passable == false || background[(x - 16) / 16][(y - 16) / 16].passable == false){ return false; };//check one block to your left
+}
+bool checkRight(int x, int y){
+	if (background[x / 16][y / 16].passable == false || background[(x + 16) / 16][(y + 16) / 16].passable == false){ return false; }//check one block to your right
+}
+bool checkUp(int x, int y){
+	return background[x / 16][(y - 16) / 16].passable;//check one block to your up
+}
+bool checkDown(int x, int y){
+	return background[x/ 16][(y + 48) / 16].passable;//check one block to your down
+}
+
+
+bool checkMovement(Player *player){
+	//take player position, check the position in the direction they are moving, return false if that move is illegal
+	switch (player->facing){
+	case left: return checkLeft(player->bounds.x, player->bounds.y); break;
+	case right: return checkRight(player->bounds.x, player->bounds.y); break;
+	case up: return checkUp(player->bounds.x, player->bounds.y); break;
+	case down: return checkDown(player->bounds.x, player->bounds.y); break;
+	}
 }
 
 int main(void)
@@ -204,7 +240,7 @@ int main(void)
 	/* Keep a pointer to SDL's internal keyboard state */
 	kbState = SDL_GetKeyboardState(NULL);
 	//*********************************************************************************************************
-	Tile background[40][40];
+	
 	Player player;
 	Camera camera;
 	Item mush;
@@ -236,22 +272,26 @@ int main(void)
 	player.bounds.y = 0;
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
+	int jumpDistanceX = 32;
+	int jumpDistanceY = 48;
 	/*to do: set up animation stuff*/
 	AnimData playerAnimData;
 	playerAnimData.curFrame = 0;
-	playerAnimData.timeToNextFrame = 1.0f;
+	playerAnimData.timeToNextFrame = 0.5f;
 	playerAnimData.isPlaying = false;
 	AnimDef walk;
 	walk.name = "walk";
-	walk.numFrames = 3;
+	walk.numFrames = 5;
 	walk.frames[0].frameNum = 5;
-	walk.frames[0].frameTime = 1.0f;
+	walk.frames[0].frameTime = 0.5f;
 	walk.frames[1].frameNum = 7;
-	walk.frames[1].frameTime = 1.0f;
+	walk.frames[1].frameTime = 0.5f;
 	walk.frames[2].frameNum = 6;
-	walk.frames[2].frameTime = 1.0f;
-	walk.frames[3].frameNum = 5;
-	walk.frames[3].frameTime = 1.0f;
+	walk.frames[2].frameTime = 0.5f;
+	walk.frames[3].frameNum = 7;
+	walk.frames[3].frameTime = 0.5f;
+	walk.frames[4].frameNum = 6;
+	walk.frames[4].frameTime = 0.5f;
 	playerAnimData.def = &walk;
 	player.data = playerAnimData;
 
@@ -261,21 +301,25 @@ int main(void)
 	camera.bounds.w = 640;
 	camera.bounds.h = 480;
 
+	
 	//mush
-	mush.bounds.x = 32;
-	mush.bounds.y = 48;
+	resetPos(&mush);
 	mush.bounds.w = tileWidth;
 	mush.bounds.h = tileHeight;
+	int mushTimeToGrow = 30.0f;
+	int mushGrowTime = 1.0f;
 	//skull
-	skull.bounds.x = 48;
-	skull.bounds.y = 64;
+	resetPos(&skull);
 	skull.bounds.w = tileWidth;
 	skull.bounds.h = tileHeight;
+	int skullTimeToGrow = 30.0f;
+	int skullGrowTime = 1.0f;
 	//slow
-	slow.bounds.x = 80;
-	slow.bounds.y = 96;
+	resetPos(&slow);
 	slow.bounds.w = tileWidth;
 	slow.bounds.h = tileHeight;
+	int slowTimeToGrow = 30.0f;
+	int slowGrowTime = 1.0f;
 	
 	
 
@@ -286,11 +330,9 @@ int main(void)
 	mushAnimData.isPlaying = true;
 	AnimDef mushIdle;
 	mushIdle.name = "idle";
-	mushIdle.numFrames = 2;
+	mushIdle.numFrames = 1;
 	mushIdle.frames[0].frameNum = 2;
 	mushIdle.frames[0].frameTime = 1.0f;
-	mushIdle.frames[1].frameNum = 2;
-	mushIdle.frames[1].frameTime = 1.0f;
 	mushAnimData.def = &mushIdle;
 	mush.data = mushAnimData;
 
@@ -301,11 +343,9 @@ int main(void)
 	skullAnimData.isPlaying = true;
 	AnimDef skullIdle;
 	skullIdle.name = "idle";
-	skullIdle.numFrames = 2;
+	skullIdle.numFrames = 1;
 	skullIdle.frames[0].frameNum = 3;
 	skullIdle.frames[0].frameTime = 1.0f;
-	skullIdle.frames[1].frameNum = 3;
-	skullIdle.frames[1].frameTime = 1.0f;
 	skullAnimData.def = &skullIdle;
 	skull.data = skullAnimData;
 
@@ -316,17 +356,11 @@ int main(void)
 	slowAnimData.isPlaying = true;
 	AnimDef slowIdle;
 	slowIdle.name = "idle";
-	slowIdle.numFrames = 2;
+	slowIdle.numFrames = 1;
 	slowIdle.frames[0].frameNum = 4;
 	slowIdle.frames[0].frameTime = 1.0f;
-	slowIdle.frames[1].frameNum = 4;
-	slowIdle.frames[1].frameTime = 1.0f;
 	slowAnimData.def = &slowIdle;
 	slow.data = slowAnimData;
-
-	items[0] = mush;
-	items[1] = skull;
-	items[2] = slow;
 
 	for (int i = 0; i < 40; i++){
 		for (int j = 0; j < 40; j++){
@@ -336,9 +370,9 @@ int main(void)
 			background[i][j].bounds.y = j * tileHeight;
 
 			switch (randr(0, 2)){
-			case 0: background[i][j].image = textures[0]; break;
-			case 1: background[i][j].image = textures[8]; break;
-			default: background[i][j].image = textures[1]; break;
+			case 0: background[i][j].image = textures[0]; background[i][j].passable = true; break;
+			case 1: background[i][j].image = textures[8]; background[i][j].passable = true; break;
+			default: background[i][j].image = textures[1]; background[i][j].passable = false; break;//use this block as unpassable
 			}
 		}
 	}
@@ -386,53 +420,85 @@ int main(void)
 
 		//if esc quit game
 		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-		
+		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE]){ //jump in a direction
+			switch (player.facing){
+			case right: player.bounds.x += jumpDistanceX; break;
+			case left: player.bounds.x -= jumpDistanceX; break;
+			case up: player.bounds.y -= jumpDistanceY; break;
+			case down: player.bounds.y += jumpDistanceY; break;
+			}
+		}
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
 			player.data.isPlaying = true;
-			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; player.bounds.x -= 16; }
-			player.bounds.x -= 16;
+			if (player.facing != left){ player.facing = left; }
+			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w;}
+			if(player.facing == left && checkMovement(&player)) { player.bounds.x -= 16; }
+			
 			
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT] && !kbPrevState[SDL_SCANCODE_RIGHT]){
 			player.data.isPlaying = true;
-			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; player.bounds.x += 16; }
-			player.bounds.x += 16;
+			if (player.facing != right) { player.facing = right; }
+			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
+			if(player.facing == right && checkMovement(&player)) { player.bounds.x += 16; }
+			
+			
 		}
 		if (kbState[SDL_SCANCODE_UP] && !kbPrevState[SDL_SCANCODE_UP]){
 			player.data.isPlaying = true;
-			player.bounds.y -= 16;
+			if (player.facing == up && checkMovement(&player)) { player.bounds.y -= 16; }
+			player.facing = up;
+			
+			
 		}
 		else if (kbState[SDL_SCANCODE_DOWN] && !kbPrevState[SDL_SCANCODE_DOWN]){
 			player.data.isPlaying = true;
-			 player.bounds.y += 16;
+			if (player.facing == down && checkMovement(&player)) { player.bounds.y += 16; }
+			player.facing = down;
+			
 		}
 
-		if (player.data.curFrame == 3){ animReset(&player.data); }
+		if (player.data.curFrame == 4){ animReset(&player.data); }
 		else{ animTick(&player.data, deltaTime); }
-		
+
+		if (mush.bounds.w >= 20 || mush.bounds.h >= 20){ mush.bounds.w = 16; mush.bounds.h = 16; mushTimeToGrow = 30.0f; }
+		else if (mushTimeToGrow < 0){ mush.bounds.w++; mush.bounds.h++; mushTimeToGrow = 30.0f; }
+		mushTimeToGrow -= mushGrowTime;
+
+		if (skull.bounds.w >= 20 || skull.bounds.h >= 20){ skull.bounds.w = 16; skull.bounds.h = 16; skullTimeToGrow = 30.0f; }
+		else if (skullTimeToGrow < 0){ skull.bounds.w++; skull.bounds.h++; skullTimeToGrow = 30.0f; }
+		skullTimeToGrow -= skullGrowTime;
+
+		if (slow.bounds.w >= 20 || slow.bounds.h >= 20){ slow.bounds.w = 16; slow.bounds.h = 16; slowTimeToGrow = 30.0f; }
+		else if (slowTimeToGrow < 0){ slow.bounds.w++; slow.bounds.h++; slowTimeToGrow = 30.0f; }
+		slowTimeToGrow -= slowGrowTime;
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
 		if (kbState[SDL_SCANCODE_A]){
 			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
+			if (camera.bounds.x <= -640) camera.bounds.x = background[39][39].bounds.x + 16;//looop
 		}
 		else if (kbState[SDL_SCANCODE_D]){
-			if (camera.bounds.x < 640 - tileWidth) camera.bounds.x += tileWidth/4;
+			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
+			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
 		}
 		if (kbState[SDL_SCANCODE_W]){
 			if (camera.bounds.y > -480) camera.bounds.y -= tileHeight/4;
+			if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
 		}
 		else if (kbState[SDL_SCANCODE_S]){
-			if (camera.bounds.y < 480 - tileHeight * 2) camera.bounds.y += tileHeight/4;
+			if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += tileHeight/4;
+			if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
 		}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
 		if (AABBIntersect(&player.bounds, &skull.bounds)){ skull.collided = true; }
 		if (AABBIntersect(&player.bounds, &slow.bounds)){ slow.collided = true; }
-		if (mush.collided){ printf("hit"); resetPos(&mush); }
-		if (skull.collided){ printf("skull"); resetPos(&skull); }
-		if (slow.collided){ printf("slow");  resetPos(&slow); }
+		if (mush.collided){ resetPos(&mush); }
+		if (skull.collided){ resetPos(&skull); }
+		if (slow.collided){ resetPos(&slow); }
 
 		//physics stuff
 		//do{
@@ -443,10 +509,11 @@ int main(void)
 		//} while(lastPhysicsFrameMs + physicsDeltaMs < curFrameMs);
 
 		//draw the current state of everything. playerDraw(&player);
-		/*to do: draw items, then draw character.*/
-		for (int i = 0; i < 3; i++){
-			animDraw(&items[i].data, items[i].bounds.x - camera.bounds.x, items[i].bounds.y - camera.bounds.y, items[i].bounds.w, items[i].bounds.h);
-		}
+		//draw items, then draw character.
+		animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y - camera.bounds.y, mush.bounds.w, mush.bounds.h);
+		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
+		animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
+		
 		animDraw(&player.data, player.bounds.x-camera.bounds.x, player.bounds.y-camera.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
