@@ -146,8 +146,8 @@ unsigned int randr(unsigned int min, unsigned int max)
 }
 
 void resetPos(Item *item){
-	item->bounds.x = randr(0, 640%16)*16;
-	item->bounds.y = randr(0, 480%16)*16;
+	item->bounds.x = randr(0, 640);
+	item->bounds.y = randr(0, 480);
 	item->collided = false;
 }
 
@@ -260,16 +260,24 @@ int main(void)
 	camera.bounds.y = 0;
 	camera.bounds.w = 640;
 	camera.bounds.h = 480;
-	/*
-	for (int i = 0; i < 3; i++){
-		resetPos(&items[i]);
-	}
-	*/
-	mush.bounds.x = 100;
-	mush.bounds.y = 100;
-	mush.bounds.w = 16;
-	mush.bounds.h = 16;
-	mush.collided = false;
+
+	//mush
+	mush.bounds.x = 32;
+	mush.bounds.y = 48;
+	mush.bounds.w = tileWidth;
+	mush.bounds.h = tileHeight;
+	//skull
+	skull.bounds.x = 48;
+	skull.bounds.y = 64;
+	skull.bounds.w = tileWidth;
+	skull.bounds.h = tileHeight;
+	//slow
+	slow.bounds.x = 80;
+	slow.bounds.y = 96;
+	slow.bounds.w = tileWidth;
+	slow.bounds.h = tileHeight;
+	
+	
 
 	/*to do: set up mush animation stuff*/
 	AnimData mushAnimData;
@@ -378,6 +386,7 @@ int main(void)
 
 		//if esc quit game
 		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
+		
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
@@ -421,9 +430,9 @@ int main(void)
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
 		if (AABBIntersect(&player.bounds, &skull.bounds)){ skull.collided = true; }
 		if (AABBIntersect(&player.bounds, &slow.bounds)){ slow.collided = true; }
-		if (mush.collided){ resetPos(&mush); }
-		if (skull.collided){ resetPos(&skull); }
-		if (slow.collided){ resetPos(&slow); }
+		if (mush.collided){ printf("hit"); resetPos(&mush); }
+		if (skull.collided){ printf("skull"); resetPos(&skull); }
+		if (slow.collided){ printf("slow");  resetPos(&slow); }
 
 		//physics stuff
 		//do{
@@ -434,12 +443,10 @@ int main(void)
 		//} while(lastPhysicsFrameMs + physicsDeltaMs < curFrameMs);
 
 		//draw the current state of everything. playerDraw(&player);
-		/*to do: draw items, then draw character.
+		/*to do: draw items, then draw character.*/
 		for (int i = 0; i < 3; i++){
 			animDraw(&items[i].data, items[i].bounds.x - camera.bounds.x, items[i].bounds.y - camera.bounds.y, items[i].bounds.w, items[i].bounds.h);
 		}
-		*/
-		animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y-camera.bounds.y, mush.bounds.w, mush.bounds.h);
 		animDraw(&player.data, player.bounds.x-camera.bounds.x, player.bounds.y-camera.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
