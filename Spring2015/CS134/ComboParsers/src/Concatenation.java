@@ -10,11 +10,12 @@ import java.util.*;
  * @author CuTs
  */
 public class Concatenation extends Result{
-    protected ArrayList<Result> kids;
+    protected Result choice1;
+    protected Result choice2;
     
     @Override
     public String toString(){
-        return kids.toString();
+        return choice1.toString()+ " + " +choice2.toString();
     }
 }
 

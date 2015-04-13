@@ -6,11 +6,7 @@ public class ExpParsers {
    public static Parser exp = new Parser();
    static {
       exp.setParser(
-         Combinators.alt(
-               Combinators.seq(
-                     number,
-                     Combinators.seq(operator, exp)),
-                number));
+         Combinators.alt(Combinators.seq(number,Combinators.seq(operator, exp)),number));
    }
    
 

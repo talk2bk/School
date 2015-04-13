@@ -6,12 +6,12 @@ import java.util.function.*;
 public class Parser implements UnaryOperator<Result>{
     protected UnaryOperator<Result> parser;
     
-    void setParser(UnaryOperator<Result> alt) {
-        parser = alt;
+    void setParser(UnaryOperator<Result> unaryOperator) {
+        parser = unaryOperator;
     }
 
     @Override
-    public Result apply(Result t) {
-        return parser.apply(t);
+    public Result apply(Result r) {
+        return parser.apply(r);
     }
 }

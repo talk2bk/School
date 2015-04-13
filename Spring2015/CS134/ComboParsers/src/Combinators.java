@@ -28,14 +28,16 @@ public class Combinators {
        parser.setParser(result -> {
            if (result.fail){return result;}
            Concatenation answer = new Concatenation();
-           answer.kids = new ArrayList<Result>();
            
-           answer.kids.add(p1.apply(result));
-           if(answer.kids.get(0).fail){return result;}
-          if(answer.unseen.isEmpty()){return answer;}
-           answer.unseen.remove(0);
-           answer.kids.add(p2.apply(result));
-           if(answer.kids.get(1).fail){return result;}
+           answer.choice1 = p1.apply(result);
+           if(answer.choice1.fail){ return result;}
+           
+           result.unseen.remove(0);
+           answer.choice2 = p2.apply(result);
+           if(answer.choice2.fail){return result;}
+                     
+           
+          
            
            return answer;
        });
@@ -49,13 +51,10 @@ public class Combinators {
        parser.setParser(result -> {
            if (result.fail){return result;}
            Iteration answer = new Iteration();
-           answer.kids = new ArrayList<Result>();
            
-           while(!answer.unseen.isEmpty()){
+           while(!result.fail){
            Result r = p.apply(result);
-           if(r.fail){return result;}
            answer.kids.add(r);
-           answer.unseen = answer.unseen.subList(1, answer.unseen.size());
            }
            
            return answer;
@@ -83,13 +82,15 @@ public class Combinators {
        parser.setParser(result -> {
            if (result.fail){return result;}
            Literal answer = new Literal();
-           if(answer.unseen.isEmpty()){return answer;}
-           answer.token = answer.unseen.get(0);
+           if(result.pending() > 0){
+            answer.token = result.unseen.get(0);
            if(answer.token.matches(regex)){
-           answer.unseen = answer.unseen.subList(1, answer.unseen.size());
+           result.unseen.remove(0);
+           answer.unseen = result.unseen;
            }
-           else{answer.fail = true;}
-           
+           else{answer.fail = true; answer.unseen = result.unseen;}
+           }
+          
            return answer;
        });
        

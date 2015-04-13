@@ -10,7 +10,7 @@ import java.util.*;
  * @author CuTs
  */
 public class Iteration extends Result{
-    protected ArrayList<Result> kids;
+    protected ArrayList<Result> kids  = new ArrayList<Result>();
     
     @Override
     public String toString(){
