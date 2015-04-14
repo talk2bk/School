@@ -15,7 +15,7 @@ public class Concatenation extends Result{
     
     @Override
     public String toString(){
-        return choice1.toString()+ " + " +choice2.toString();
+        return choice1.toString()+ " ~ " +choice2.toString();
     }
 }
 

@@ -32,12 +32,10 @@ public class Combinators {
            answer.choice1 = p1.apply(result);
            if(answer.choice1.fail){ return result;}
            
-           result.unseen.remove(0);
+           answer.unseen = answer.choice1.unseen;
            answer.choice2 = p2.apply(result);
            if(answer.choice2.fail){return result;}
-                     
-           
-          
+           answer.unseen = answer.choice2.unseen;
            
            return answer;
        });
@@ -68,8 +66,10 @@ public class Combinators {
        Parser parser = new Parser();
        parser.setParser(result -> {
            if (result.fail){return result;}
+           
            Option answer = new Option();
            answer.kid = p.apply(result);
+           if(answer.kid.fail){answer.fail = true;}
            return answer;
        });
        
@@ -82,14 +82,15 @@ public class Combinators {
        parser.setParser(result -> {
            if (result.fail){return result;}
            Literal answer = new Literal();
-           if(result.pending() > 0){
-            answer.token = result.unseen.get(0);
+           if(result.unseen.isEmpty()){answer.fail = true; return answer;}
+           
+           answer.token = result.unseen.get(0);
            if(answer.token.matches(regex)){
            result.unseen.remove(0);
            answer.unseen = result.unseen;
            }
            else{answer.fail = true; answer.unseen = result.unseen;}
-           }
+           
           
            return answer;
        });
