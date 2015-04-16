@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS
 #define SDL_MAIN_HANDLED
 
@@ -186,6 +187,20 @@ bool checkMovement(Player *player){
 	case down: return checkDown(player->bounds.x, player->bounds.y); break;
 	}
 }
+
+void itemAnimUpdate(Item* item){
+	//write this with the info at the bottom.
+}
+
+void itemUpdate(Item* item, float dt){
+	itemAnimUpdate(&item->data);
+
+	float deltaX;
+	float deltaY;
+
+	}
+
+}//maybe pass in different AIs for each item. give each item an AI???
 
 int main(void)
 {
