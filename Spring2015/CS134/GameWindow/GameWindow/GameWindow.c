@@ -1,4 +1,3 @@
-
 #define _CRT_SECURE_NO_WARNINGS
 #define SDL_MAIN_HANDLED
 
@@ -12,13 +11,18 @@
 //array of textures for everything
 GLuint textures[8];
 
-
-
 enum Direction{
 	up,
 	down,
 	left,
 	right
+};
+
+enum Speed{
+	slow,
+	medium,
+	fast,
+	sanic
 };
 //structs
 
@@ -48,6 +52,13 @@ typedef struct AABB{
 	int x, y, w, h;
 }AABB;
 
+typedef struct AI{
+	enum Direction d;
+	bool chasePlayer;
+	enum Speed;
+
+}AI;
+
 typedef struct Camera{
 	AABB bounds;
 }Camera;
@@ -64,6 +75,7 @@ typedef struct Item{
 	AABB bounds;
 	AnimData data;
 	bool collided;
+	AI movementPattern;
 }Item;
 
 typedef struct Tile{
@@ -188,17 +200,29 @@ bool checkMovement(Player *player){
 	}
 }
 
+void moveDirection(Item* item){
+	switch (item->movementPattern.d){
+	case left: item->bounds.x--; break;
+	case right: item->bounds.x++; break;
+	case up: item->bounds.y--; break;
+	case down: item->bounds.y++; break;
+	}
+}
+
 void itemAnimUpdate(Item* item){
 	//write this with the info at the bottom.
 }
 
-void itemUpdate(Item* item, float dt){
+void itemUpdate(Item* item,Player* player, float dt){
 	itemAnimUpdate(&item->data);
 
 	float deltaX;
 	float deltaY;
-
+	if (item->movementPattern.chasePlayer){
+		item->movementPattern.d = player->facing;
+		moveDirection(item);
 	}
+	
 
 }//maybe pass in different AIs for each item. give each item an AI???
 
