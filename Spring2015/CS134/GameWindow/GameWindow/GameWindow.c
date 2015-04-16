@@ -11,7 +11,7 @@
 //array of textures for everything
 GLuint textures[8];
 
-enum Direction{
+enum Direction{//change this to just negative and positive values
 	up,
 	down,
 	left,
@@ -19,10 +19,11 @@ enum Direction{
 };
 
 enum Speed{
-	slow,
-	medium,
-	fast,
-	sanic
+	low = 1,
+	medium = 2,
+	high = 4,
+	sanic = 8,
+	tooFastKool = 16
 };
 //structs
 
@@ -53,10 +54,10 @@ typedef struct AABB{
 }AABB;
 
 typedef struct AI{
-	enum Direction d;
 	bool chasePlayer;
-	enum Speed;
-
+	enum Speed speed;
+	float timeToChangeAI;
+	float defaultTimeToChangeAI;
 }AI;
 
 typedef struct Camera{
@@ -68,7 +69,13 @@ typedef struct Player{
 	AABB bounds;
 	AnimData data;
 	enum Direction facing;
+	enum Speed speed;
 }Player;
+
+typedef struct GrowTime{
+	float timeToGrow;
+	float growTime;
+}GrowTime;
 
 //any of the three items, mush, skull, or evilmush.
 typedef struct Item{
@@ -76,7 +83,10 @@ typedef struct Item{
 	AnimData data;
 	bool collided;
 	AI movementPattern;
+	GrowTime grow;
 }Item;
+
+
 
 typedef struct Tile{
 	int image;
@@ -170,17 +180,21 @@ unsigned int randr(unsigned int min, unsigned int max)
 	return result;
 }
 
-void resetPos(Item *item){
+void resetPos(Item* item){
 	item->bounds.x = randr(0,640);
 	item->bounds.y = randr(0,640);
 	item->collided = false;
+	item->grow.growTime = 30.0f;
+	item->grow.timeToGrow = 1.0f;
 }
 
 bool checkLeft(int x, int y){
 	if (background[(x - 16) / 16][y / 16].passable == false || background[(x - 16) / 16][(y - 16) / 16].passable == false){ return false; };//check one block to your left
+	return true;
 }
 bool checkRight(int x, int y){
 	if (background[x / 16][y / 16].passable == false || background[(x + 16) / 16][(y + 16) / 16].passable == false){ return false; }//check one block to your right
+	return true;
 }
 bool checkUp(int x, int y){
 	return background[x / 16][(y - 16) / 16].passable;//check one block to your up
@@ -197,32 +211,52 @@ bool checkMovement(Player *player){
 	case right: return checkRight(player->bounds.x, player->bounds.y); break;
 	case up: return checkUp(player->bounds.x, player->bounds.y); break;
 	case down: return checkDown(player->bounds.x, player->bounds.y); break;
+	default: return true;
 	}
 }
 
-void moveDirection(Item* item){
-	switch (item->movementPattern.d){
-	case left: item->bounds.x--; break;
-	case right: item->bounds.x++; break;
-	case up: item->bounds.y--; break;
-	case down: item->bounds.y++; break;
+void updateAI(Item* item, float dt){
+	item->movementPattern.timeToChangeAI -= 2.0f*dt;
+
+	if (item->movementPattern.timeToChangeAI <= 0){
+		switch (randr(0, 1)){
+		case 0: item->movementPattern.chasePlayer = true; break;
+		default: item->movementPattern.chasePlayer = false; break;
+		}
+		printf("AI change, ");
+		item->movementPattern.timeToChangeAI = item->movementPattern.defaultTimeToChangeAI;
 	}
 }
 
-void itemAnimUpdate(Item* item){
-	//write this with the info at the bottom.
+void moveTowards(Item* item, Player* player, float dt){
+	if (item->bounds.x <= player->bounds.x){ item->bounds.x += item->movementPattern.speed; }
+	else { item->bounds.x -= item->movementPattern.speed; }
+
+	if (item->bounds.y <= player->bounds.y){ item->bounds.y += item->movementPattern.speed; }
+	else{ item->bounds.y -= item->movementPattern.speed; }
 }
 
-void itemUpdate(Item* item,Player* player, float dt){
-	itemAnimUpdate(&item->data);
+void moveAway(Item* item, Player* player, float dt){
+	if (item->bounds.x < player->bounds.x){ item->bounds.x -= item->movementPattern.speed; }
+	else { item->bounds.x += item->movementPattern.speed; }
 
-	float deltaX;
-	float deltaY;
-	if (item->movementPattern.chasePlayer){
-		item->movementPattern.d = player->facing;
-		moveDirection(item);
-	}
-	
+	if (item->bounds.y < player->bounds.y){ item->bounds.y -= item->movementPattern.speed; }
+	else{ item->bounds.y += item->movementPattern.speed; }
+}
+
+void itemAnimUpdate(Item* item, float dt){
+	if (item->bounds.w >= 20 || item->bounds.h >= 20){ item->bounds.w = 16; item->bounds.h = 16; item->grow.timeToGrow = 30.0f; }
+	else if (item->grow.timeToGrow < 0){ item->bounds.w++; item->bounds.h++; item->grow.timeToGrow = 30.0f; }
+	item->grow.timeToGrow -= item->grow.growTime*dt;
+}
+
+void itemUpdate(Item* item, Player* player, float dt){
+	itemAnimUpdate(item, dt);
+
+	updateAI(item, dt);
+
+	if (item->movementPattern.chasePlayer){moveTowards(item, player, dt);}
+	else{moveAway(item, player, dt);}
 
 }//maybe pass in different AIs for each item. give each item an AI???
 
@@ -241,7 +275,7 @@ int main(void)
 	SDL_GL_SetAttribute(SDL_GL_BUFFER_SIZE, 32);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_Window* window = SDL_CreateWindow(
-		"New and Improved and New",
+		"Press space to jump spaces, arrow keys to move, wasd to move camera. items will run at or away from you alternating.",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		640, 480,
 		SDL_WINDOW_OPENGL);
@@ -311,8 +345,11 @@ int main(void)
 	player.bounds.y = 0;
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
+	player.facing = left;
+
 	int jumpDistanceX = 32;
 	int jumpDistanceY = 48;
+	player.speed = high;
 	/*to do: set up animation stuff*/
 	AnimData playerAnimData;
 	playerAnimData.curFrame = 0;
@@ -345,21 +382,28 @@ int main(void)
 	resetPos(&mush);
 	mush.bounds.w = tileWidth;
 	mush.bounds.h = tileHeight;
-	int mushTimeToGrow = 30.0f;
-	int mushGrowTime = 1.0f;
+	mush.movementPattern.chasePlayer = false;
+	mush.movementPattern.speed = medium;
+	mush.movementPattern.timeToChangeAI = 20.0f;
+	mush.movementPattern.defaultTimeToChangeAI = 20.0f;
+
 	//skull
 	resetPos(&skull);
 	skull.bounds.w = tileWidth;
 	skull.bounds.h = tileHeight;
-	int skullTimeToGrow = 30.0f;
-	int skullGrowTime = 1.0f;
+	skull.movementPattern.chasePlayer = true;
+	skull.movementPattern.speed = low;
+	skull.movementPattern.timeToChangeAI = 15.0f;
+	skull.movementPattern.defaultTimeToChangeAI = 15.0f;
+
 	//slow
 	resetPos(&slow);
 	slow.bounds.w = tileWidth;
 	slow.bounds.h = tileHeight;
-	int slowTimeToGrow = 30.0f;
-	int slowGrowTime = 1.0f;
-	
+	slow.movementPattern.chasePlayer = true;
+	slow.movementPattern.speed = high;
+	slow.movementPattern.timeToChangeAI = 10.0f;
+	slow.movementPattern.defaultTimeToChangeAI = 10.0f;
 	
 
 	/*to do: set up mush animation stuff*/
@@ -469,32 +513,32 @@ int main(void)
 		}
 
 		//update player based on input. playerUpdate(&player, deltaTime);
-		if (kbState[SDL_SCANCODE_LEFT] && !kbPrevState[SDL_SCANCODE_LEFT]){
+		if (kbState[SDL_SCANCODE_LEFT]){
 			player.data.isPlaying = true;
 			if (player.facing != left){ player.facing = left; }
-			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w;}
-			if(player.facing == left && checkMovement(&player)) { player.bounds.x -= 16; }
+			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
+			if (player.facing == left && checkMovement(&player)) { player.bounds.x -= player.speed; }
 			
 			
 		}
-		else if (kbState[SDL_SCANCODE_RIGHT] && !kbPrevState[SDL_SCANCODE_RIGHT]){
+		else if (kbState[SDL_SCANCODE_RIGHT]){
 			player.data.isPlaying = true;
 			if (player.facing != right) { player.facing = right; }
 			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
-			if(player.facing == right && checkMovement(&player)) { player.bounds.x += 16; }
+			if(player.facing == right && checkMovement(&player)) { player.bounds.x += player.speed; }
 			
 			
 		}
-		if (kbState[SDL_SCANCODE_UP] && !kbPrevState[SDL_SCANCODE_UP]){
+		if (kbState[SDL_SCANCODE_UP]){
 			player.data.isPlaying = true;
-			if (player.facing == up && checkMovement(&player)) { player.bounds.y -= 16; }
+			if (player.facing == up && checkMovement(&player)) { player.bounds.y -= player.speed; }
 			player.facing = up;
 			
 			
 		}
-		else if (kbState[SDL_SCANCODE_DOWN] && !kbPrevState[SDL_SCANCODE_DOWN]){
+		else if (kbState[SDL_SCANCODE_DOWN]){
 			player.data.isPlaying = true;
-			if (player.facing == down && checkMovement(&player)) { player.bounds.y += 16; }
+			if (player.facing == down && checkMovement(&player)) { player.bounds.y += player.speed; }
 			player.facing = down;
 			
 		}
@@ -502,17 +546,9 @@ int main(void)
 		if (player.data.curFrame == 4){ animReset(&player.data); }
 		else{ animTick(&player.data, deltaTime); }
 
-		if (mush.bounds.w >= 20 || mush.bounds.h >= 20){ mush.bounds.w = 16; mush.bounds.h = 16; mushTimeToGrow = 30.0f; }
-		else if (mushTimeToGrow < 0){ mush.bounds.w++; mush.bounds.h++; mushTimeToGrow = 30.0f; }
-		mushTimeToGrow -= mushGrowTime;
-
-		if (skull.bounds.w >= 20 || skull.bounds.h >= 20){ skull.bounds.w = 16; skull.bounds.h = 16; skullTimeToGrow = 30.0f; }
-		else if (skullTimeToGrow < 0){ skull.bounds.w++; skull.bounds.h++; skullTimeToGrow = 30.0f; }
-		skullTimeToGrow -= skullGrowTime;
-
-		if (slow.bounds.w >= 20 || slow.bounds.h >= 20){ slow.bounds.w = 16; slow.bounds.h = 16; slowTimeToGrow = 30.0f; }
-		else if (slowTimeToGrow < 0){ slow.bounds.w++; slow.bounds.h++; slowTimeToGrow = 30.0f; }
-		slowTimeToGrow -= slowGrowTime;
+		itemUpdate(&mush, &player, deltaTime);
+		itemUpdate(&skull, &player, deltaTime);
+		itemUpdate(&slow, &player, deltaTime);
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
 		if (kbState[SDL_SCANCODE_A]){
