@@ -1,3 +1,5 @@
+package meta;
+
 import java.lang.reflect.*;
 
 public class MetaMachine {
@@ -7,9 +9,9 @@ public class MetaMachine {
         Method methods[] = c.getMethods();
         Method meth = c.getMethod(args[1], String[].class);        
         Object blob = c.newInstance();
-        String param[] = new String[args.length];
+        String param[] = new String[args.length-2];
         for(int i = 2, j = 0; i < args.length; i++, j++){
-           param[j] = args[i]; j++;
+           param[j] = args[i];
         }
         meth.invoke(blob,(Object) param);
         } catch(Exception e){
