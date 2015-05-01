@@ -1,20 +1,35 @@
 
+import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 
 public class VM {
+    private String regEx = "([A-Z:]+ )?([a-z]+)( ([a-z]+)(, ([a-z0-9]+( [\\*\\+] [a-z0-9]+)?))?)?";
     private int pc;//iterate through program executing each command.
-    private Pattern cmmdPattern;
+    private Pattern cmmdPattern = Pattern.compile(regEx);
     private ArrayList<Frame> controlStack;
     private ArrayList<Command> program;
     private HashMap<String,Integer> vars;
     
+    
     public void add(String cmmd){
-        //add commands to the program;
+        
+        Matcher match = cmmdPattern.matcher(cmmd);
+        
+        // System.out.println(match.);
+        program.add(new Command(match.group(1),match.group(2),match.group(4),match.group(5)));
     }
     
-    public void compile(String fileName){
+    public void compile(String fileName) {
         //take a fileinput and run all the commands in it
+        try{
+        Scanner scan = new Scanner(new File(fileName));
+        while(scan.hasNextLine()){
+            add(scan.nextLine());
+        }
+        } catch(FileNotFoundException f){
+            System.out.println("File not Found");
+        }
     }
     
     public void execute(Command cmmd){
