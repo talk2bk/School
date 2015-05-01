@@ -1,13 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author SWAGpad
- */
 public class Frame {
+    public int pc; //pc is the program counter, which index of the control stack is being called
+    public int count; //number of times to loop
+
+    public Frame(int pc, int count) {
+        this.pc = pc;
+        this.count = count;
+    }
+    
     
 }
