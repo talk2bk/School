@@ -23,6 +23,10 @@ public class Command {
         this.arg2 = arg2;
     }
 
+    public Command(String cmmd, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * @return the label
      */

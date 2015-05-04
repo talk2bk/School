@@ -4,21 +4,18 @@ import java.util.*;
 import java.util.regex.*;
 
 public class VM {
-    
     private int pc;//iterate through program executing each command.
-    
-    //private ArrayList<Frame> controlStack;
     private ArrayList<Command> program;
     private HashMap<String,Integer> vars;
     
-    
-    public void add(String cmmd){
-        
-        
+    public VM() {
+        this.pc = 0;
+        this.program = new ArrayList<Command>();
+        this.vars = new HashMap<String, Integer>();
     }
     
-    private void resolveLabels(){
-        
+    public void add(String cmmd){
+        program.add(new Command(cmmd, pc++));
     }
     
     public void compile(String fileName) {
@@ -43,9 +40,20 @@ public class VM {
         else {}//error, unrecognized opcode
     }
     
+    private void resolveLabels(){
+        Stack<Command> loopStack = new Stack<Command>();
+        Map<String, Integer> targets = new HashMap<String, Integer>();
+        //pass 1
+        for(Command cmmd: program){;}
+        //pass 2
+        for(Command cmmd: program){;}
+    }
+    
     public void run(){
-        //run da shits
-        //the run method uses pc to iterate through program to execute each command using the execute method
-        
+    resolveLabels();
+    pc = 0;
+    while(pc < program.size()) {
+      execute(program.get(pc++));
+   }
     }
 }
