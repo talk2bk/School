@@ -4,20 +4,21 @@ import java.util.*;
 import java.util.regex.*;
 
 public class VM {
-    private String regEx = "([A-Z:]+ )?([a-z]+)( ([a-z]+)(, ([a-z0-9]+( [\\*\\+] [a-z0-9]+)?))?)?";
+    
     private int pc;//iterate through program executing each command.
-    private Pattern cmmdPattern = Pattern.compile(regEx);
-    private ArrayList<Frame> controlStack;
+    
+    //private ArrayList<Frame> controlStack;
     private ArrayList<Command> program;
     private HashMap<String,Integer> vars;
     
     
     public void add(String cmmd){
         
-        Matcher match = cmmdPattern.matcher(cmmd);
         
-        // System.out.println(match.);
-        program.add(new Command(match.group(1),match.group(2),match.group(4),match.group(5)));
+    }
+    
+    private void resolveLabels(){
+        
     }
     
     public void compile(String fileName) {
@@ -34,11 +35,11 @@ public class VM {
     
     public void execute(Command cmmd){
         //the command to run
-        if(cmmd.opcode.equals("load")){;}
-        else if (cmmd.opcode.equals("inc")){;}
-        else if (cmmd.opcode.equals("goto")){;}
-        else if (cmmd.opcode.equals("loop")){;}
-        else if (cmmd.opcode.equals("end")){;}
+        if(cmmd.getOpcode().equals("load")){;}
+        else if (cmmd.getOpcode().equals("inc")){;}
+        else if (cmmd.getOpcode().equals("goto")){;}
+        else if (cmmd.getOpcode().equals("loop")){;}
+        else if (cmmd.getOpcode().equals("end")){;}
         else {}//error, unrecognized opcode
     }
     
