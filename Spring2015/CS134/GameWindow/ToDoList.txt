@@ -1,5 +1,0 @@
-TO DO:
--figure out physics.
--collision/collision resolution
-- fix character flipping
-- fix collision to be 100% working
