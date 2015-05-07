@@ -86,8 +86,6 @@ typedef struct Item{
 	GrowTime grow;
 }Item;
 
-
-
 typedef struct Tile{
 	int image;
 	AABB bounds;
@@ -215,6 +213,16 @@ bool checkMovement(Player *player){
 	}
 }
 
+void shoot(Player *player){
+	switch (player->facing){
+	case left:  break;
+	case right:  break;
+	case up:  break;
+	case down:; break;
+	default: return true;
+	}
+}
+
 void updateAI(Item* item, float dt){
 	item->movementPattern.timeToChangeAI -= 2.0f*dt;
 
@@ -253,10 +261,10 @@ void itemAnimUpdate(Item* item, float dt){
 void itemUpdate(Item* item, Player* player, float dt){
 	itemAnimUpdate(item, dt);
 
-	updateAI(item, dt);
+	//updateAI(item, dt);
 
-	if (item->movementPattern.chasePlayer){moveTowards(item, player, dt);}
-	else{moveAway(item, player, dt);}
+	//if (item->movementPattern.chasePlayer){moveTowards(item, player, dt);}
+	//else{moveAway(item, player, dt);}
 
 }//maybe pass in different AIs for each item. give each item an AI???
 
@@ -316,6 +324,7 @@ int main(void)
 	
 	Player player;
 	Camera camera;
+	Item bullet;
 	Item mush;
 	Item skull;
 	Item slow;
@@ -589,7 +598,7 @@ int main(void)
 		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
 		animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
 		
-		animDraw(&player.data, player.bounds.x-camera.bounds.x, player.bounds.y-camera.bounds.y, player.bounds.w, player.bounds.h);
+		animDraw(&player.data, player.bounds.x, player.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
 	}
