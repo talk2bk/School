@@ -12,11 +12,14 @@ public class Command {
     private int count;
     
     private String regEx = "([A-Z:]+ )?([a-z]+)( ([a-z]+)(, ([a-z0-9]+( [\\*\\+] [a-z0-9]+)?))?)?";
-    private Pattern cmmdPattern = Pattern.compile(regEx);
+    private String regExTest = "([A-Z]+: )?(goto ([A-Z]+)|load ([a-z]+), ([a-z0-9]+)( [\\*\\/\\+\\-\\%] ([a-z0-9]+))?|(inc|loop|load) ([a-z]+)|end)";
+    private Pattern cmmdPattern = Pattern.compile(regExTest);
 
     public Command(String cmmd, int i) {
         setPc(i);
         Matcher match = getCmmdPattern().matcher(cmmd);
+        System.out.println(match.groupCount());
+        System.out.println(match.group());
         setLabel(match.group(1));
         setOpcode(match.group(2));
         setArg1(match.group(4));

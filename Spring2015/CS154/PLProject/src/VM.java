@@ -14,11 +14,11 @@ public class VM {
         this.vars = new HashMap<String, Integer>();
     }
     
-    public void add(String cmmd){
+    public void add(String cmmd){//done
         program.add(new Command(cmmd, pc++));
     }
     
-    public void compile(String fileName) {
+    public void compile(String fileName) {//done?
         //take a fileinput and run all the commands in it
         try{
         Scanner scan = new Scanner(new File(fileName));
@@ -49,7 +49,7 @@ public class VM {
         for(Command cmmd: program){;}
     }
     
-    public void run(){
+    public void run() throws Exception{//done?
     resolveLabels();
     pc = 0;
     while(pc < program.size()) {
