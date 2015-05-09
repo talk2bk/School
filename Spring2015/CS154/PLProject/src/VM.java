@@ -32,11 +32,26 @@ public class VM {
     
     public void execute(Command cmmd){
         //the command to run
-        if(cmmd.getOpcode().equals("load")){;}
-        else if (cmmd.getOpcode().equals("inc")){;}
-        else if (cmmd.getOpcode().equals("goto")){;}
-        else if (cmmd.getOpcode().equals("loop")){;}
-        else if (cmmd.getOpcode().equals("end")){;}
+        if(cmmd.getOpcode().equals("load")){
+        }
+        
+        else if (cmmd.getOpcode().equals("inc")){
+        vars.put(cmmd.getArg1(), vars.get(cmmd.getArg1())+1);
+        }
+        
+        else if (cmmd.getOpcode().equals("goto")){
+        if(vars.containsKey(cmmd.getArg1())){
+            pc = vars.get(cmmd.getArg1());
+        }
+        }
+        
+        else if (cmmd.getOpcode().equals("loop")){
+        
+        }
+        
+        else if (cmmd.getOpcode().equals("end")){
+        
+        }
         else {}//error, unrecognized opcode
     }
     

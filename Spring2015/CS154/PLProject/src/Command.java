@@ -11,8 +11,8 @@ public class Command {
     private int pc;
     private int count;
     
-    private String regEx = "([A-Z]+: )?((goto) ([A-Z]+)|(load) ([a-z]+), ([a-z0-9]+)( [\\*\\/\\+\\-\\%] ([a-z0-9]+))?|(inc|loop|load) ([a-z]+)|(end))";
-    private Pattern cmmdPattern = Pattern.compile("([A-Z]+: )?((goto) ([A-Z]+)|(load) ([a-z]+), ([a-z0-9]+)( [\\*\\/\\+\\-\\%] ([a-z0-9]+))?|(inc|loop|load) ([a-z]+)|(end))");
+    private String regEx = "([A-Z]+: )?((goto) ([A-Z]+)|(load) ([a-z]+), ([a-z0-9]+)?|(inc|loop|load) ([a-z]+)|(end))";
+    private Pattern cmmdPattern = Pattern.compile(regEx);
 
     public Command(String cmmd, int i) {
         setPc(i);
@@ -26,50 +26,46 @@ public class Command {
         
         if(match.group(2) != null && match.group(2).contains("load")){
             if(!match.group(2).contains(",")){
-                if(!match.group(2).contains("+") || !match.group(2).contains("-")
-                    || !match.group(2).contains("/") || !match.group(2).contains("*")){
-                    
-                    if(match.group(10) != null)setOpcode(match.group(10)); //load
-                    if(match.group(11) != null)setArg1(match.group(11)); //one argument
-                    setArg2(null); // no second args
-                }
-            
-            if(match.group(5) != null)setOpcode(match.group(5));
-            if(match.group(6) != null)setArg1(match.group(6));
-            if(match.group(7) != null)setArg2(match.group(7));
+                if(match.group(10) != null)
+                    setOpcode(match.group(8)); //load
+                if(match.group(11) != null)
+                    setArg1(match.group(9)); //one argument
             }
-        
-        if(match.group(5) != null)setOpcode(match.group(5));
-        if(match.group(6) != null)setArg1(match.group(6));
-        if(match.group(7) != null&&match.group(8) != null)setArg2(match.group(7)+match.group(8));
+            if(match.group(5) != null)
+                setOpcode(match.group(5));
+            if(match.group(6) != null)
+                setArg1(match.group(6));
+            if(match.group(7) != null)
+                setArg2(match.group(7));
         }
         
         else if(match.group(2) != null && match.group(2).contains("inc")){
         
-       if(match.group(10) != null) setOpcode(match.group(10));
-       if(match.group(11) != null) setArg1(match.group(11));
-        setArg2(null);
+       if(match.group(10) != null)
+           setOpcode(match.group(8));
+       if(match.group(11) != null)
+           setArg1(match.group(9));
         }
         
         else if(match.group(2) != null && match.group(2).contains("goto")){
         
-        if(match.group(3) != null)setOpcode(match.group(3));
-        if(match.group(4) != null)setArg1(match.group(4));
-        setArg2(null);
+        if(match.group(3) != null)
+            setOpcode(match.group(3));
+        if(match.group(4) != null)
+            setArg1(match.group(4));//??????
         }
         
         else if(match.group(2) != null && match.group(2).contains("loop")){
         
-       if(match.group(10) != null) setOpcode(match.group(10));
-       if(match.group(11) != null) setArg1(match.group(11));
-        setArg2(null);
+       if(match.group(10) != null)
+           setOpcode(match.group(8));
+       if(match.group(11) != null)
+           setArg1(match.group(9));
         }
         
         else if(match.group(2) != null && match.group(2).contains("end")){
-        
-        if(match.group(12) != null)setOpcode(match.group(12));
-        setArg1(null);
-        setArg2(null);
+        if(match.group(12) != null)
+            setOpcode(match.group(10));
         }
     }
 
