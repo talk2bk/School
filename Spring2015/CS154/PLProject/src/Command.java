@@ -26,9 +26,9 @@ public class Command {
         
         if(match.group(2) != null && match.group(2).contains("load")){
             if(!match.group(2).contains(",")){
-                if(match.group(10) != null)
+                if(match.group(8) != null)
                     setOpcode(match.group(8)); //load
-                if(match.group(11) != null)
+                if(match.group(9) != null)
                     setArg1(match.group(9)); //one argument
             }
             if(match.group(5) != null)
@@ -41,9 +41,9 @@ public class Command {
         
         else if(match.group(2) != null && match.group(2).contains("inc")){
         
-       if(match.group(10) != null)
+       if(match.group(8) != null)
            setOpcode(match.group(8));
-       if(match.group(11) != null)
+       if(match.group(9) != null)
            setArg1(match.group(9));
         }
         
@@ -57,14 +57,14 @@ public class Command {
         
         else if(match.group(2) != null && match.group(2).contains("loop")){
         
-       if(match.group(10) != null)
+       if(match.group(8) != null)
            setOpcode(match.group(8));
-       if(match.group(11) != null)
+       if(match.group(9) != null)
            setArg1(match.group(9));
         }
         
         else if(match.group(2) != null && match.group(2).contains("end")){
-        if(match.group(12) != null)
+        if(match.group(10) != null)
             setOpcode(match.group(10));
         }
     }
