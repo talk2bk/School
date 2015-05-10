@@ -11,6 +11,8 @@ public class Command {
     private int pc;
     private int count;
     
+    private boolean hasLabel = false;
+    
     private String regEx = "([A-Z]+: )?((goto) ([A-Z]+)|(load) ([a-z]+), ([a-z0-9]+)?|(inc|loop|load) ([a-z]+)|(end))";
     private Pattern cmmdPattern = Pattern.compile(regEx);
 
@@ -22,6 +24,7 @@ public class Command {
         
         if(match.group(1) != null && !match.group(1).isEmpty()){
             setLabel(match.group(1));
+            hasLabel = true;
         }
         
         if(match.group(2) != null && match.group(2).contains("load")){
@@ -178,5 +181,7 @@ public class Command {
         this.cmmdPattern = cmmdPattern;
     }
 
-
+    public boolean hasLabel(){
+        return this.hasLabel;
+    }
 }

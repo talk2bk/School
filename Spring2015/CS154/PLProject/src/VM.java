@@ -32,36 +32,42 @@ public class VM {
     
     public void execute(Command cmmd){
         //the command to run
-//        if(cmmd.getOpcode().equals("load")){
-//        }
-//        
-//        else if (cmmd.getOpcode().equals("inc")){
+        if(cmmd.getOpcode().equals("load")){
+        }
+        
+        else if (cmmd.getOpcode().equals("inc")){
 //        vars.put(cmmd.getArg1(), vars.get(cmmd.getArg1())+1);
-//        }
-//        
-//        else if (cmmd.getOpcode().equals("goto")){
+        }
+        
+        else if (cmmd.getOpcode().equals("goto")){
 //        if(vars.containsKey(cmmd.getArg1())){
 //            pc = vars.get(cmmd.getArg1());
 //        }
-//        }
-//        
-//        else if (cmmd.getOpcode().equals("loop")){
-//        
-//        }
-//        
-//        else if (cmmd.getOpcode().equals("end")){
-//        
-//        }
-//        else {}//error, unrecognized opcode
+        }
+        
+        else if (cmmd.getOpcode().equals("loop")){
+        
+        }
+        
+        else if (cmmd.getOpcode().equals("end")){
+        
+        }
+        else {}//error, unrecognized opcode
     }
     
     private void resolveLabels(){
         Stack<Command> loopStack = new Stack<Command>();
         Map<String, Integer> targets = new HashMap<String, Integer>();
         //pass 1
-        for(Command cmmd: program){;}
+        for(Command cmmd: program){
+        //labeled commands: label and pc are put into the targets map
+        //loop command: pushed onto loop stack
+        //end command: pop the top of the loop stack, set it's target to the pc of the end command, set the end command's target to the pc of the loop command
+        }
         //pass 2
-        for(Command cmmd: program){;}
+        for(Command cmmd: program){
+        //set targets of goto commands: search the target map for the pc of the label(arg1) and load this into the goto command's target
+        }
     }
     
     public void run() throws Exception{//done?
