@@ -7,8 +7,10 @@ public class VM {
     private int pc;//iterate through program executing each command.
     private ArrayList<Command> program;
     private HashMap<String,Integer> vars;
+    private int instructionCounter;
     
     public VM() {
+        this.instructionCounter = 0;
         this.pc = 0;
         this.program = new ArrayList<Command>();
         this.vars = new HashMap<String, Integer>();
@@ -31,9 +33,13 @@ public class VM {
     }
     
     public void execute(Command cmmd) throws Exception{
-        //the command to run
+        instructionCounter++;
+//the command to run
         if(cmmd.getOpcode().equals("load")){
-            vars.put(cmmd.getArg1(), Integer.parseInt(cmmd.getArg2()));
+            Pattern digitPattern = Pattern.compile("[0-9]+");
+            Matcher matchDigit = digitPattern.matcher(cmmd.getArg2());
+            if(matchDigit.matches()){vars.put(cmmd.getArg1(), Integer.parseInt(cmmd.getArg2()));}
+            else{vars.put(cmmd.getArg1(), vars.get(cmmd.getArg2()));}
                 
         }
         
@@ -47,10 +53,11 @@ public class VM {
         }
         
         else if (cmmd.getOpcode().equals("loop")){
+        cmmd.setCount(vars.get(cmmd.getArg1()));
         if(cmmd.getCount() <= 0){
             pc = cmmd.getTarget()+1;
         }
-        cmmd.setCount(vars.get(cmmd.getArg1()));
+        
         }
         
         else if (cmmd.getOpcode().equals("end")){
@@ -106,7 +113,7 @@ public class VM {
     
     @Override
     public String toString(){
-        return "pc = "+pc+"; "+"vars = "+vars.toString();
+        return "pc = "+pc+"; "+"vars = "+vars.toString()+"; "+"number of vars: "+vars.size()+"; "+"number of instructions: "+instructionCounter;
         
     }
 }
