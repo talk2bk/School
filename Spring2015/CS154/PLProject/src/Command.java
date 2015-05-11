@@ -23,7 +23,8 @@ public class Command {
         match.matches();
         
         if(match.group(1) != null && !match.group(1).isEmpty()){
-            setLabel(match.group(1));
+            String[] temp = match.group(1).split(":");
+            setLabel(temp[0]); 
             hasLabel = true;
         }
         

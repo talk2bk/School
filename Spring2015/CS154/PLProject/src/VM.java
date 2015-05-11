@@ -30,29 +30,40 @@ public class VM {
         }
     }
     
-    public void execute(Command cmmd){
+    public void execute(Command cmmd) throws Exception{
         //the command to run
         if(cmmd.getOpcode().equals("load")){
+            vars.put(cmmd.getArg1(), Integer.parseInt(cmmd.getArg2()));
+                
         }
         
         else if (cmmd.getOpcode().equals("inc")){
-//        vars.put(cmmd.getArg1(), vars.get(cmmd.getArg1())+1);
+            if(vars.containsKey(cmmd.getArg1())){vars.put(cmmd.getArg1(), vars.get(cmmd.getArg1())+1);}
+            else{vars.put(cmmd.getArg1(), 1);}
         }
         
         else if (cmmd.getOpcode().equals("goto")){
-//        if(vars.containsKey(cmmd.getArg1())){
-//            pc = vars.get(cmmd.getArg1());
-//        }
+        pc = cmmd.getTarget();
         }
         
         else if (cmmd.getOpcode().equals("loop")){
-        
+        if(cmmd.getCount() <= 0){
+            pc = cmmd.getTarget()+1;
+        }
+        cmmd.setCount(vars.get(cmmd.getArg1()));
         }
         
         else if (cmmd.getOpcode().equals("end")){
-        
+        Command myLoop = program.get(cmmd.getTarget());
+        int tempCount = myLoop.getCount()-1;
+        myLoop.setCount(tempCount);
+        if(tempCount > 0){
+            pc = myLoop.getPc()+1;
         }
-        else {}//error, unrecognized opcode
+        }
+        else {
+        throw new UnsupportedOperationException("Not an opcode");
+        }//error, unrecognized opcode
     }
     
     private void resolveLabels(){
@@ -61,12 +72,27 @@ public class VM {
         //pass 1
         for(Command cmmd: program){
         //labeled commands: label and pc are put into the targets map
+        if(cmmd.hasLabel()){
+            targets.put(cmmd.getLabel(),cmmd.getPc());
+        }
         //loop command: pushed onto loop stack
+        if(cmmd.getOpcode().equals("loop")){
+            loopStack.push(cmmd);
+        }
         //end command: pop the top of the loop stack, set it's target to the pc of the end command, set the end command's target to the pc of the loop command
+        if(cmmd.getOpcode().equals("end")){
+            Command temp = loopStack.pop();
+            
+            temp.setTarget(cmmd.getPc());
+            cmmd.setTarget(temp.getPc());
+        }
         }
         //pass 2
         for(Command cmmd: program){
         //set targets of goto commands: search the target map for the pc of the label(arg1) and load this into the goto command's target
+        if(cmmd.getOpcode().equals("goto")){
+            cmmd.setTarget(targets.get(cmmd.getArg1()));
+        }
         }
     }
     
@@ -76,5 +102,11 @@ public class VM {
     while(pc < program.size()) {
       execute(program.get(pc++));
    }
+    }
+    
+    @Override
+    public String toString(){
+        return "pc = "+pc+"; "+"vars = "+vars.toString();
+        
     }
 }
