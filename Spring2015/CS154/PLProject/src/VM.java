@@ -39,12 +39,12 @@ public class VM {
             Pattern digitPattern = Pattern.compile("[0-9]+");
             Matcher matchDigit = digitPattern.matcher(cmmd.getArg2());
             if(matchDigit.matches()){vars.put(cmmd.getArg1(), Integer.parseInt(cmmd.getArg2()));}
-            else{vars.put(cmmd.getArg1(), vars.get(cmmd.getArg2()));}
+            else{vars.put(cmmd.getArg1(), getFromVars(cmmd.getArg2()));}
                 
         }
         
         else if (cmmd.getOpcode().equals("inc")){
-            if(vars.containsKey(cmmd.getArg1())){vars.put(cmmd.getArg1(), vars.get(cmmd.getArg1())+1);}
+            if(vars.containsKey(cmmd.getArg1())){vars.put(cmmd.getArg1(), getFromVars(cmmd.getArg1())+1);}
             else{vars.put(cmmd.getArg1(), 1);}
         }
         
@@ -53,7 +53,7 @@ public class VM {
         }
         
         else if (cmmd.getOpcode().equals("loop")){
-        cmmd.setCount(vars.get(cmmd.getArg1()));
+        cmmd.setCount(getFromVars(cmmd.getArg1()));
         if(cmmd.getCount() <= 0){
             pc = cmmd.getTarget()+1;
         }
@@ -115,5 +115,10 @@ public class VM {
     public String toString(){
         return "pc = "+pc+"; "+"vars = "+vars.toString()+"; "+"number of vars: "+vars.size()+"; "+"number of instructions: "+instructionCounter;
         
+    }
+	
+    private Integer getFromVars(String key){
+        if(!vars.containsKey(key)){vars.put(key, 0);}
+        return vars.get(key);
     }
 }

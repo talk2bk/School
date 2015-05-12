@@ -1,0 +1,19 @@
+ant -f D:\\GitHub\\School\\Spring2015\\CS154\\PLProject -Djavac.includes=TestVM.java -Dnb.internal.action.name=run.single -Drun.class=TestVM run-single
+init:
+Deleting: D:\GitHub\School\Spring2015\CS154\PLProject\build\built-jar.properties
+deps-jar:
+Updating property file: D:\GitHub\School\Spring2015\CS154\PLProject\build\built-jar.properties
+Compiling 1 source file to D:\GitHub\School\Spring2015\CS154\PLProject\build\classes
+compile-single:
+run-single:
+Pearce's test: pc = 8; vars = {x=10, y=16}; number of vars: 2; number of instructions: 25
+*******************************
+n = 5; m = 32
+n+m = m: pc = 5; vars = {m=37, n=5}; number of vars: 2; number of instructions: 13
+*******************************
+n * m = z: pc = 7; vars = {z=6, m=3, n=2}; number of vars: 3; number of instructions: 19
+*******************************
+n = 10; m = 4
+n - m = z: pc = 12; vars = {a=6, v=6, w=7, z=6, m=4, n=10}; number of vars: 6; number of instructions: 123
+*******************************
+BUILD SUCCESSFUL (total time: 0 seconds)

@@ -23,7 +23,7 @@ public class TestVM {
          vm2.add("inc m");
          vm2.add("end");
          System.out.println("n = 5; m = 32");
-         System.out.print("n+m: ");
+         System.out.print("n+m = m: ");
          vm2.run();
          System.out.println(vm2);
          System.out.println("*******************************");
@@ -39,17 +39,6 @@ public class TestVM {
          System.out.print("n * m = z: ");
          vm3.run();
          System.out.println(vm3);
-         System.out.println("*******************************");
-         
-         VM vm4 = new VM();
-         vm.add("load m, 5");
-         vm.add("load n, 26");
-         vm.add("load z, m");
-         
-         
-         System.out.print("max(m,n): ");
-         vm4.run();
-         System.out.println(vm4);
          System.out.println("*******************************");
          
          VM vm5 = new VM();
