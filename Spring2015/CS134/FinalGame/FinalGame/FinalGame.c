@@ -491,37 +491,37 @@ int main(void)
 		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE]){ //jump in a direction
 			shoot(&player, &skull);
 			}
-		}
+		
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT]){
 			player.data.isPlaying = true;
 			if (player.facing != left){ player.facing = left; }
 			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
-			if (player.facing == left && checkMovement(&player)) { player.bounds.x -= player.speed; }
-			
+			player.bounds.x -= player.speed; 
+			if (player.bounds.x <= -640) player.bounds.x = background[39][39].bounds.x + 16;//looop
 			
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT]){
 			player.data.isPlaying = true;
 			if (player.facing != right) { player.facing = right; }
 			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
-			if(player.facing == right && checkMovement(&player)) { player.bounds.x += player.speed; }
-			
+			player.bounds.x += player.speed; 
+			if (player.bounds.x >= background[39][39].bounds.x + 16) player.bounds.x = -640;//looooop
 			
 		}
 		if (kbState[SDL_SCANCODE_UP]){
 			player.data.isPlaying = true;
-			if (player.facing == up && checkMovement(&player)) { player.bounds.y -= player.speed; }
+			 player.bounds.y -= player.speed; 
 			player.facing = up;
-			
+			if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
 			
 		}
 		else if (kbState[SDL_SCANCODE_DOWN]){
 			player.data.isPlaying = true;
-			if (player.facing == down && checkMovement(&player)) { player.bounds.y += player.speed; }
+			 player.bounds.y += player.speed; 
 			player.facing = down;
-			
+			if (player.bounds.y >= background[39][39].bounds.y + 16) player.bounds.y = -480;
 		}
 
 		if (player.data.curFrame == 4){ animReset(&player.data); }
@@ -532,20 +532,20 @@ int main(void)
 		itemUpdate(&slow, &player, deltaTime);
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
-		if (kbState[SDL_SCANCODE_A]){
-			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
-			if (camera.bounds.x <= -640) camera.bounds.x = background[39][39].bounds.x + 16;//looop
-		}
-		else if (kbState[SDL_SCANCODE_D]){
-			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
-			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
-		}
-		if (kbState[SDL_SCANCODE_W]){
-			if (camera.bounds.y > -480) camera.bounds.y -= tileHeight/4;
+//		if (kbState[SDL_SCANCODE_A]){//left
+//			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
+//			if (camera.bounds.x <= -640) camera.bounds.x = background[39][39].bounds.x + 16;//looop
+//		}
+//		else if (kbState[SDL_SCANCODE_D]){//right
+//			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
+//			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
+//		}
+		if (kbState[SDL_SCANCODE_W]){//up
+			if (camera.bounds.y > -480) camera.bounds.y -= 4;
 			if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
 		}
-		else if (kbState[SDL_SCANCODE_S]){
-			if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += tileHeight/4;
+		else if (kbState[SDL_SCANCODE_S]){//down
+			if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += 4;
 			if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
 		}
 
