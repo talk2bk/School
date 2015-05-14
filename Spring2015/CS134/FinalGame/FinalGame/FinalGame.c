@@ -84,6 +84,7 @@ typedef struct Item{
 	bool collided;
 	AI movementPattern;
 	GrowTime grow;
+	enum Speed speed;
 }Item;
 
 typedef struct Tile{
@@ -218,13 +219,9 @@ bool checkMovement(Player *player){
 }
 
 void shoot(Player *player, Item *item){
-	switch (player->facing){
-	case left:  break;
-	case right:  break;
-	case up:  break;
-	case down:; break;
-	default: return true;
-	}
+	item->bounds.x = player->bounds.x;
+	item->bounds.y = player->bounds.y;
+	item->speed = high;
 }
 
 
@@ -236,13 +233,28 @@ void itemAnimUpdate(Item* item, float dt){
 
 void itemUpdate(Item* item, Player* player, float dt){
 	itemAnimUpdate(item, dt);
-
+	if (item->speed > 0 && (item->bounds.y >= 0 && !item->collided)){
+		item->bounds.y -= item->speed;
+	}
+	
 	//updateAI(item, dt);
 
 	//if (item->movementPattern.chasePlayer){moveTowards(item, player, dt);}
 	//else{moveAway(item, player, dt);}
 
 }//maybe pass in different AIs for each item. give each item an AI???
+
+void printLocation(Player* player){
+	printf("Player x = %d\n", player->bounds.x);
+	printf("Player y = %d\n", player->bounds.y);
+}
+
+void checkLocation(Player* player){//moves player to edge of screen whe ngoing right or left
+	if (player->bounds.x < 0){player->bounds.x = 640-player->speed;}
+	else if (player->bounds.x >= 640){player->bounds.x = 0;}
+	//if (player.bounds.x <= 0) player.bounds.x = 640;//looop left
+	//if (player.bounds.x >= 640) player.bounds.x = 0;// looop right
+}
 
 int main(void)
 {
@@ -327,14 +339,14 @@ int main(void)
 
 	//player
 	player.bounds.x = 0;
-	player.bounds.y = 0;
+	player.bounds.y = 448;
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
 	player.facing = left;
 
 	int jumpDistanceX = 32;
 	int jumpDistanceY = 48;
-	player.speed = high;
+	player.speed = medium;
 	/*to do: set up animation stuff*/
 	AnimData playerAnimData;
 	playerAnimData.curFrame = 0;
@@ -374,8 +386,8 @@ int main(void)
 
 	//skull
 	//resetPos(&skull);
-	//skull.bounds.w = tileWidth;
-	//skull.bounds.h = tileHeight;
+	skull.bounds.w = tileWidth;
+	skull.bounds.h = tileHeight;
 	//skull.movementPattern.chasePlayer = true;
 	//skull.movementPattern.speed = low;
 	//skull.movementPattern.timeToChangeAI = 15.0f;
@@ -490,38 +502,41 @@ int main(void)
 		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
 		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE]){ //jump in a direction
 			shoot(&player, &skull);
+			//changeSpeed(&player);
+			//printLocation(&player);
 			}
 		
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT]){
+
 			player.data.isPlaying = true;
-			if (player.facing != left){ player.facing = left; }
-			if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
+			//if (player.facing != left){ player.facing = left; }
+			//if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
 			player.bounds.x -= player.speed; 
-			if (player.bounds.x <= -640) player.bounds.x = background[39][39].bounds.x + 16;//looop
-			
+			checkLocation(&player);
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT]){
+
 			player.data.isPlaying = true;
-			if (player.facing != right) { player.facing = right; }
-			if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
+			//if (player.facing != right) { player.facing = right; }
+			//if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
 			player.bounds.x += player.speed; 
-			if (player.bounds.x >= background[39][39].bounds.x + 16) player.bounds.x = -640;//looooop
-			
+			checkLocation(&player);
 		}
 		if (kbState[SDL_SCANCODE_UP]){
+			//max 320
 			player.data.isPlaying = true;
-			 player.bounds.y -= player.speed; 
+			if(player.bounds.y > 320)player.bounds.y -= player.speed; 
 			player.facing = up;
 			if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
 			
 		}
 		else if (kbState[SDL_SCANCODE_DOWN]){
+			//lowest is 448
 			player.data.isPlaying = true;
-			 player.bounds.y += player.speed; 
+			if(player.bounds.y < 448)player.bounds.y += player.speed; 
 			player.facing = down;
-			if (player.bounds.y >= background[39][39].bounds.y + 16) player.bounds.y = -480;
 		}
 
 		if (player.data.curFrame == 4){ animReset(&player.data); }
@@ -550,10 +565,11 @@ int main(void)
 		}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
-		if (AABBIntersect(&player.bounds, &skull.bounds)){ skull.collided = true; }
 		if (AABBIntersect(&player.bounds, &slow.bounds)){ slow.collided = true; }
+		if (AABBIntersect(&skull.bounds, &mush.bounds)){ skull.collided = true; mush.collided = true; }
+		if (AABBIntersect(&skull.bounds, &slow.bounds)){ skull.collided = true; slow.collided = true; }
 		if (mush.collided){ resetPos(&mush); }
-		if (skull.collided){ resetPos(&skull); }
+		if (skull.collided){ skull.speed = 0; skull.collided = false; }
 		if (slow.collided){ resetPos(&slow); }
 
 		//physics stuff
