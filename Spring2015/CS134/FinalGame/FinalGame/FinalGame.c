@@ -70,6 +70,7 @@ typedef struct Player{
 	AnimData data;
 	enum Direction facing;
 	enum Speed speed;
+	bool shot;
 }Player;
 
 typedef struct GrowTime{
@@ -93,7 +94,7 @@ typedef struct Tile{
 	bool passable;
 }Tile;
 
-Tile background[40][40];
+Tile background[40][30];
 //methods
 
 //set which animation is running
@@ -187,6 +188,15 @@ void resetPos(Item* item){
 	item->grow.timeToGrow = 1.0f;
 }
 
+void resetPosShot(Item* item, Player* player){
+	item->bounds.x = -30;
+	item->bounds.y = -30;
+	item->collided = false;
+	//item->grow.growTime = 30.0f;
+	//item->grow.timeToGrow = 1.0f;
+	player->shot = false;
+}
+
 void setPos(Player *player, Item* item){
 
 }
@@ -219,9 +229,11 @@ bool checkMovement(Player *player){
 }
 
 void shoot(Player *player, Item *item){
+	player->shot = true;
 	item->bounds.x = player->bounds.x;
 	item->bounds.y = player->bounds.y;
-	item->speed = high;
+	item->speed = sanic;
+	
 }
 
 
@@ -233,7 +245,7 @@ void itemAnimUpdate(Item* item, float dt){
 
 void itemUpdate(Item* item, Player* player, float dt){
 	itemAnimUpdate(item, dt);
-	if (item->speed > 0 && (item->bounds.y >= 0 && !item->collided)){
+	if (item->speed > 0 && !item->collided){
 		item->bounds.y -= item->speed;
 	}
 
@@ -319,8 +331,8 @@ int main(void)
 	//number of items is 3.
 	Item items[6];
 
-	int charHeight = 16;
-	int charWidth = 32;
+	int charHeight = 28;
+	int charWidth = 34;
 	int tileHeight = 16;
 	int tileWidth = 16;
 	textures[0] = glTexImageTGAFile("enderStone.tga", &tileWidth, &tileHeight);
@@ -343,6 +355,7 @@ int main(void)
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
 	player.facing = left;
+	player.shot = false;
 
 	int jumpDistanceX = 32;
 	int jumpDistanceY = 48;
@@ -386,8 +399,8 @@ int main(void)
 
 	//skull
 	//resetPos(&skull);
-	skull.bounds.w = tileWidth;
-	skull.bounds.h = tileHeight;
+	skull.bounds.w = 5;
+	skull.bounds.h = 14;
 	//skull.movementPattern.chasePlayer = true;
 	//skull.movementPattern.speed = low;
 	//skull.movementPattern.timeToChangeAI = 15.0f;
@@ -443,15 +456,15 @@ int main(void)
 	slow.data = slowAnimData;
 
 	for (int i = 0; i < 40; i++){
-		for (int j = 0; j < 40; j++){
+		for (int j = 0; j < 30; j++){
 			background[i][j].bounds.w = tileWidth;
 			background[i][j].bounds.h = tileHeight;
 			background[i][j].bounds.x = i * tileWidth;
 			background[i][j].bounds.y = j * tileHeight;
 
 			switch (randr(0, 2)){
-			case 0: background[i][j].image = textures[0]; background[i][j].passable = true; break;
-			case 1: background[i][j].image = textures[8]; background[i][j].passable = true; break;
+			//case 0: background[i][j].image = textures[0]; background[i][j].passable = true; break;
+			//case 1: background[i][j].image = textures[8]; background[i][j].passable = true; break;
 			default: background[i][j].image = textures[1]; background[i][j].passable = false; break;//use this block as unpassable
 			}
 		}
@@ -489,7 +502,7 @@ int main(void)
 
 		//update and draw game
 		for (int i = 0; i < 40; i++){
-			for (int j = 0; j < 40; j++){
+			for (int j = 0; j < 30; j++){
 				if (AABBIntersect(&camera.bounds, &background[i][j].bounds)){
 					glDrawSprite(background[i][j].image, background[i][j].bounds.x - camera.bounds.x, background[i][j].bounds.y - camera.bounds.y, background[i][j].bounds.h, background[i][j].bounds.w);
 				}
@@ -500,7 +513,7 @@ int main(void)
 
 		//if esc quit game
 		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE]){ //jump in a direction
+		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE] && !player.shot){ //jump in a direction
 			shoot(&player, &skull);
 			//changeSpeed(&player);
 			//printLocation(&player);
@@ -527,7 +540,7 @@ int main(void)
 		if (kbState[SDL_SCANCODE_UP]){
 			//max 320
 			player.data.isPlaying = true;
-			if (player.bounds.y > 320)player.bounds.y -= player.speed;
+			if (player.bounds.y > 0)player.bounds.y -= player.speed;
 			player.facing = up;
 			if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
 
@@ -555,21 +568,28 @@ int main(void)
 		//			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
 		//			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
 		//		}
-		if (kbState[SDL_SCANCODE_W]){//up
-			if (camera.bounds.y > -480) camera.bounds.y -= 4;
-			if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
-		}
-		else if (kbState[SDL_SCANCODE_S]){//down
-			if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += 4;
-			if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
-		}
+		//if (kbState[SDL_SCANCODE_W]){//up
+		//	if (camera.bounds.y > -480) camera.bounds.y -= 4;
+		//	if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
+		//}
+		//else if (kbState[SDL_SCANCODE_S]){//down
+		//	if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += 4;
+		//	if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
+		//}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
 		if (AABBIntersect(&player.bounds, &slow.bounds)){ slow.collided = true; }
 		if (AABBIntersect(&skull.bounds, &mush.bounds)){ skull.collided = true; mush.collided = true; }
 		if (AABBIntersect(&skull.bounds, &slow.bounds)){ skull.collided = true; slow.collided = true; }
+		for (int k = 0; k < 40; k++){
+			if (AABBIntersect(&skull.bounds, &background[k][0].bounds)){
+				skull.collided = true;
+			}
+		}
+
+
 		if (mush.collided){ resetPos(&mush); }
-		if (skull.collided){ skull.speed = 0; skull.collided = false; }
+		if (skull.collided){ skull.speed = 0; resetPosShot(&skull, &player); }
 		if (slow.collided){ resetPos(&slow); }
 
 		//physics stuff
@@ -586,7 +606,7 @@ int main(void)
 		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
 		animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
 
-		animDraw(&player.data, player.bounds.x, player.bounds.y, player.bounds.w, player.bounds.h);
+		animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
 
 		SDL_GL_SwapWindow(window);
 	}
