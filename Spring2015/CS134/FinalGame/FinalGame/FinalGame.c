@@ -93,7 +93,7 @@ typedef struct Tile{
 	bool passable;
 }Tile;
 
-Tile background[40][40];
+Tile background[40][100];
 //methods
 
 //set which animation is running
@@ -254,6 +254,7 @@ void checkLocation(Player* player){//moves player to edge of screen whe ngoing r
 	else if (player->bounds.x >= 640){player->bounds.x = 0;}
 	//if (player.bounds.x <= 0) player.bounds.x = 640;//looop left
 	//if (player.bounds.x >= 640) player.bounds.x = 0;// looop right
+	//0, 640 horizontally
 }
 
 int main(void)
@@ -273,7 +274,7 @@ int main(void)
 	SDL_Window* window = SDL_CreateWindow(
 		"Press space to jump spaces, arrow keys to move, wasd to move camera. items will run at or away from you alternating.",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-		640, 480,
+		800, 640,
 		SDL_WINDOW_OPENGL);
 	if (!window) {
 		fprintf(stderr, "Could not create window.ErrorCode = %s\n", SDL_GetError());
@@ -295,9 +296,9 @@ int main(void)
 		return 1;
 	}
 	/* Setup OpenGL state */
-	glViewport(0, 0, 640, 480);
+	glViewport(0, 0, 800, 640);
 	glMatrixMode(GL_PROJECTION);
-	glOrtho(0, 640, 480, 0, 0, 100);
+	glOrtho(0, 800, 640, 0, 0, 100);
 	glEnable(GL_TEXTURE_2D);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -371,9 +372,13 @@ int main(void)
 	//camera
 	camera.bounds.x = 0; 
 	camera.bounds.y = 0;
-	camera.bounds.w = 640;
-	camera.bounds.h = 480;
-
+	camera.bounds.w = 800;
+	camera.bounds.h = 640;
+	//window
+	int windowWidth = 800;
+	int windowHeight = 640;
+	int windowWidthMax = 800 / 16;
+	int windowHeightMax = 640 / 16;
 	
 	//mush
 	resetPos(&mush);
@@ -442,8 +447,8 @@ int main(void)
 	slowAnimData.def = &slowIdle;
 	slow.data = slowAnimData;
 
-	for (int i = 0; i < 40; i++){
-		for (int j = 0; j < 40; j++){
+	for (int i = 0; i < windowWidthMax; i++){//left and right
+		for (int j = 0; j < windowHeightMax; j++){//up and down
 			background[i][j].bounds.w = tileWidth;
 			background[i][j].bounds.h = tileHeight;
 			background[i][j].bounds.x = i * tileWidth;
@@ -456,7 +461,7 @@ int main(void)
 			}
 		}
 	}
-
+	//i is rows, j is columns. i is height, j is length
 	Uint32 lastFrameMs;
 	Uint32 currentFrameMs = SDL_GetTicks();
 	float physicsDeltaTime = 1 / 100.0f;
@@ -488,8 +493,8 @@ int main(void)
 		float deltaTime = (currentFrameMs - lastFrameMs) / 1000.0f;
 
 		//update and draw game
-		for (int i = 0; i < 40; i++){
-			for (int j = 0; j < 40; j++){
+		for (int i = 0; i < windowWidthMax; i++){
+			for (int j = 0; j < windowHeightMax; j++){
 				if (AABBIntersect(&camera.bounds, &background[i][j].bounds)){
 					glDrawSprite(background[i][j].image, background[i][j].bounds.x - camera.bounds.x, background[i][j].bounds.y - camera.bounds.y, background[i][j].bounds.h, background[i][j].bounds.w);
 				}
@@ -527,15 +532,17 @@ int main(void)
 		if (kbState[SDL_SCANCODE_UP]){
 			//max 320
 			player.data.isPlaying = true;
-			if(player.bounds.y > 320)player.bounds.y -= player.speed; 
+			//if(player.bounds.y > 320)
+				player.bounds.y -= player.speed; 
 			player.facing = up;
-			if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
+			//if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
 			
 		}
 		else if (kbState[SDL_SCANCODE_DOWN]){
 			//lowest is 448
 			player.data.isPlaying = true;
-			if(player.bounds.y < 448)player.bounds.y += player.speed; 
+			//if(player.bounds.y < 448)
+				player.bounds.y += player.speed; 
 			player.facing = down;
 		}
 
@@ -547,21 +554,21 @@ int main(void)
 		itemUpdate(&slow, &player, deltaTime);
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
-//		if (kbState[SDL_SCANCODE_A]){//left
-//			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
-//			if (camera.bounds.x <= -640) camera.bounds.x = background[39][39].bounds.x + 16;//looop
-//		}
-//		else if (kbState[SDL_SCANCODE_D]){//right
-//			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
-//			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
-//		}
+		if (kbState[SDL_SCANCODE_A]){//left
+			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
+			if (camera.bounds.x <= -640) camera.bounds.x = background[windowWidthMax - 1][windowHeightMax-1].bounds.x + 16;//looop
+		}
+		else if (kbState[SDL_SCANCODE_D]){//right
+			if (camera.bounds.x < background[windowWidthMax - 1][windowHeightMax - 1].bounds.x + 16) camera.bounds.x += tileWidth / 4;
+			if (camera.bounds.x >= background[windowWidthMax - 1][windowHeightMax - 1].bounds.x + 16) camera.bounds.x = -640;//looooop
+		}
 		if (kbState[SDL_SCANCODE_W]){//up
 			if (camera.bounds.y > -480) camera.bounds.y -= 4;
-			if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
+			if (camera.bounds.y <= -480) camera.bounds.y = background[windowWidthMax - 1][windowHeightMax - 1].bounds.y + 16;//loop
 		}
 		else if (kbState[SDL_SCANCODE_S]){//down
-			if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += 4;
-			if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
+			if (camera.bounds.y < background[windowWidthMax - 1][windowHeightMax - 1].bounds.y + 16) camera.bounds.y += 4;
+			if (camera.bounds.y >= background[windowWidthMax - 1][windowHeightMax - 1].bounds.y + 16) camera.bounds.y = -480;
 		}
 
 		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
@@ -586,7 +593,7 @@ int main(void)
 		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
 		animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
 		
-		animDraw(&player.data, player.bounds.x, player.bounds.y, player.bounds.w, player.bounds.h);
+		animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
 		
 		SDL_GL_SwapWindow(window);
 	}
