@@ -9,7 +9,7 @@
 #include <stdbool.h>
 
 //array of textures for everything
-GLuint textures[8];
+GLuint textures[30];
 
 enum Direction{//change this to just negative and positive values
 	up,
@@ -64,6 +64,12 @@ typedef struct Camera{
 	AABB bounds;
 }Camera;
 
+typedef struct Stand{
+	AABB bounds;
+	AnimData data;
+	bool play;
+}Stand;
+
 //player sprite, has a bounding box and animation data.
 typedef struct Player{
 	AABB bounds;
@@ -71,7 +77,19 @@ typedef struct Player{
 	enum Direction facing;
 	enum Speed speed;
 	bool shot;
+	Stand playerStand;
 }Player;
+
+typedef struct Boss{
+	AABB bounds;
+	AnimData data;
+	bool attacked;
+	Stand bossStand;
+	bool alive;
+	//probably need to implement an AI
+}Boss;
+
+
 
 typedef struct GrowTime{
 	float timeToGrow;
@@ -324,6 +342,8 @@ int main(void)
 
 	Player player;
 	Camera camera;
+	Boss boss;
+	Stand stand;
 	Item bullet;
 	Item mush;
 	Item skull;
@@ -335,19 +355,41 @@ int main(void)
 	int charWidth = 34;
 	int tileHeight = 16;
 	int tileWidth = 16;
+	//background
 	textures[0] = glTexImageTGAFile("enderStone.tga", &tileWidth, &tileHeight);
 	textures[1] = glTexImageTGAFile("obsidian.tga", &tileWidth, &tileHeight);
 	textures[8] = glTexImageTGAFile("sandStone.tga", &tileWidth, &tileHeight);
-
+	//misc
 	textures[2] = glTexImageTGAFile("mush.tga", &tileWidth, &tileHeight);
 	textures[3] = glTexImageTGAFile("skull.tga", &tileWidth, &tileHeight);
 	textures[4] = glTexImageTGAFile("slow.tga", &tileWidth, &tileHeight);
-
+	//player
 	textures[5] = glTexImageTGAFile("idleAnim.tga", &charWidth, &charHeight);
 	textures[6] = glTexImageTGAFile("walkOne.tga", &charWidth, &charHeight);
 	textures[7] = glTexImageTGAFile("walkTwo.tga", &charWidth, &charHeight);
+	//boss
 
+	textures[8] = glTexImageTGAFile("menuidle.tga", NULL, NULL);
 
+	textures[9] = glTexImageTGAFile("ready.tga", NULL, NULL);
+	textures[10] = glTexImageTGAFile("attack.tga", NULL, NULL);
+	textures[11] = glTexImageTGAFile("death1.tga", NULL, NULL);
+	textures[12] = glTexImageTGAFile("death2.tga", NULL, NULL);
+	textures[13] = glTexImageTGAFile("death3.tga", NULL, NULL);
+	textures[14] = glTexImageTGAFile("death4.tga", NULL, NULL);
+
+	textures[15] = glTexImageTGAFile("stand.tga", NULL, NULL);
+	textures[16] = glTexImageTGAFile("attack1.tga", NULL, NULL);
+	textures[17] = glTexImageTGAFile("attack1Mirror.tga", NULL, NULL);
+	textures[18] = glTexImageTGAFile("attack2.tga", NULL, NULL);
+	textures[19] = glTexImageTGAFile("attack2Mirror.tga", NULL, NULL);
+	
+
+	//camera
+	camera.bounds.x = 0;
+	camera.bounds.y = 0;
+	camera.bounds.w = 640;
+	camera.bounds.h = 480;
 
 	//player
 	player.bounds.x = 0;
@@ -381,21 +423,56 @@ int main(void)
 	playerAnimData.def = &walk;
 	player.data = playerAnimData;
 
-	//camera
-	camera.bounds.x = 0;
-	camera.bounds.y = 0;
-	camera.bounds.w = 640;
-	camera.bounds.h = 480;
+	//boss
+	boss.bounds.x = 0;
+	boss.bounds.y = 0;
+	boss.bounds.h = 75;
+	boss.bounds.w = 120;
+	boss.attacked = false;
+	
+	AnimData bossAnimData;
+	bossAnimData.curFrame = 0;
+	bossAnimData.timeToNextFrame = 0.0f;
+	bossAnimData.isPlaying = false;
 
+	AnimDef menuIdle;
+	menuIdle.name = "menuIdle";
+	menuIdle.numFrames = 1;
+	menuIdle.frames[0].frameNum = 8;
+	menuIdle.frames[0].frameTime = 1.0f;
 
-	//mush
-	resetPos(&mush);
-	mush.bounds.w = tileWidth;
-	mush.bounds.h = tileHeight;
-	mush.movementPattern.chasePlayer = false;
-	mush.movementPattern.speed = medium;
-	mush.movementPattern.timeToChangeAI = 20.0f;
-	mush.movementPattern.defaultTimeToChangeAI = 20.0f;
+	AnimDef ready;
+	ready.name = "ready";
+	ready.numFrames = 1;
+	ready.frames[0].frameNum = 9;
+	ready.frames[0].frameTime = 1.0f;
+
+	AnimDef attack;
+	attack.name = "attack";
+	attack.numFrames = 1;
+	attack.frames[0].frameNum = 10;
+	attack.frames[0].frameTime = 1.0f;
+
+	AnimDef death;
+	death.name = "death";
+	death.numFrames = 4;
+	death.frames[0].frameNum = 11;
+	death.frames[0].frameTime = 1.0f;
+	death.frames[1].frameNum = 12;
+	death.frames[1].frameTime = 1.0f;
+	death.frames[2].frameNum = 13;
+	death.frames[2].frameTime = 1.0f;
+	death.frames[3].frameNum = 14;
+	death.frames[3].frameTime = 1.0f;
+
+	bossAnimData.def = &menuIdle;
+	boss.data = bossAnimData;
+
+	//boss's Stand
+	Stand bossStand;
+	bossStand.bounds.x = 0;
+	bossStand.bounds.y = 0;
+	bossStand.play = false;
 
 	//skull
 	//resetPos(&skull);
@@ -406,28 +483,6 @@ int main(void)
 	//skull.movementPattern.timeToChangeAI = 15.0f;
 	//skull.movementPattern.defaultTimeToChangeAI = 15.0f;
 
-	//slow
-	resetPos(&slow);
-	slow.bounds.w = tileWidth;
-	slow.bounds.h = tileHeight;
-	slow.movementPattern.chasePlayer = true;
-	slow.movementPattern.speed = high;
-	slow.movementPattern.timeToChangeAI = 10.0f;
-	slow.movementPattern.defaultTimeToChangeAI = 10.0f;
-
-
-	/*to do: set up mush animation stuff*/
-	AnimData mushAnimData;
-	mushAnimData.curFrame = 0;
-	mushAnimData.timeToNextFrame = 1.0f;
-	mushAnimData.isPlaying = true;
-	AnimDef mushIdle;
-	mushIdle.name = "idle";
-	mushIdle.numFrames = 1;
-	mushIdle.frames[0].frameNum = 2;
-	mushIdle.frames[0].frameTime = 1.0f;
-	mushAnimData.def = &mushIdle;
-	mush.data = mushAnimData;
 
 	/*to do: set up skull animation stuff*/
 	AnimData skullAnimData;
@@ -442,18 +497,7 @@ int main(void)
 	skullAnimData.def = &skullIdle;
 	skull.data = skullAnimData;
 
-	/*to do: set up slow animation stuff*/
-	AnimData slowAnimData;
-	slowAnimData.curFrame = 0;
-	slowAnimData.timeToNextFrame = 1.0f;
-	slowAnimData.isPlaying = true;
-	AnimDef slowIdle;
-	slowIdle.name = "idle";
-	slowIdle.numFrames = 1;
-	slowIdle.frames[0].frameNum = 4;
-	slowIdle.frames[0].frameTime = 1.0f;
-	slowAnimData.def = &slowIdle;
-	slow.data = slowAnimData;
+
 
 	for (int i = 0; i < 40; i++){
 		for (int j = 0; j < 30; j++){
@@ -555,32 +599,16 @@ int main(void)
 		if (player.data.curFrame == 4){ animReset(&player.data); }
 		else{ animTick(&player.data, deltaTime); }
 
-		itemUpdate(&mush, &player, deltaTime);
 		itemUpdate(&skull, &player, deltaTime);
-		itemUpdate(&slow, &player, deltaTime);
+
+		//itemUpdate(&mush, &player, deltaTime);
+		//itemUpdate(&slow, &player, deltaTime);
 
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
-		//		if (kbState[SDL_SCANCODE_A]){//left
-		//			if (camera.bounds.x > -640) camera.bounds.x -= tileWidth/4;
-		//			if (camera.bounds.x <= -640) camera.bounds.x = background[39][39].bounds.x + 16;//looop
-		//		}
-		//		else if (kbState[SDL_SCANCODE_D]){//right
-		//			if (camera.bounds.x < background[39][39].bounds.x+16) camera.bounds.x += tileWidth/4;
-		//			if (camera.bounds.x >= background[39][39].bounds.x + 16) camera.bounds.x = -640;//looooop
-		//		}
-		//if (kbState[SDL_SCANCODE_W]){//up
-		//	if (camera.bounds.y > -480) camera.bounds.y -= 4;
-		//	if (camera.bounds.y <= -480) camera.bounds.y = background[39][39].bounds.y + 16;//loop
-		//}
-		//else if (kbState[SDL_SCANCODE_S]){//down
-		//	if (camera.bounds.y < background[39][39].bounds.y + 16) camera.bounds.y += 4;
-		//	if (camera.bounds.y >= background[39][39].bounds.y + 16) camera.bounds.y = -480;
-		//}
-
-		if (AABBIntersect(&player.bounds, &mush.bounds)){ mush.collided = true; }
-		if (AABBIntersect(&player.bounds, &slow.bounds)){ slow.collided = true; }
-		if (AABBIntersect(&skull.bounds, &mush.bounds)){ skull.collided = true; mush.collided = true; }
-		if (AABBIntersect(&skull.bounds, &slow.bounds)){ skull.collided = true; slow.collided = true; }
+		if (AABBIntersect(&skull.bounds, &boss.bounds)){
+			skull.collided = true;
+			boss.alive = false;
+		}
 		for (int k = 0; k < 40; k++){
 			if (AABBIntersect(&skull.bounds, &background[k][0].bounds)){
 				skull.collided = true;
@@ -588,9 +616,14 @@ int main(void)
 		}
 
 
-		if (mush.collided){ resetPos(&mush); }
+		//if (mush.collided){ resetPos(&mush); }
+		//if (slow.collided){ resetPos(&slow); }
 		if (skull.collided){ skull.speed = 0; resetPosShot(&skull, &player); }
-		if (slow.collided){ resetPos(&slow); }
+		if (!boss.alive){
+			boss.data.def = &death;
+			boss.data.isPlaying = true;
+		}
+		if (!boss.alive && boss.data.curFrame < 4){ animTick(&boss.data, deltaTime); }
 
 		//physics stuff
 		//do{
@@ -602,9 +635,12 @@ int main(void)
 
 		//draw the current state of everything. playerDraw(&player);
 		//draw items, then draw character.
-		animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y - camera.bounds.y, mush.bounds.w, mush.bounds.h);
+		//animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
+		//animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y - camera.bounds.y, mush.bounds.w, mush.bounds.h);
+
+		//draw boss
+		animDraw(&boss.data, boss.bounds.x - camera.bounds.x, boss.bounds.y - boss.bounds.y, boss.bounds.w, boss.bounds.h);
 		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
-		animDraw(&slow.data, slow.bounds.x - camera.bounds.x, slow.bounds.y - camera.bounds.y, slow.bounds.w, slow.bounds.h);
 
 		animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
 
