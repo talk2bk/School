@@ -64,10 +64,22 @@ typedef struct Camera{
 	AABB bounds;
 }Camera;
 
-typedef struct Stand{
+typedef struct Attack{
 	AABB bounds;
 	AnimData data;
+	bool collided;
+	bool collidedPlayer;
+	enum Speed attackSpeed;
+}Attack;
+
+typedef struct Stand{
+	AABB bounds;
+	Attack left;
+	Attack right;
+	AnimData data;
 	bool play;
+	int standHealth;
+	bool attacking;
 }Stand;
 
 //player sprite, has a bounding box and animation data.
@@ -78,13 +90,17 @@ typedef struct Player{
 	enum Speed speed;
 	bool shot;
 	Stand playerStand;
+	bool isRolling;
+	int playerHealth;
+	bool hit;
 }Player;
 
 typedef struct Boss{
 	AABB bounds;
 	AnimData data;
 	bool attacked;
-	Stand bossStand;
+	Stand bosssStand;
+	int bossHealth;
 	bool alive;
 	//probably need to implement an AI
 }Boss;
@@ -104,6 +120,7 @@ typedef struct Item{
 	AI movementPattern;
 	GrowTime grow;
 	enum Speed speed;
+	int damage;
 }Item;
 
 typedef struct Tile{
@@ -215,35 +232,13 @@ void resetPosShot(Item* item, Player* player){
 	player->shot = false;
 }
 
-void setPos(Player *player, Item* item){
-
-}
-
-bool checkLeft(int x, int y){
-	if (background[(x - 16) / 16][y / 16].passable == false || background[(x - 16) / 16][(y - 16) / 16].passable == false){ return false; };//check one block to your left
-	return true;
-}
-bool checkRight(int x, int y){
-	if (background[x / 16][y / 16].passable == false || background[(x + 16) / 16][(y + 16) / 16].passable == false){ return false; }//check one block to your right
-	return true;
-}
-bool checkUp(int x, int y){
-	return background[x / 16][(y - 16) / 16].passable;//check one block to your up
-}
-bool checkDown(int x, int y){
-	return background[x / 16][(y + 48) / 16].passable;//check one block to your down
-}
-
-
-bool checkMovement(Player *player){
-	//take player position, check the position in the direction they are moving, return false if that move is illegal
-	switch (player->facing){
-	case left: return checkLeft(player->bounds.x, player->bounds.y); break;
-	case right: return checkRight(player->bounds.x, player->bounds.y); break;
-	case up: return checkUp(player->bounds.x, player->bounds.y); break;
-	case down: return checkDown(player->bounds.x, player->bounds.y); break;
-	default: return true;
-	}
+void resetAttack(Boss* boss, Player* player){
+	boss->bosssStand.left.bounds.x = player->bounds.x - 158*2 - 150;
+	boss->bosssStand.right.bounds.x = player->bounds.x + 158*2;
+	boss->bosssStand.left.bounds.y = player->bounds.y - 129;
+	boss->bosssStand.right.bounds.y = player->bounds.y - 129;
+	boss->bosssStand.left.collided = false;
+	boss->bosssStand.right.collided = false;
 }
 
 void shoot(Player *player, Item *item){
@@ -253,6 +248,7 @@ void shoot(Player *player, Item *item){
 	item->speed = sanic;
 	
 }
+
 
 
 void itemAnimUpdate(Item* item, float dt){
@@ -280,10 +276,23 @@ void printLocation(Player* player){
 }
 
 void checkLocation(Player* player){//moves player to edge of screen whe ngoing right or left
-	if (player->bounds.x < 0){ player->bounds.x = 640 - player->speed; }
-	else if (player->bounds.x >= 640){ player->bounds.x = 0; }
-	//if (player.bounds.x <= 0) player.bounds.x = 640;//looop left
-	//if (player.bounds.x >= 640) player.bounds.x = 0;// looop right
+	if (player->bounds.x < 0){ player->bounds.x = 640 - player->speed; } //if off screen to the left, make him come out to the right
+	else if (player->bounds.x >= 640){ player->bounds.x = 0; } //if offscreen to the right, make him come out to the left
+
+	if (player->bounds.y < 0){ player->bounds.y = 480 - player->speed; }
+	else if (player->bounds.y >= 480){ player->bounds.y = 0 + player->speed; }
+}
+
+void roll(Player* player){
+
+	switch (player->facing){
+	case(left) : player->bounds.x -= 40; break;
+	case(right) : player->bounds.x += 40; break;
+	case(up) : player->bounds.y -= 40; break;
+	case(down) : player->bounds.y += 40; break;
+	}
+	player->isRolling = true;
+
 }
 
 int main(void)
@@ -343,13 +352,9 @@ int main(void)
 	Player player;
 	Camera camera;
 	Boss boss;
-	Stand stand;
-	Item bullet;
-	Item mush;
+	Stand bossStand;
 	Item skull;
-	Item slow;
-	//number of items is 3.
-	Item items[6];
+	bool prevFrameHit;
 
 	int charHeight = 28;
 	int charWidth = 34;
@@ -367,6 +372,7 @@ int main(void)
 	textures[5] = glTexImageTGAFile("idleAnim.tga", &charWidth, &charHeight);
 	textures[6] = glTexImageTGAFile("walkOne.tga", &charWidth, &charHeight);
 	textures[7] = glTexImageTGAFile("walkTwo.tga", &charWidth, &charHeight);
+	textures[20] = glTexImageTGAFile("roll.tga", &charWidth, &charHeight);
 	//boss
 
 	textures[8] = glTexImageTGAFile("menuidle.tga", NULL, NULL);
@@ -392,12 +398,15 @@ int main(void)
 	camera.bounds.h = 480;
 
 	//player
-	player.bounds.x = 0;
+	player.bounds.x = (640/2) - 17;
 	player.bounds.y = 448;
 	player.bounds.h = charHeight;
 	player.bounds.w = charWidth;
 	player.facing = left;
 	player.shot = false;
+	player.isRolling = false;
+	player.playerHealth = 3;
+	player.hit = false;
 
 	int jumpDistanceX = 32;
 	int jumpDistanceY = 48;
@@ -423,11 +432,18 @@ int main(void)
 	playerAnimData.def = &walk;
 	player.data = playerAnimData;
 
+	AnimDef rollDef;
+	rollDef.name = "roll";
+	rollDef.numFrames = 1;
+	rollDef.frames[0].frameNum = 20;
+	rollDef.frames[0].frameTime = 1.0f;
+
 	//boss
-	boss.bounds.x = 0;
-	boss.bounds.y = 0;
+	boss.bounds.x = (640/2) - (75/2);
+	boss.bounds.y = (480/2) - 120;
 	boss.bounds.h = 75;
 	boss.bounds.w = 120;
+	boss.bossHealth = 1;
 	boss.attacked = false;
 	
 	AnimData bossAnimData;
@@ -469,15 +485,94 @@ int main(void)
 	boss.data = bossAnimData;
 
 	//boss's Stand
-	Stand bossStand;
-	bossStand.bounds.x = 0;
-	bossStand.bounds.y = 0;
-	bossStand.play = false;
+	bossStand.bounds.x = 640/2 - 233/2;
+	bossStand.bounds.y = 480/2 - 120;
+	bossStand.bounds.h = 217;
+	bossStand.bounds.w = 220;
+	bossStand.standHealth = 420;
+	bossStand.play = true;
+	bossStand.attacking = false;
+
+	AnimData bossStandAnimData;
+	bossStandAnimData.curFrame = 0;
+	bossStandAnimData.timeToNextFrame = 0.0f;
+	bossStandAnimData.isPlaying = false;
+
+	AnimDef standDef;
+	standDef.name = "standDef";
+	standDef.numFrames = 1;
+	standDef.frames[0].frameNum = 15;
+	standDef.frames[0].frameTime = 1.0f;
+
+	bossStandAnimData.def = &standDef;
+	bossStand.data = bossStandAnimData;
+	
+	boss.bosssStand = bossStand;
+
+	Attack leftAttack;
+	leftAttack.bounds.x = 0;
+	leftAttack.bounds.y = 0;
+	leftAttack.bounds.h = 207;
+	leftAttack.bounds.w = 158;
+	leftAttack.attackSpeed = medium;
+	leftAttack.collided = false;
+	leftAttack.collidedPlayer = false;
+	AnimData leftAttackAnimData;
+	leftAttackAnimData.curFrame = 0;
+	leftAttackAnimData.timeToNextFrame = 0.0f;
+	leftAttackAnimData.isPlaying = false;
+
+	AnimDef leftAttackSwing;
+	leftAttackSwing.name = "leftArm";
+	leftAttackSwing.numFrames = 1;
+	leftAttackSwing.frames[0].frameNum = 16;
+	leftAttackSwing.frames[0].frameTime = 1.0f;
+
+	AnimDef leftAttackSwingHit;
+	leftAttackSwingHit.name = "leftArmHit";
+	leftAttackSwingHit.numFrames = 1;
+	leftAttackSwingHit.frames[0].frameNum = 18;
+	leftAttackSwingHit.frames[0].frameTime = 1.0f;
+
+	leftAttackAnimData.def = &leftAttackSwing;
+	leftAttack.data = leftAttackAnimData;
+	boss.bosssStand.left = leftAttack;
+
+	Attack rightAttack;
+	rightAttack.bounds.x = 640- 158;
+	rightAttack.bounds.y = 0;
+	rightAttack.bounds.h = 207;
+	rightAttack.bounds.w = 158;
+	rightAttack.attackSpeed = medium;
+	rightAttack.collided = false;
+	rightAttack.collidedPlayer = false;
+	AnimData rightAttackAnimData;
+	rightAttackAnimData.curFrame = 0;
+	rightAttackAnimData.timeToNextFrame = 0.0f;
+	rightAttackAnimData.isPlaying = false;
+
+	AnimDef rightAttackSwing;
+	rightAttackSwing.name = "rightArm";
+	rightAttackSwing.numFrames = 1;
+	rightAttackSwing.frames[0].frameNum = 17;
+	rightAttackSwing.frames[0].frameTime = 1.0f;
+
+	AnimDef rightAttackSwingHit;
+	rightAttackSwingHit.name = "rightArmHit";
+	rightAttackSwingHit.numFrames = 1;
+	rightAttackSwingHit.frames[0].frameNum = 19;
+	rightAttackSwingHit.frames[0].frameTime = 1.0f;
+
+	rightAttackAnimData.def = &rightAttackSwing;
+	rightAttack.data = rightAttackAnimData;
+	boss.bosssStand.right = rightAttack;
+
 
 	//skull
 	//resetPos(&skull);
 	skull.bounds.w = 5;
 	skull.bounds.h = 14;
+	skull.damage = 10;
 	//skull.movementPattern.chasePlayer = true;
 	//skull.movementPattern.speed = low;
 	//skull.movementPattern.timeToChangeAI = 15.0f;
@@ -557,18 +652,23 @@ int main(void)
 
 		//if esc quit game
 		if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE] && !player.shot){ //jump in a direction
+
+		if (kbState[SDL_SCANCODE_X] && !kbPrevState[SDL_SCANCODE_X]){printLocation(&player);}
+		if ((kbState[SDL_SCANCODE_LSHIFT] || kbState[SDL_SCANCODE_RSHIFT]) && !player.shot){ //jump in a direction
 			shoot(&player, &skull);
 			//changeSpeed(&player);
-			//printLocation(&player);
 		}
 
+		if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE] && !player.isRolling){
+			roll(&player);
+			animSet(&player.data, &rollDef);
+		}
 
 		//update player based on input. playerUpdate(&player, deltaTime);
 		if (kbState[SDL_SCANCODE_LEFT]){
 
 			player.data.isPlaying = true;
-			//if (player.facing != left){ player.facing = left; }
+			player.facing = left;
 			//if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
 			player.bounds.x -= player.speed;
 			checkLocation(&player);
@@ -576,7 +676,7 @@ int main(void)
 		else if (kbState[SDL_SCANCODE_RIGHT]){
 
 			player.data.isPlaying = true;
-			//if (player.facing != right) { player.facing = right; }
+			player.facing = right;
 			//if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
 			player.bounds.x += player.speed;
 			checkLocation(&player);
@@ -586,41 +686,113 @@ int main(void)
 			player.data.isPlaying = true;
 			if (player.bounds.y > 0)player.bounds.y -= player.speed;
 			player.facing = up;
-			if (player.bounds.y <= -480) player.bounds.y = background[39][39].bounds.y + 16;//loop
+			checkLocation(&player);
 
 		}
 		else if (kbState[SDL_SCANCODE_DOWN]){
 			//lowest is 448
 			player.data.isPlaying = true;
-			if (player.bounds.y < 448)player.bounds.y += player.speed;
+			if(player.bounds.y < 448)player.bounds.y += player.speed;
 			player.facing = down;
+			checkLocation(&player);
+		}
+		if (!player.isRolling){
+			if (player.data.curFrame == 4){ animReset(&player.data); }
+			else{ animTick(&player.data, deltaTime); }
 		}
 
-		if (player.data.curFrame == 4){ animReset(&player.data); }
-		else{ animTick(&player.data, deltaTime); }
+		if (boss.bosssStand.attacking && (!boss.bosssStand.left.collided && !boss.bosssStand.right.collided)){
+			if (boss.bosssStand.left.bounds.x - player.bounds.x > 240) { boss.bosssStand.left.attackSpeed = low; }
+			if (boss.bosssStand.right.bounds.x - player.bounds.x > 240) { boss.bosssStand.right.attackSpeed = low; }
+			else{
+				boss.bosssStand.left.attackSpeed = medium; boss.bosssStand.right.attackSpeed = medium;
+			}
+			boss.bosssStand.left.bounds.x += boss.bosssStand.left.attackSpeed;
+			boss.bosssStand.right.bounds.x -= boss.bosssStand.right.attackSpeed;
+			
+		}
 
 		itemUpdate(&skull, &player, deltaTime);
 
-		//itemUpdate(&mush, &player, deltaTime);
-		//itemUpdate(&slow, &player, deltaTime);
-
 		//update camera, items based on input and player. cameraUpdate(&camera, deltaTime); for(int i = 0; i < numitems; ++i){itemUpdate(&items[i],deltaTime);}
+		prevFrameHit = player.hit;
+
+		//when hands hit, change animation to the hit animation
+		if (AABBIntersect(&boss.bosssStand.left.bounds, &boss.bosssStand.right.bounds)){
+			animSet(&boss.bosssStand.left.data, &leftAttackSwingHit);
+			animSet(&boss.bosssStand.right.data, &rightAttackSwingHit);
+			boss.bosssStand.left.collided = true;
+			boss.bosssStand.right.collided = true;
+			boss.bosssStand.attacking = false;
+			//resetAttack(&boss, &player);
+		}
+
+		//if boss isnt attacking
+		if (!boss.bosssStand.attacking){
+			switch (randr(0, 2)){
+			case 0: boss.bosssStand.attacking = true;  resetAttack(&boss, &player); break;
+			default: break;
+			}
+		}
+		
+
+		//if hand hits a player, deal damage to player
+		if ((AABBIntersect(&boss.bosssStand.left.bounds, &player.bounds) 
+			|| AABBIntersect(&boss.bosssStand.right.bounds, &player.bounds) 
+			|| AABBIntersect(&boss.bosssStand.bounds, &player.bounds) 
+			|| AABBIntersect(&boss.bounds, &player.bounds)) && (!player.hit && !prevFrameHit)){
+			player.playerHealth -= 1;
+			player.hit = true;
+			printf("playerHealth: %d\n", player.playerHealth);
+		}
+		//if not hitting, and last frame wasnt hitting.
+		if ((!AABBIntersect(&boss.bosssStand.left.bounds, &player.bounds) 
+			&& !AABBIntersect(&boss.bosssStand.right.bounds, &player.bounds)
+			&& !AABBIntersect(&boss.bosssStand.bounds, &player.bounds)
+			&& !AABBIntersect(&boss.bounds, &player.bounds)
+			) && (player.hit && prevFrameHit)){
+			player.hit = false;
+		}
+
+		//if shot hits stand
+		if (AABBIntersect(&skull.bounds,&boss.bosssStand.bounds)){
+			skull.collided = true;
+			boss.bosssStand.standHealth -= skull.damage; printf("standhealth is: %d\n", boss.bosssStand.standHealth);
+			boss.bosssStand.attacking = true;
+			if (boss.bosssStand.standHealth <= 0){
+				boss.bosssStand.play = false; 
+				boss.bosssStand.bounds.h = 0; 
+				boss.bosssStand.bounds.w = 0; 
+				boss.bosssStand.left.bounds.h = 0;
+				boss.bosssStand.left.bounds.w = 0;
+				boss.bosssStand.right.bounds.h = 0;
+				boss.bosssStand.right.bounds.w = 0;
+			}
+		}
+
+		//if shot hits arms
+		if (AABBIntersect(&skull.bounds, &boss.bosssStand.left.bounds) || AABBIntersect(&skull.bounds, &boss.bosssStand.right.bounds)){
+			skull.collided = true;
+			//do nothing other than reset bullet
+		}
+		//if shot hits boss
 		if (AABBIntersect(&skull.bounds, &boss.bounds)){
 			skull.collided = true;
-			boss.alive = false;
+			boss.bossHealth -= skull.damage;
+			if(boss.bossHealth <= 0) boss.alive = false;
 		}
+		//if shot hits edge of screen
 		for (int k = 0; k < 40; k++){
 			if (AABBIntersect(&skull.bounds, &background[k][0].bounds)){
 				skull.collided = true;
 			}
 		}
-
-
-		//if (mush.collided){ resetPos(&mush); }
-		//if (slow.collided){ resetPos(&slow); }
-		if (skull.collided){ skull.speed = 0; resetPosShot(&skull, &player); }
+		
+		//if shot hit something , reset it
+		if (skull.collided){ skull.speed = 0; resetPosShot(&skull, &player); }\
+		//when boss dies play animatino of death.
 		if (!boss.alive){
-			boss.data.def = &death;
+			animSet(&boss.data, &death);
 			boss.data.isPlaying = true;
 		}
 		if (!boss.alive && boss.data.curFrame < 4){ animTick(&boss.data, deltaTime); }
@@ -639,10 +811,21 @@ int main(void)
 		//animDraw(&mush.data, mush.bounds.x - camera.bounds.x, mush.bounds.y - camera.bounds.y, mush.bounds.w, mush.bounds.h);
 
 		//draw boss
-		animDraw(&boss.data, boss.bounds.x - camera.bounds.x, boss.bounds.y - boss.bounds.y, boss.bounds.w, boss.bounds.h);
+		animDraw(&boss.data, boss.bounds.x - camera.bounds.x, boss.bounds.y - camera.bounds.y, boss.bounds.w, boss.bounds.h);
+		if (boss.bosssStand.play){ 
+			animDraw(&boss.bosssStand.data, boss.bosssStand.bounds.x - camera.bounds.x, boss.bosssStand.bounds.y - camera.bounds.y, boss.bosssStand.bounds.w, boss.bosssStand.bounds.h);
+			if (boss.bosssStand.attacking){
+				animDraw(&boss.bosssStand.left.data, boss.bosssStand.left.bounds.x - camera.bounds.x, boss.bosssStand.left.bounds.y - camera.bounds.y, boss.bosssStand.left.bounds.w, boss.bosssStand.left.bounds.h);
+				animDraw(&boss.bosssStand.right.data, boss.bosssStand.right.bounds.x - camera.bounds.x, boss.bosssStand.right.bounds.y - camera.bounds.y, boss.bosssStand.right.bounds.w, boss.bosssStand.right.bounds.h);
+			}
+		}
 		animDraw(&skull.data, skull.bounds.x - camera.bounds.x, skull.bounds.y - camera.bounds.y, skull.bounds.w, skull.bounds.h);
 
 		animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
+		if (player.isRolling){
+			player.isRolling = false;
+			animSet(&player.data, &walk);
+		}
 
 		SDL_GL_SwapWindow(window);
 	}
