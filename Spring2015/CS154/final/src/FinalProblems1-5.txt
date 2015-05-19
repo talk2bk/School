@@ -1,0 +1,43 @@
+Problem 1:
+FORMULA ::= (TERM = TERM) || (TERM < TERM)
+TERM ::= [0-9]+ || [0.0-9.9]+ || VAR || FUNCTIONCALL
+FUNCTIONCALL ::= FUNCTION + OPERANDS
+OPERANDS ::= (TERM)?(, TERM)+
+FUNCTION ::= [A-Za-z][A-Za-z0-9]+
+VAR ::= [A-Za-z][A-Za-z0-9]+
+
+Problem 2:
+sin(cos(x)) = tan(3.14)
+FORMULA
+TERM = TERM
+FUNCTIONCALL = TERM
+FUNCTION + OPERANDS = TERM
+FUNCTION + TERM = TERM
+FUNCTION + FUNCTION = TERM
+FUNCTION + FUNCTION = FUNCTION + OPERANDS
+FUNCTION + FUNCTION = FUNCTION + TERM
+FUNCTION + FUNCTION = FUNCTION + [0.0-9.9]+
+
+Problem 3: 
+Assume that P(i) is somewhere in the list
+diag(i) = Pi(i) + 1
+diag(i) = P100(i)
+diag(100) = P100(100) = P100(100) + 1 // This is not valid
+This assumption is not valid because it clashes with our definition
+
+Problem 4:
+loop: if x == 0 goto end
+C1
+C2
+C3
+goto loop
+end:
+
+Problem 5:
+a.True
+b.True
+c.False
+d.False
+e.True
+f.False
+g.True
