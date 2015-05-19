@@ -670,7 +670,7 @@ int main(void)
 			player.data.isPlaying = true;
 			player.facing = left;
 			//if (player.bounds.w < 0) { player.bounds.w = -player.bounds.w; }
-			player.bounds.x -= player.speed;
+			player.bounds.x -= player.speed*deltaTime;
 			checkLocation(&player);
 		}
 		else if (kbState[SDL_SCANCODE_RIGHT]){
@@ -678,13 +678,13 @@ int main(void)
 			player.data.isPlaying = true;
 			player.facing = right;
 			//if (player.bounds.w > 0) { player.bounds.w = -player.bounds.w; }
-			player.bounds.x += player.speed;
+			player.bounds.x += player.speed*deltaTime;
 			checkLocation(&player);
 		}
 		if (kbState[SDL_SCANCODE_UP]){
 			//max 320
 			player.data.isPlaying = true;
-			if (player.bounds.y > 0)player.bounds.y -= player.speed;
+			if (player.bounds.y > 0)player.bounds.y -= player.speed*deltaTime;
 			player.facing = up;
 			checkLocation(&player);
 
@@ -692,7 +692,7 @@ int main(void)
 		else if (kbState[SDL_SCANCODE_DOWN]){
 			//lowest is 448
 			player.data.isPlaying = true;
-			if(player.bounds.y < 448)player.bounds.y += player.speed;
+			if (player.bounds.y < 448)player.bounds.y += player.speed*deltaTime;
 			player.facing = down;
 			checkLocation(&player);
 		}
@@ -707,8 +707,8 @@ int main(void)
 			else{
 				boss.bosssStand.left.attackSpeed = medium; boss.bosssStand.right.attackSpeed = medium;
 			}
-			boss.bosssStand.left.bounds.x += boss.bosssStand.left.attackSpeed;
-			boss.bosssStand.right.bounds.x -= boss.bosssStand.right.attackSpeed;
+			boss.bosssStand.left.bounds.x += boss.bosssStand.left.attackSpeed*deltaTime;
+			boss.bosssStand.right.bounds.x -= boss.bosssStand.right.attackSpeed*deltaTime;
 			
 		}
 
@@ -826,7 +826,7 @@ int main(void)
 			player.isRolling = false;
 			animSet(&player.data, &walk);
 		}
-
+		
 		SDL_GL_SwapWindow(window);
 	}
 	SDL_Quit();
