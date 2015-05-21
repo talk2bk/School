@@ -1,35 +1,35 @@
-﻿Build started 5/20/2015 12:09:54 AM.
+﻿Build started 5/20/2015 6:01:50 PM.
      1>Project "D:\GitHub\School\Spring2015\CS134\FinalGame\FinalGame\FinalGame.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt FinalGame.c
          FinalGame.c
-     1>FinalGame.c(214): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>FinalGame.c(216): warning C4018: '<=' : signed/unsigned mismatch
-     1>FinalGame.c(216): warning C4018: '>=' : signed/unsigned mismatch
-     1>FinalGame.c(226): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>FinalGame.c(227): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>FinalGame.c(286): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(219): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>FinalGame.c(221): warning C4018: '<=' : signed/unsigned mismatch
+     1>FinalGame.c(221): warning C4018: '>=' : signed/unsigned mismatch
+     1>FinalGame.c(231): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>FinalGame.c(232): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
      1>FinalGame.c(289): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(290): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(412): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(413): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(608): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(609): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(610): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(611): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>FinalGame.c(659): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(660): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(669): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(845): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(848): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(850): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(851): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(853): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(855): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(865): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(868): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(874): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
-     1>FinalGame.c(625): warning C4101: 'lastPhysicsFrameMs' : unreferenced local variable
+     1>FinalGame.c(427): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(428): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(649): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(650): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(651): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(652): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FinalGame.c(700): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(701): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(710): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(893): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(896): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(898): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(899): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(901): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(903): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(914): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(916): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(917): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(926): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(927): warning C4244: 'function' : conversion from 'float' to 'int', possible loss of data
+     1>FinalGame.c(666): warning C4101: 'lastPhysicsFrameMs' : unreferenced local variable
        Link:
          D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\School\Spring2015\CS134\FinalGame\Release\FinalGame.exe" /NOLOGO SDL2.lib opengl32.lib glu32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\School\Spring2015\CS134\FinalGame\Release\FinalGame.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\School\Spring2015\CS134\FinalGame\Release\FinalGame.lib" /MACHINE:X86 /SAFESEH Release\DrawUtils.obj
          Release\FinalGame.obj

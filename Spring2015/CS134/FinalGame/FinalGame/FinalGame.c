@@ -136,6 +136,11 @@ typedef struct Tile{
 	bool passable;
 }Tile;
 
+typedef struct Text{
+	AABB bounds;
+	AnimData data;
+}Text;
+
 Tile background[40][30];
 //methods
 
@@ -256,8 +261,6 @@ void shoot(Player *player, Item *item, float dt){
 	
 }
 
-
-
 void itemAnimUpdate(Item* item, float dt){
 	if (item->bounds.w >= 20 || item->bounds.h >= 20){ item->bounds.w = 16; item->bounds.h = 16; item->grow.timeToGrow = 30.0f; }
 	else if (item->grow.timeToGrow < 0){ item->bounds.w++; item->bounds.h++; item->grow.timeToGrow = 30.0f; }
@@ -286,20 +289,28 @@ void checkLocation(Player* player){//moves player to edge of screen whe ngoing r
 	if (player->bounds.x < 0){ player->bounds.x = 640 - player->speed; } //if off screen to the left, make him come out to the right
 	else if (player->bounds.x >= 640){ player->bounds.x = 0; } //if offscreen to the right, make him come out to the left
 
-	if (player->bounds.y < 0){ player->bounds.y = 480 - player->speed; }
-	else if (player->bounds.y >= 480){ player->bounds.y = 0 + player->speed; }
+	//if (player->bounds.y < 0){ player->bounds.y = 480 - player->speed; }
+	//else if (player->bounds.y >= 480){ player->bounds.y = 0 + player->speed; }
 }
 
-void roll(Player* player){
+void roll(Player* player, float dt){
 
 	switch (player->facing){
 	case(left) : player->bounds.x -= 40; break;
 	case(right) : player->bounds.x += 40; break;
-	case(up) : player->bounds.y -= 40; break;
-	case(down) : player->bounds.y += 40; break;
+	case(up) : if(player->bounds.y - 40 >= 0) player->bounds.y -= 40; break;
+	case(down) : if(player->bounds.y + 40 <= 480) player->bounds.y += 40; break;
 	}
 	player->isRolling = true;
 
+}
+
+void resetGame(Player* player, Boss* boss){
+	player->playerHealth = 3;
+	boss->alive = true;
+	boss->bossHealth = 100;
+
+	boss->bosssStand.standHealth = 420;
 }
 
 int main(void)
@@ -363,6 +374,7 @@ int main(void)
 	Item skull;
 	bool prevFrameHit;
 	enum GameState currentState;
+	Text gameText;
 	currentState = GS_TitleScreen;
 
 	int charHeight = 28;
@@ -398,7 +410,10 @@ int main(void)
 	textures[17] = glTexImageTGAFile("attack1Mirror.tga", NULL, NULL);
 	textures[18] = glTexImageTGAFile("attack2.tga", NULL, NULL);
 	textures[19] = glTexImageTGAFile("attack2Mirror.tga", NULL, NULL);
-	
+
+	textures[21] = glTexImageTGAFile("THANKS OBAMA.tga", NULL, NULL);
+	textures[22] = glTexImageTGAFile("victory1.tga", NULL, NULL);
+	textures[23] = glTexImageTGAFile("victory2.tga", NULL, NULL);
 
 	//camera
 	camera.bounds.x = 0;
@@ -419,7 +434,7 @@ int main(void)
 
 	int jumpDistanceX = 32;
 	int jumpDistanceY = 48;
-	player.speed = medium;
+	player.speed = high;
 	/*to do: set up animation stuff*/
 	AnimData playerAnimData;
 	playerAnimData.curFrame = 0;
@@ -452,7 +467,7 @@ int main(void)
 	boss.bounds.y = (480/2) - 120;
 	boss.bounds.h = 75;
 	boss.bounds.w = 120;
-	boss.bossHealth = 1;
+	boss.bossHealth = 100;
 	boss.attacked = false;
 	
 	AnimData bossAnimData;
@@ -598,8 +613,34 @@ int main(void)
 	skullIdle.numFrames = 1;
 	skullIdle.frames[0].frameNum = 3;
 	skullIdle.frames[0].frameTime = 1.0f;
+
 	skullAnimData.def = &skullIdle;
 	skull.data = skullAnimData;
+
+	//text
+	gameText.bounds.x = 0;
+	gameText.bounds.y = 120;
+	gameText.bounds.h = 74;
+	gameText.bounds.w = 640;
+	AnimData gameTextAnimData;
+	gameTextAnimData.curFrame = 0;
+	gameTextAnimData.timeToNextFrame = 0.0f;
+	gameTextAnimData.isPlaying = false;
+	AnimDef victoryDef;
+	victoryDef.name = "victory";
+	victoryDef.numFrames = 2;
+	victoryDef.frames[0].frameNum = 22;
+	victoryDef.frames[0].frameTime = 2.0f;
+	victoryDef.frames[1].frameNum = 23;
+	victoryDef.frames[1].frameTime = 2.0f;
+	AnimDef defeatDef;
+	defeatDef.name = "defeat";
+	defeatDef.numFrames = 1;
+	defeatDef.frames[0].frameNum = 21;
+	defeatDef.frames[0].frameTime = 1.0f;
+
+	gameTextAnimData.def = &victoryDef;
+	gameText.data = gameTextAnimData;
 
 
 
@@ -683,7 +724,7 @@ int main(void)
 			}
 
 			if (kbState[SDL_SCANCODE_SPACE] && !kbPrevState[SDL_SCANCODE_SPACE] && !player.isRolling){
-				roll(&player);
+				roll(&player, deltaTime);
 				animSet(&player.data, &rollDef);
 			}
 
@@ -802,7 +843,7 @@ int main(void)
 			if (AABBIntersect(&skull.bounds, &boss.bounds)){
 				skull.collided = true;
 				boss.bossHealth -= skull.damage;
-				if (boss.bossHealth <= 0) {boss.alive = false; animSet(&boss.data, &death); boss.data.isPlaying = true;}//when boss dies play animation of death.
+				if (boss.bossHealth <= 0) { boss.alive = false; animSet(&boss.data, &death); boss.data.isPlaying = true; player.playerHealth = 300; }//when boss dies play animation of death.
 			}
 			//if shot hits edge of screen
 			for (int k = 0; k < 40; k++){
@@ -812,11 +853,18 @@ int main(void)
 			}
 
 			if (player.playerHealth <= 0){
+				animSet(&gameText.data, &defeatDef);
+				
 				currentState = GS_GameOverBad;
 			}
 
 			if (!boss.alive){
-				if (boss.data.curFrame == 3){ currentState = GS_GameOverGood; }
+				
+				if (boss.data.curFrame == 3){
+					animSet(&gameText.data, &victoryDef);
+					gameText.data.isPlaying = true;
+					currentState = GS_GameOverGood; 
+				}
 				else{ animTick(&boss.data, deltaTime); }
 			}
 			//
@@ -861,17 +909,23 @@ int main(void)
 //*********************************************************************************************************
 		case GS_GameOverBad:
 			if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
+			if (kbState[SDL_SCANCODE_R]){ resetGame(&player, &boss); animSet(&player.data, &walk); animSet(&boss.data, &ready); currentState = GS_Game; }//reset game
 			animSet(&boss.data, &attack);
 			animDraw(&boss.data, boss.bounds.x - camera.bounds.x, boss.bounds.y - camera.bounds.y, boss.bounds.w, boss.bounds.h);
 			animSet(&player.data, &rollDef);
-			//print you and all your friends are dead
 			animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
+			animDraw(&gameText.data, gameText.bounds.x - camera.bounds.x, gameText.bounds.y - camera.bounds.y, gameText.bounds.w, gameText.bounds.h);
+			
 
 			break;
 		case GS_GameOverGood:
 			if (kbState[SDL_SCANCODE_ESCAPE]){ shouldExit = true; }
-			//print good job!
+			//if (kbState[SDL_SCANCODE_R]){ animSet(&player.data, &walk); animSet(&boss.data, &attack); resetGame(&player, &boss);  currentState = GS_Game; }//reset game
+			
+			if (gameText.data.curFrame < victoryDef.numFrames){ animTick(&gameText.data, deltaTime); }
 			animDraw(&player.data, player.bounds.x - camera.bounds.x, player.bounds.y - camera.bounds.y, player.bounds.w, player.bounds.h);
+			animDraw(&gameText.data, gameText.bounds.x - camera.bounds.x, gameText.bounds.y - camera.bounds.y, gameText.bounds.w, gameText.bounds.h);
+			
 			break;
 		}
 
