@@ -19,16 +19,16 @@ less(X, Y, Z).
 
 %Org Charts etc
 %X supervises Y or a supervisor of Y
-supervises(X, Y) :-.
+%supervises(X, Y) :-.
 
 %X is a friend of Y
-friend(X, Y) :-.
+%friend(X, Y) :-.
 
 %x == Y
-equals(X, Y) :-.
+%equals(X, Y) :-.
 
 %distance from X to Y is Z hops
-distance(X,Y,Z) :-.
+%distance(X,Y,Z) :-.
 
 %%Evaluating expressions
 prod(C1,C2).

@@ -12,8 +12,8 @@ mul(zero, X, zero).
 mul(inc(X), Y, Z) :- mul(X,Y,P), add(P, Y, Z).
 
 exp(zero, X, 1).
-exp(X, Y, Z).
 
+exp(X, inc(Y), Z) :- mul(X,Y,P), mul(P,X,Z).
 
 less(X, Y, Z).
 

@@ -19,7 +19,15 @@ class Statement {
         }
         return false;
     }
-    
+    public boolean hasConditions(){
+        if(this.conditions.isEmpty()){
+            return false;
+        }
+        return true;
+    }
+    public List<String> addConditions(){
+        return conditions;
+    }
 
 }
 
@@ -35,6 +43,9 @@ public class Engine {
             //	   4. if true is ever returned, stop iteration and return true
             for(Statement statement : kbase){
                 if(statement.matches(goals.get(0))){
+                    if(statement.hasConditions()){
+                        goals.addAll(statement.addConditions());
+                    }
                     return execute(goals.subList(1, goals.size()));
                     
                 }
