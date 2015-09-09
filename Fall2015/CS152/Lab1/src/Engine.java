@@ -46,7 +46,12 @@ public class Engine {
                     if(statement.hasConditions()){
                         goals.addAll(statement.addConditions());
                     }
-                    return execute(goals.subList(1, goals.size()));
+                    if(execute(goals.subList(1, goals.size())) == false){
+                        String temp = goals.get(0);
+                        goals.clear();
+                        goals.add(temp);
+                    }
+                    else{return true;}
                     
                 }
             }
