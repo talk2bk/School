@@ -4,13 +4,9 @@ class Statement {
     private String conclusion = new String();
     private List<String> conditions = new LinkedList<String>();
     
-    Statement(String statement) {
+    Statement(String statement, String... conditions) {
        this.conclusion = statement;
-    }
-    Statement(String conclusion, String condition1, String condition2) {
-        this.conclusion = conclusion;
-        conditions.add(condition1);
-        conditions.add(condition2);
+       this.conditions = Arrays.asList(conditions);
     }
     
     public boolean matches(String goal){
