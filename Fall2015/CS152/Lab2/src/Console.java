@@ -29,13 +29,13 @@ class Command {
             
             Integer result = 1;
             Integer x = 0;
-            if(args.isEmpty()){return "0";}
+            if(args.isEmpty()){return "1";}
             for(String arg: args){
                 try{
                         x = Integer.parseInt(arg);
                 }   catch(Exception e) {
                     x = env.get(arg);
-                    if(x == null) throw new Exception("undefinied variable: " + arg);
+                    if(x == null) throw new Exception("undefined variable: " + arg);
                 }
                 result *= x;
                 
@@ -48,13 +48,17 @@ class Command {
             try{
                 env.put(args.get(0), Integer.parseInt(args.get(1)));
             }   catch(Exception e){
-                //add exception?
+                if(env.get(args.get(0))== null) throw new Exception("Could not load variable: " + args.get(0));
             }
             return "done";
         }
         //do this
 	public String execute(Map<String, Integer> env) throws Exception {
-            return "";
+            if(opcode.equals("add")){return add(operands,env);}
+            else if(opcode.equals("mul")){return mul(operands,env);}
+            else if(opcode.equals("load")){return load(operands,env);}
+            
+            return "unrecognized opcode: "+ opcode;
         }
 }
 
@@ -64,13 +68,17 @@ public class Console {
         
         //do this
 	private List<String> scan(String exp) {
-            return new LinkedList<String>();
+            List<String> result = new ArrayList<String>();
+            for(String string : exp.split(" ")){
+                result.add(string);
+            }
+            return result;
+            
         }
         
         //do this
 	private Command parse(List<String> tokens) {
-            
-            return new Command("", new LinkedList<String>());
+            return new Command(tokens.get(0), tokens.subList(1, tokens.size()));
         }
 
 	// read-execute-print loop
