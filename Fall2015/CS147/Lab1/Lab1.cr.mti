@@ -1,10 +1,8 @@
-C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/Lab1/FULLADD.V {1 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/Lab1/FULLADD.V
+C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/Lab2/NONBLOCK.V {1 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/Lab2/NONBLOCK.V
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module fulladd
--- Compiling module fulladd4
--- Compiling module stimulus
+-- Compiling module dummy
 
 Top level modules:
-	stimulus
+	dummy
 
 } {} {}}
