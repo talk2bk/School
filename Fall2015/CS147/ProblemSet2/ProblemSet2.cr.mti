@@ -1,0 +1,18 @@
+C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/pset2_definition.v {1 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/pset2_definition.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+
+} {} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/alu.v {1 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/pset2_tb.v {1 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet2/pset2_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module pset2_tb
+
+Top level modules:
+	pset2_tb
+
+} {} {}}
