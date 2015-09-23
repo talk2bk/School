@@ -11,7 +11,7 @@ object Calculator {
    
    def tri(n: Integer) = {
       // place iterative solution here
-     var result = 1;
+     var result = 0;
      for(i <- 1 to n){
        result += i;
      }
@@ -30,9 +30,13 @@ object Calculator {
    def isPrime(n: Integer) = {
      var result = true;
       // place iterative solution here
-     for(i <- 2 to n){
+     if(n == 2){result = true;}
+     else{
+       for(i <- 2 until n){
        if(n%i == 0){result =  false;}
      }
+     }
+     
      result;
    }
    

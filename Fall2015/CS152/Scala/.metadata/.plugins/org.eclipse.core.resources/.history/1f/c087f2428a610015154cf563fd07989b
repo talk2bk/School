@@ -1,0 +1,10 @@
+object Mystery {
+
+  def main(args: Array[String]): Unit = {
+    // Enter code here
+    Console.print("enter a positive integer: ");
+    var r = scala.util.Random;
+    var k: Int = Console.readInt();
+    
+  }
+}

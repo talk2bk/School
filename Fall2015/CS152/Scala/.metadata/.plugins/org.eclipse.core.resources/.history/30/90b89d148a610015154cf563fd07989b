@@ -1,0 +1,8 @@
+object Mystery {
+
+  def main(args: Array[String]): Unit = {
+    // Enter code here
+    Console.print("enter a positive integer: ");
+    var cmmd: Int = Console.readInt();
+  }
+}

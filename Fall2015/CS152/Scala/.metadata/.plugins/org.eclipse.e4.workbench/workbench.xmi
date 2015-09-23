@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_NyghoV1yEeWNioopXSeyYQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_NyhIsF1yEeWNioopXSeyYQ" bindingContexts="_NyhItl1yEeWNioopXSeyYQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Calculator.scala&quot; tooltip=&quot;Lab1/src/Calculator.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/Calculator.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Mystery.scala&quot; tooltip=&quot;Lab1/src/Mystery.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/Mystery.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;VectorCalculator.scala&quot; tooltip=&quot;Lab1/src/VectorCalculator.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/VectorCalculator.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;ShapeMaker.scala&quot; tooltip=&quot;Lab1/src/ShapeMaker.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/ShapeMaker.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Calculator.scala&quot; tooltip=&quot;Lab1/src/Calculator.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/Calculator.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;TaxCalculator.scala&quot; tooltip=&quot;Lab1/src/TaxCalculator.scala&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Lab1/src/TaxCalculator.scala&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_NyhIsF1yEeWNioopXSeyYQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_PHkQEF1yEeWNioopXSeyYQ" label="%trimmedwindow.label.eclipseSDK" x="665" y="184" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_NyhIsF1yEeWNioopXSeyYQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_PHkQEF1yEeWNioopXSeyYQ" label="%trimmedwindow.label.eclipseSDK" x="444" y="-26" width="960" height="1050">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1442518105076"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_PHkQEF1yEeWNioopXSeyYQ" selectedElement="_PHkQEV1yEeWNioopXSeyYQ" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_PHkQEV1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_QRuWEF1yEeWNioopXSeyYQ">
         <children xsi:type="advanced:Perspective" xmi:id="_QRuWEF1yEeWNioopXSeyYQ" elementId="org.scala-ide.sdt.core.perspective" selectedElement="_QRuWEV1yEeWNioopXSeyYQ" label="Scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/eview16/sperspective.gif">
@@ -40,16 +43,17 @@
           <tags>persp.actionSet:org.eclipse.debug.ui.breakpointActionSet</tags>
           <tags>persp.newWizSC:org.scalaide.worksheet.wizards.newWorksheet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_QRuWEV1yEeWNioopXSeyYQ" selectedElement="_QRuWFF1yEeWNioopXSeyYQ" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_QRuWEl1yEeWNioopXSeyYQ" elementId="explorer" containerData="2500" selectedElement="_QRuWE11yEeWNioopXSeyYQ">
+            <children xsi:type="basic:PartStack" xmi:id="_QRuWEl1yEeWNioopXSeyYQ" elementId="explorer" visible="false" containerData="2500" selectedElement="_QRuWE11yEeWNioopXSeyYQ">
               <tags>newtablook</tags>
+              <tags>Minimized</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_QRuWE11yEeWNioopXSeyYQ" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_QRo2gF1yEeWNioopXSeyYQ"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_QRuWFF1yEeWNioopXSeyYQ" containerData="7500" selectedElement="_QRuWFV1yEeWNioopXSeyYQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_QRuWFV1yEeWNioopXSeyYQ" containerData="7500" selectedElement="_QRuWFl1yEeWNioopXSeyYQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_QRuWFl1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_QRa0EF1yEeWNioopXSeyYQ"/>
-                <children xsi:type="basic:PartStack" xmi:id="_QRuWF11yEeWNioopXSeyYQ" elementId="right" containerData="2500" selectedElement="_QRuWGF1yEeWNioopXSeyYQ">
+                <children xsi:type="basic:PartStack" xmi:id="_QRuWF11yEeWNioopXSeyYQ" elementId="right" toBeRendered="false" containerData="2500">
                   <tags>newtablook</tags>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_QRuWGF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_QRr50V1yEeWNioopXSeyYQ"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_QRuWGF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.views.ContentOutline" toBeRendered="false" ref="_QRr50V1yEeWNioopXSeyYQ"/>
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_QRuWGV1yEeWNioopXSeyYQ" elementId="problems" visible="false" containerData="2500" selectedElement="_QRuWHF1yEeWNioopXSeyYQ">
@@ -82,13 +86,37 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_QRa0EF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.editorss" selectedElement="_QRa0EV1yEeWNioopXSeyYQ">
-      <children xsi:type="basic:PartStack" xmi:id="_QRa0EV1yEeWNioopXSeyYQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_fhP0QF1yEeWNioopXSeyYQ">
+      <children xsi:type="basic:PartStack" xmi:id="_QRa0EV1yEeWNioopXSeyYQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_UCBRkGGIEeW1yMhfbAUpHQ">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_fhP0QF1yEeWNioopXSeyYQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Calculator.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Calculator.scala&quot; partName=&quot;Calculator.scala&quot; title=&quot;Calculator.scala&quot; tooltip=&quot;Lab1/src/Calculator.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/Calculator.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;690&quot; selectionTopPixel=&quot;92&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_m5AiUGFfEeWaIdrx6-4Xyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TaxCalculator.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;TaxCalculator.scala&quot; partName=&quot;TaxCalculator.scala&quot; title=&quot;TaxCalculator.scala&quot; tooltip=&quot;Lab1/src/TaxCalculator.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/TaxCalculator.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;59&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sx3MEGFfEeWaIdrx6-4Xyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Calculator.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Calculator.scala&quot; partName=&quot;Calculator.scala&quot; title=&quot;Calculator.scala&quot; tooltip=&quot;Lab1/src/Calculator.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/Calculator.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_68B50GFhEeWaIdrx6-4Xyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ShapeMaker.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;ShapeMaker.scala&quot; partName=&quot;ShapeMaker.scala&quot; title=&quot;ShapeMaker.scala&quot; tooltip=&quot;Lab1/src/ShapeMaker.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/ShapeMaker.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;466&quot; selectionTopPixel=&quot;124&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_WeVQ4GFlEeWaIdrx6-4Xyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="VectorCalculator.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;VectorCalculator.scala&quot; partName=&quot;VectorCalculator.scala&quot; title=&quot;VectorCalculator.scala&quot; tooltip=&quot;Lab1/src/VectorCalculator.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/VectorCalculator.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;374&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_UCBRkGGIEeW1yMhfbAUpHQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Mystery.scala" iconURI="platform:/plugin/org.scala-ide.sdt.core/icons/full/obj16/scu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;scala.tools.eclipse.ScalaSourceFileEditor&quot; name=&quot;Mystery.scala&quot; partName=&quot;Mystery.scala&quot; title=&quot;Mystery.scala&quot; tooltip=&quot;Lab1/src/Mystery.scala&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Lab1/src/Mystery.scala&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;451&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>scala.tools.eclipse.ScalaSourceFileEditor</tags>
           <tags>removeOnHide</tags>
@@ -139,7 +167,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_RDvB0F1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.views.ContentOutline"/>
+      <toolbar xmi:id="_RDvB0F1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
     </sharedElements>
     <trimBars xmi:id="_NyhIsV1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_PJ_5AF1yEeWNioopXSeyYQ" elementId="group.file" toBeRendered="false">
@@ -148,7 +176,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PKBuMF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PKQXsF1yEeWNioopXSeyYQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_N02D9F1yEeWNioopXSeyYQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_q57ioGF2EeW1yMhfbAUpHQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_N02D9F1yEeWNioopXSeyYQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PKBuMV1yEeWNioopXSeyYQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -166,7 +194,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PKC8UF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PKSz8F1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_N002BF1yEeWNioopXSeyYQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_q6OdkWF2EeW1yMhfbAUpHQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_N002BF1yEeWNioopXSeyYQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_PKC8UV1yEeWNioopXSeyYQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -200,9 +228,15 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_NyhIs11yEeWNioopXSeyYQ" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Left"/>
+    <trimBars xmi:id="_NyhIs11yEeWNioopXSeyYQ" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_8WqWsGFfEeWaIdrx6-4Xyg" elementId="explorer(org.scala-ide.sdt.core.perspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
     <trimBars xmi:id="_NyhItF1yEeWNioopXSeyYQ" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right">
       <children xsi:type="menu:ToolControl" xmi:id="_f9vGgF1zEeWNioopXSeyYQ" elementId="problems(org.scala-ide.sdt.core.perspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <persistedState key="XSize" value="600"/>
+        <persistedState key="YSize" value="400"/>
         <tags>TrimStack</tags>
       </children>
     </trimBars>

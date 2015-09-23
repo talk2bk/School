@@ -1,0 +1,6 @@
+object Mystery {
+
+  def main(args: Array[String]): Unit = {
+    // Enter code here
+  }
+}

@@ -1,19 +1,43 @@
 object Calculator {
 
    def fact(n: Integer) = {
-      // place iterative solution here
+     // place iterative solution here
+     var result = 1;
+     for(i <- 1 to n){
+       result *= i;
+     }
+     result;
     }
    
    def tri(n: Integer) = {
       // place iterative solution here
+     var result = 1;
+     for(i <- 1 to n){
+       result += i;
+     }
+     result;
     }
    
    def exp(n: Integer) = {
        // place iterative solution here
+      var result = 1;
+      for(i <- 1 to n){
+        result *= 2;
+      }
+      result;
     }
    
    def isPrime(n: Integer) = {
+     var result = true;
       // place iterative solution here
+     if(n == 2){result = true;}
+     else{
+       for(i <- 2 to n){
+       if(n%i == 0){result =  false;}
+     }
+     }
+     
+     result;
    }
    
    def main(args: Array[String]): Unit = {

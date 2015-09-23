@@ -1227,3 +1227,690 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/Lab1/src/Calcu
 2015-09-17 13:13:35,741  WARN [Worker-29] - ScalaProject - Project Lab1 runs on platform default installation.
 2015-09-17 13:13:36,555  WARN [Worker-29] - ScalaProject - Project Lab1 has platform default sourceLevel.
 2015-09-17 13:13:36,555  WARN [Worker-29] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 10:05:55,169  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 10:05:55,171  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 10:05:55,199  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 10:05:55,200  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 10:06:30,055 ERROR [Worker-6] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-22 10:06:30,055 ERROR [Worker-6] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-22 10:06:30,056 ERROR [Worker-6] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-22 12:06:01,009  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:06:01,029  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:06:01,050  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:06:01,051  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:06:53,480  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2015-09-22 12:07:06,743  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:06,745  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:06,821  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:06,822  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:07,204  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:07,204  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:13,820  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:13,820  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:30,402 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 12:07:30,427 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 12:07:35,053  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:35,053  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:35,080  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:35,080  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:36,947  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:07:36,947  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:07:49,887 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-22 12:07:49,888 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-22 12:07:49,888 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-22 12:08:37,648  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:08:37,648  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:08:37,672  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:08:37,672  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:08:39,042  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:08:39,043  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:09:09,087  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:09:09,087  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:09:09,111  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:09:09,111  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:09:10,247  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:09:10,248  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:10:24,438  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:10:24,438  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:10:24,460  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:10:24,460  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:10:25,557  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:10:25,557  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:12:22,096  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:12:22,097  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:12:22,119  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:12:22,119  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:12:23,143  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:12:23,143  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:55,694  WARN [Worker-11] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:55,695  WARN [Worker-11] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:55,718  WARN [Worker-11] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:55,719  WARN [Worker-11] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:56,059  WARN [Java indexing] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:56,059  WARN [Java indexing] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:56,259  WARN [Worker-11] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:56,260  WARN [Worker-11] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:57,352  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:57,353  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:57,388  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:57,388  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:24:57,935  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:24:57,935  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:25:00,296  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:25:00,296  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:25:00,314  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:25:00,315  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:25:48,598  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:25:48,598  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:25:48,617  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:25:48,617  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:25:49,296  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:25:49,296  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:31:27,491  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:31:27,492  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:31:27,512  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:31:27,513  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:31:35,612  WARN [Worker-19] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:31:35,612  WARN [Worker-19] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:31:35,631  WARN [Worker-19] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:31:35,631  WARN [Worker-19] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:31:36,278  WARN [Worker-19] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:31:36,278  WARN [Worker-19] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:19,846  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:19,846  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:19,863  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:19,864  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:20,445  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:20,445  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:34,197  WARN [Worker-21] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:34,197  WARN [Worker-21] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:34,216  WARN [Worker-21] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:34,216  WARN [Worker-21] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:34,238  WARN [Worker-21] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:34,238  WARN [Worker-21] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:39,519  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:39,519  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:39,538  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:39,538  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:40,016  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:40,017  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:44,203  WARN [Worker-21] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:44,203  WARN [Worker-21] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:44,220  WARN [Worker-21] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:44,221  WARN [Worker-21] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:50,449  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:50,450  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:50,468  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:50,468  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:32:50,485  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:32:50,485  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:04,570  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:04,570  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:04,586  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:04,586  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:34,014  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:34,015  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:34,031  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:34,031  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:42,638  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:42,638  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:33:42,655  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:33:42,655  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:34:05,367  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:34:05,368  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:34:05,385  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:34:05,385  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:35:23,087  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:35:23,087  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:35:23,104  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:35:23,104  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:35:38,535  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:35:38,535  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:35:38,551  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:35:38,551  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:20,292  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:20,292  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:20,308  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:20,308  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:21,775  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:21,775  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:21,797  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:21,797  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:29,034  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:29,034  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:36:29,050  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:36:29,050  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:37:14,010  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:37:14,011  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:37:14,027  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:37:14,027  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:37:14,604  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:37:14,605  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:37:53,918  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:37:53,918  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:37:53,935  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:37:53,936  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:38:50,690  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:38:50,690  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:38:50,706  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:38:50,706  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:38:51,218  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:38:51,218  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:29,756  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:29,756  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:30,092  WARN [Worker-26] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:30,092  WARN [Worker-26] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:30,114  WARN [Worker-26] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:30,115  WARN [Worker-26] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:30,762  WARN [Worker-26] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:30,763  WARN [Worker-26] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:41,483  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:41,483  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:41,499  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:41,499  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:41:41,944  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:41:41,944  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:42:17,930  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 114
+2015-09-22 12:42:20,980  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-09-22 12:42:30,285  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:42:30,285  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:42:30,300  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:42:30,301  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:42:43,832  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 146
+2015-09-22 12:42:43,838  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 146
+2015-09-22 12:42:44,871  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 142
+2015-09-22 12:42:50,233  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:42:50,233  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:42:50,250  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:42:50,250  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:42:50,997  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:42:50,997  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:43:04,407  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:43:04,408  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:43:04,425  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:43:04,425  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:43:05,118  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:43:05,119  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:44:36,106  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:44:36,106  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:44:36,122  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:44:36,122  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:44:36,814  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:44:36,814  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:45:44,463  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 303
+2015-09-22 12:45:44,464  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 303
+2015-09-22 12:45:56,900  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:45:56,901  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:45:56,919  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:45:56,919  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:18,952  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:18,952  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:18,971  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:18,971  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:19,654  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:19,655  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:40,132  WARN [Worker-33] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:40,133  WARN [Worker-33] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:40,147  WARN [Worker-33] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:40,147  WARN [Worker-33] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:46:40,841  WARN [Worker-33] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:46:40,841  WARN [Worker-33] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:11,917  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 505
+2015-09-22 12:47:19,018  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:19,018  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:19,032  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:19,032  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:19,744  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:19,744  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:27,741  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:27,741  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:27,755  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:27,755  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:47:28,479  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:47:28,479  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:48:48,581  WARN [Worker-36] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:48:48,581  WARN [Worker-36] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:48:48,597  WARN [Worker-36] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:48:48,597  WARN [Worker-36] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:48:49,111  WARN [Worker-36] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:48:49,111  WARN [Worker-36] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:51:27,444 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 12:51:27,445 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 12:51:27,445 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 12:51:29,822  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:51:29,822  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:51:29,839  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:51:29,839  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:51:30,541  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:51:30,541  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:52:43,001  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:52:43,002  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:52:43,019  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:52:43,019  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:52:59,497  WARN [Worker-41] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:52:59,497  WARN [Worker-41] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:52:59,511  WARN [Worker-41] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:52:59,511  WARN [Worker-41] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:53:02,786  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:53:02,786  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:53:02,802  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:53:02,803  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:53:12,187  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:53:12,187  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:53:12,204  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:53:12,204  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:53:12,980  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:53:12,981  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:58:34,748  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:58:34,748  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:58:34,766  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:58:34,766  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 12:58:35,553  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 12:58:35,553  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:27,519  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 762
+2015-09-22 13:00:27,521  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 762
+2015-09-22 13:00:28,571  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 758
+2015-09-22 13:00:37,648  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:37,648  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:37,663  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:37,663  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:38,434  WARN [Worker-45] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:38,435  WARN [Worker-45] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:51,480  WARN [Worker-50] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:51,480  WARN [Worker-50] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:51,496  WARN [Worker-50] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:51,496  WARN [Worker-50] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:00:52,206  WARN [Worker-50] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:00:52,207  WARN [Worker-50] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:01:00,290  WARN [Worker-48] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:01:00,290  WARN [Worker-48] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:01:00,324  WARN [Worker-48] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:01:00,325  WARN [Worker-48] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:01:01,042  WARN [Worker-48] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:01:01,042  WARN [Worker-48] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:05:38,322  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:05:38,322  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:05:38,338  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:05:38,339  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:05:39,171  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:05:39,171  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:03,056  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:03,057  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:03,246  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:03,246  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:03,263  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:03,264  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:03,869  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:03,869  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:13,037  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:13,037  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:13,059  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:13,059  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:49,078  WARN [Worker-49] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:49,078  WARN [Worker-49] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:06:49,095  WARN [Worker-49] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:06:49,095  WARN [Worker-49] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:01,142  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:01,142  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:01,157  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:01,157  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:05,334  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:05,335  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:05,350  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:05,350  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:23,712  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:23,712  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:23,726  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:23,726  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:37,065  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:37,066  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:37,080  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:37,080  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:41,099  WARN [Worker-56] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:41,099  WARN [Worker-56] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:07:41,112  WARN [Worker-56] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:07:41,112  WARN [Worker-56] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:07,837  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:07,837  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:07,853  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:07,853  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:14,105  WARN [Worker-55] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:14,105  WARN [Worker-55] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:14,121  WARN [Worker-55] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:14,121  WARN [Worker-55] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:35,629  WARN [Worker-59] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:35,629  WARN [Worker-59] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:35,647  WARN [Worker-59] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:35,647  WARN [Worker-59] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:40,266  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:40,266  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:08:40,280  WARN [Worker-58] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:08:40,280  WARN [Worker-58] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:16,413  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:16,413  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:16,429  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:16,429  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:17,280  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:17,281  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:28,528  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:28,528  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:28,541  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:28,541  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:09:29,213  WARN [Worker-57] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:09:29,213  WARN [Worker-57] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:10:38,704  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 191
+2015-09-22 13:10:41,769  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 175
+2015-09-22 13:10:55,754  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 208
+2015-09-22 13:11:00,321  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 206
+2015-09-22 13:11:10,229  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:10,229  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:11:10,243  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:10,243  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:11:11,030  WARN [Worker-53] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:11,030  WARN [Worker-53] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:11:42,686  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 228
+2015-09-22 13:11:46,298  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 231
+2015-09-22 13:11:56,063  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:56,063  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:11:56,076  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:56,076  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:11:56,782  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:11:56,782  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:12:37,845  WARN [Worker-63] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:12:37,845  WARN [Worker-63] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:12:37,861  WARN [Worker-63] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:12:37,861  WARN [Worker-63] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:17,426  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:17,426  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:17,444  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:17,444  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:18,223  WARN [Worker-61] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:18,223  WARN [Worker-61] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:32,475  WARN [Worker-63] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:32,475  WARN [Worker-63] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:32,488  WARN [Worker-63] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:32,488  WARN [Worker-63] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:13:33,135  WARN [Worker-63] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:13:33,135  WARN [Worker-63] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:16:04,305  WARN [Worker-66] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:16:04,306  WARN [Worker-66] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:16:04,321  WARN [Worker-66] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:16:04,321  WARN [Worker-66] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 13:16:05,069  WARN [Worker-66] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 13:16:05,069  WARN [Worker-66] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 15:10:14,981  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 15:10:14,993  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 15:10:15,022  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 15:10:15,022  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:23:51,721 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:23:51,737 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:23:56,121  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:23:56,122  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:23:56,193  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:23:56,193  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:23:56,416  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:23:56,416  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:24:03,970  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:24:03,970  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:24:27,578 ERROR [Worker-7] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-22 16:24:27,578 ERROR [Worker-7] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-22 16:24:27,578 ERROR [Worker-7] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-22 16:25:06,299  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:25:06,299  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:25:06,346  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:25:06,346  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:25:11,174  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:25:11,174  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:25:11,200  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:25:11,200  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:27:30,893  WARN [Worker-8] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:27:30,894  WARN [Worker-8] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:27:30,960  WARN [Worker-8] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:27:30,960  WARN [Worker-8] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:27:33,369  WARN [Worker-8] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:27:33,369  WARN [Worker-8] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:02,815  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:02,815  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:02,839  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:02,839  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:04,314  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:04,315  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:10,707 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:10,711 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:10,711 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:10,714 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:16,307 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:16,325 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:16,326 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 16:29:17,527  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:17,527  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:17,555  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:17,555  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:29:18,932  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:29:18,933  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:30:30,121  WARN [Worker-9] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:30:30,121  WARN [Worker-9] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:30:30,140  WARN [Worker-9] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:30:30,140  WARN [Worker-9] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 16:30:31,802  WARN [Worker-9] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 16:30:31,802  WARN [Worker-9] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:01:15,284  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:01:15,285  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:01:15,310  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:01:15,311  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:01:16,586  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:01:16,586  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:03:24,053  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:03:24,053  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:03:24,070  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:03:24,070  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:03:25,174  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:03:25,174  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:08:22,391  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:08:22,391  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:08:22,412  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:08:22,412  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:08:23,471  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:08:23,472  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:08:51,750  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 845
+2015-09-22 17:08:57,006  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 847
+2015-09-22 17:08:58,620  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 764
+2015-09-22 17:10:10,904  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:10:10,904  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:10:10,927  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:10:10,928  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:10:37,569  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:10:37,570  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:10:37,592  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:10:37,592  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:10:38,601  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:10:38,602  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:08,718  WARN [Worker-30] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:08,718  WARN [Worker-30] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:08,740  WARN [Worker-30] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:08,740  WARN [Worker-30] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:09,833  WARN [Worker-30] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:09,833  WARN [Worker-30] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:29,177  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:29,177  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:29,211  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:29,211  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:30,289  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:30,289  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:39,380  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:39,380  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:39,403  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:39,403  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:11:40,308  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:11:40,308  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:08,306  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:08,306  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:08,324  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:08,324  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:09,433  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:09,433  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:18,013  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:18,014  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:18,036  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:18,036  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:19,039  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:19,039  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:48,260  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:48,260  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:48,284  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:48,284  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:12:49,307  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:12:49,307  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:10,213  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:10,213  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:10,230  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:10,230  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:11,237  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:11,237  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:17,925  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:17,925  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:17,958  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:17,959  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:13:19,036  WARN [Worker-27] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:13:19,037  WARN [Worker-27] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:15,024  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:15,025  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:15,045  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:15,045  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:15,999  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:15,999  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:28,752  WARN [Worker-29] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:28,753  WARN [Worker-29] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:28,772  WARN [Worker-29] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:28,772  WARN [Worker-29] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:29,690  WARN [Worker-29] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:14:29,691  WARN [Worker-29] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:14:58,521 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,521 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,521 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,522 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,523 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:14:58,524 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-22 17:15:05,475  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:15:05,475  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:15:05,492  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:15:05,492  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:15:06,468  WARN [Worker-20] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:15:06,468  WARN [Worker-20] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:18,889  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:18,890  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:19,345  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:19,345  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:19,372  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:19,372  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:20,453  WARN [Worker-28] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:20,454  WARN [Worker-28] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:28,683  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:28,683  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:28,700  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:28,700  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:16:29,165  WARN [Worker-31] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:16:29,165  WARN [Worker-31] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:27:19,437  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:27:19,437  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:27:19,469  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:27:19,469  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:27:23,473  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:27:23,473  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:00,951  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:00,951  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:00,973  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:00,973  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:16,065  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:16,066  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:16,114  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:16,114  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:17,958  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:17,958  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:58,544  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:58,544  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:28:58,566  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:28:58,566  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:29:35,006  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:29:35,006  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:29:35,023  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:29:35,023  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:29:35,987  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:29:35,987  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:08,287  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 226
+2015-09-22 17:30:09,328  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 227
+2015-09-22 17:30:16,275  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:16,275  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:16,301  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:16,301  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:17,948  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:17,948  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:27,035  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:27,036  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:27,051  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:27,051  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:28,141  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:28,141  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:28,573  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 277
+2015-09-22 17:30:46,926  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:46,926  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:46,941  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:46,941  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:30:47,909  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:30:47,910  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:00,628  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:00,628  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:00,647  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:00,647  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:01,862  WARN [Worker-40] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:01,868  WARN [Worker-40] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:02,941  WARN [Worker-39] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:02,941  WARN [Worker-39] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:02,963  WARN [Worker-39] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:02,963  WARN [Worker-39] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:03,919  WARN [Worker-39] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:03,920  WARN [Worker-39] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:52,423  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:52,423  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:52,439  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:52,439  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:31:53,727  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:31:53,727  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:36,032  WARN [Worker-34] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:36,032  WARN [Worker-34] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:36,051  WARN [Worker-34] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:36,051  WARN [Worker-34] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:42,255  WARN [Worker-43] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:42,256  WARN [Worker-43] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:42,273  WARN [Worker-43] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:42,274  WARN [Worker-43] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:43,294  WARN [Worker-43] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:43,294  WARN [Worker-43] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:48,551  WARN [Worker-41] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:48,551  WARN [Worker-41] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:48,566  WARN [Worker-41] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:48,567  WARN [Worker-41] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:35:48,587  WARN [Worker-41] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:35:48,587  WARN [Worker-41] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:05,130  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:05,130  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:05,146  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:05,146  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:06,167  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:06,167  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:10,276  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:10,276  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:10,292  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:10,292  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-22 17:36:11,130  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-22 17:36:11,130  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
