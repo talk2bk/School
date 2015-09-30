@@ -55,14 +55,105 @@ pass_test = 0;
     oprn_reg=`ALU_OPRN_WIDTH'h01;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 15 - 5 = 10
 #5  op1_reg=15;
     op2_reg=5;
     oprn_reg=`ALU_OPRN_WIDTH'h02;   
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 15 + 5 = 20
 #5  op1_reg=15;
     op2_reg=5;
     oprn_reg=`ALU_OPRN_WIDTH'h01;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+/////////////////////////////////////////////////////////////////////// multiply
+//test 5*5 = 25
+#5  op1_reg=5;
+    op2_reg=5;
+    oprn_reg=`ALU_OPRN_WIDTH'h03;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 5*2 = 10
+#5  op1_reg=5;
+    op2_reg=2;
+    oprn_reg=`ALU_OPRN_WIDTH'h03;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//////////////////////////////////////////////////////////////////////// and
+//test 1 && 1 = 1
+#5  op1_reg=1;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h04;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 1 && 0 = 0
+#5  op1_reg=1;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h04;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 0 && 0 = 0
+#5  op1_reg=0;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h04;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+/////////////////////////////////////////////////////////////////////// or
+//test 1 || 1 = 1
+#5  op1_reg=1;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h05;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 1 || 0 = 1
+#5  op1_reg=1;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h05;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 0 || 0 = 0
+#5  op1_reg=0;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h05;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//////////////////////////////////////////////////////////////////////// nor
+//test 1 ~&& 1 = 0
+#5  op1_reg=1;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h06;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 1 ~&& 0 = 1
+#5  op1_reg=1;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h06;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 0 ~&& 0 = 1
+#5  op1_reg=0;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h06;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+/////////////////////////////////////////////////////////////////////// nand
+//test 1 ~|| 1 = 0
+#5  op1_reg=1;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 1 ~|| 0 = 0
+#5  op1_reg=1;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+//test 0 ~|| 0 = 1
+#5  op1_reg=0;
+    op2_reg=0;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 // 

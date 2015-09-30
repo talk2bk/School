@@ -1,0 +1,6 @@
+object stringSession {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+	
+	def isPal(word: String) = word == word.reverse //> isPal: (word: String)Unit
+	
+}

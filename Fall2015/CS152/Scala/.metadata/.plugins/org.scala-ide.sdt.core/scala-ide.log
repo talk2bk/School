@@ -1914,3 +1914,1014 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/Lab1/src/Calcu
 2015-09-22 17:36:10,292  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
 2015-09-22 17:36:11,130  WARN [Worker-35] - ScalaProject - Project Lab1 has platform default sourceLevel.
 2015-09-22 17:36:11,130  WARN [Worker-35] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:09:34,401  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:09:34,423  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:09:34,445  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:09:34,445  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:09:56,833  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2015-09-24 12:10:27,370  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:27,371  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:27,450  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:27,450  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:28,009  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:28,009  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:35,369  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:35,369  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:36,541  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:36,541  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:36,623  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:36,623  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:38,262  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:38,262  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:43,241  WARN [Worker-5] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:43,242  WARN [Worker-5] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:43,270  WARN [Worker-5] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:43,270  WARN [Worker-5] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:45,210  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:45,211  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:45,235  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:45,235  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:10:45,266  WARN [Worker-4] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:10:45,266  WARN [Worker-4] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:11:11,961  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:11:11,961  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:11:11,984  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:11:11,984  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:11:13,523  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:11:13,523  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:12:55,616  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:12:55,616  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:12:55,639  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:12:55,640  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:12:56,938  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:12:56,938  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:01,497 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-24 12:13:01,497 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-24 12:13:01,497 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-24 12:13:22,783  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:22,783  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:22,808  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:22,808  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:24,038  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:24,039  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:48,253 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-24 12:13:48,254 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-24 12:13:48,258 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-24 12:13:50,363  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:50,363  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:50,383  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:50,383  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:13:51,433  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:13:51,433  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:14:04,850  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:14:04,850  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:14:04,868  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:14:04,868  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-24 12:14:05,928  WARN [Worker-1] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-24 12:14:05,928  WARN [Worker-1] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:46:16,110  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:46:16,125  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:46:16,166  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:46:16,166  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:31,991  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:31,992  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:32,065  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:32,065  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:32,479  WARN [Java indexing] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:32,479  WARN [Java indexing] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:32,575  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:32,575  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:36,981  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:36,981  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:37,777 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - An error occurred while trying to create a file.
+org.eclipse.core.internal.resources.ResourceException: Resource '/Lab1/src/MatrixCalculator.scala' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.File.create(File.java:112)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.create(File.java:111)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.create(File.java:111)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:356)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.openFileInSrcDir$1(NewFileWizard.scala:355)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.org$scalaide$ui$internal$wizards$NewFileWizard$$openEditor(NewFileWizard.scala:366)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:278)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+2015-09-25 11:50:37,790 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - An error occurred while trying to create a file.
+org.eclipse.core.internal.resources.ResourceException: Resource '/Lab1/src/MatrixCalculator.scala' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.File.create(File.java:112)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.create(File.java:111)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:356)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.openFileInSrcDir$1(NewFileWizard.scala:355)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.org$scalaide$ui$internal$wizards$NewFileWizard$$openEditor(NewFileWizard.scala:366)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:278)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+2015-09-25 11:50:37,810 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - An error occurred while trying to create a file.
+org.eclipse.core.internal.resources.ResourceException: Resource '/Lab1/src/MatrixCalculator.scala' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.File.create(File.java:112)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply$mcV$sp(FileUtils.scala:98)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at org.scalaide.util.eclipse.FileUtils$$anonfun$createFile$1.apply(FileUtils.scala:89)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.scalaide.util.eclipse.FileUtils$.createFile(FileUtils.scala:89)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:275)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:128)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:102)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:233)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:197)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:356)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.openFileInSrcDir$1(NewFileWizard.scala:355)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.org$scalaide$ui$internal$wizards$NewFileWizard$$openEditor(NewFileWizard.scala:366)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:278)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$$anonfun$okPressed$1.apply(NewFileWizard.scala:274)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.ui.internal.wizards.NewFileWizard$class.okPressed(NewFileWizard.scala:274)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter$$anon$1.okPressed(NewFileWizardAdapter.scala:28)
+	at org.scalaide.ui.internal.wizards.NewFileWizardAdapter.performFinish(NewFileWizardAdapter.scala:55)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:853)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:438)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+2015-09-25 11:50:38,115  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:38,116  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:38,230  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:38,231  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:40,030  WARN [Worker-0] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:40,030  WARN [Worker-0] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:41,529  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:41,530  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:50:41,569  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:50:41,569  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:52:35,828  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:52:35,829  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:52:35,854  WARN [Worker-7] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:52:35,855  WARN [Worker-7] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:59:29,291  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:59:29,292  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:59:29,327  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 11:59:29,327  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 11:59:58,903 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-25 12:00:02,551  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:00:02,552  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:00:02,589  WARN [Worker-12] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:00:02,589  WARN [Worker-12] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:01:14,092  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:01:14,092  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:01:14,132  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:01:14,133  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:01:15,009  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:01:15,009  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:02:12,549  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:02:12,549  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:02:12,572  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:02:12,572  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:02:14,271  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:02:14,272  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:03:18,846  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:03:18,846  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:03:18,874  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:03:18,874  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:03:20,328  WARN [Worker-14] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:03:20,328  WARN [Worker-14] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:04:31,783  WARN [Worker-16] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:04:31,783  WARN [Worker-16] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:04:31,816  WARN [Worker-16] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:04:31,817  WARN [Worker-16] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:04:32,977  WARN [Worker-16] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:04:32,977  WARN [Worker-16] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:04:50,064  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 197
+2015-09-25 12:04:58,235  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 199
+2015-09-25 12:05:00,870  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 180
+2015-09-25 12:05:11,758  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 221
+2015-09-25 12:06:43,664  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:06:43,664  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:06:43,685  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:06:43,685  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:06:44,800  WARN [Worker-10] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:06:44,800  WARN [Worker-10] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:08:11,657  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 460
+2015-09-25 12:08:11,658  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 460
+2015-09-25 12:08:19,330  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 458
+2015-09-25 12:10:45,627  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 458
+2015-09-25 12:11:17,758  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 435
+2015-09-25 12:11:21,897  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 412
+2015-09-25 12:11:26,062  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 405
+2015-09-25 12:11:29,766  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 400
+2015-09-25 12:11:30,361  WARN [Worker-11] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:11:30,361  WARN [Worker-11] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:11:30,381  WARN [Worker-11] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:11:30,381  WARN [Worker-11] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:11:33,970  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 398
+2015-09-25 12:11:35,505  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:11:35,505  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:11:35,525  WARN [Worker-17] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:11:35,525  WARN [Worker-17] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:11:35,681  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 397
+2015-09-25 12:11:50,442  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 389
+2015-09-25 12:11:56,615  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 391
+2015-09-25 12:12:50,479  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 420
+2015-09-25 12:16:09,295  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:16:09,295  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:16:09,317  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:16:09,317  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:16:10,591  WARN [Worker-22] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:16:10,591  WARN [Worker-22] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:17:43,535  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:17:43,535  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:17:43,557  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:17:43,558  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:17:44,737  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:17:44,737  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:17:47,744 ERROR [Worker-19] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-25 12:17:47,744 ERROR [Worker-19] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-25 12:17:47,744 ERROR [Worker-19] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-25 12:18:23,946  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:18:23,947  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:18:23,963  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:18:23,963  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:18:25,074  WARN [Worker-23] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:18:25,074  WARN [Worker-23] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:20:29,785  WARN [Worker-24] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:20:29,785  WARN [Worker-24] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:20:29,803  WARN [Worker-24] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:20:29,803  WARN [Worker-24] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:20:30,824  WARN [Worker-24] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:20:30,824  WARN [Worker-24] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:21:08,713  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:21:08,713  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:21:08,755  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:21:08,755  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:21:09,703  WARN [Worker-25] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:21:09,703  WARN [Worker-25] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:21:32,120  WARN [Worker-24] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:21:32,120  WARN [Worker-24] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:21:32,136  WARN [Worker-24] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:21:32,136  WARN [Worker-24] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:22:57,592  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 209
+2015-09-25 12:23:40,526  WARN [Worker-34] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:23:40,526  WARN [Worker-34] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:23:40,545  WARN [Worker-34] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:23:40,545  WARN [Worker-34] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:23:41,845  WARN [Worker-34] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:23:41,845  WARN [Worker-34] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:05,361  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:05,361  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:05,381  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:05,381  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:06,400  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:06,400  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:14,675  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:14,675  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:14,691  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:14,692  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:14,715  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:14,716  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:41,282  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:41,282  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:41,300  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:41,300  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:26:46,947  WARN [Worker-37] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:26:46,947  WARN [Worker-37] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:27:01,495  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:27:01,495  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:27:01,513  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:27:01,513  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-25 12:27:03,104  WARN [Worker-38] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-25 12:27:03,104  WARN [Worker-38] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-29 12:04:27,980  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-29 12:04:27,989  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-29 12:04:28,013  WARN [main] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-09-29 12:04:28,013  WARN [main] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-09-29 12:05:28,385  WARN [ModalContext] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:28,387  WARN [ModalContext] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:29,238  WARN [Worker-1] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:29,239  WARN [Worker-1] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:29,433  WARN [Worker-1] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:29,433  WARN [Worker-1] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:29,460  WARN [Worker-1] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:29,460  WARN [Worker-1] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:56,455  WARN [Worker-4] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:56,455  WARN [Worker-4] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:56,839  WARN [Worker-4] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:56,840  WARN [Worker-4] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:56,890  WARN [bundle-324-ActorSystem-akka.actor.default-dispatcher-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:56,890  WARN [bundle-324-ActorSystem-akka.actor.default-dispatcher-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:05:56,913  WARN [Worker-4] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:05:56,914  WARN [Worker-4] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:06:00,161  WARN [Worker-6] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:06:00,161  WARN [Worker-6] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:06:00,188  WARN [Worker-6] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:06:00,188  WARN [Worker-6] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:06:00,210  WARN [Worker-6] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:06:00,210  WARN [Worker-6] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:06:05,307 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-09-29 12:06:05,307 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-09-29 12:06:05,307 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-09-29 12:08:16,818  WARN [Worker-3] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:16,818  WARN [Worker-3] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:08:16,842  WARN [Worker-3] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:16,843  WARN [Worker-3] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:08:16,880  WARN [Worker-3] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:16,880  WARN [Worker-3] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:08:18,180  WARN [Worker-8] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:18,181  WARN [Worker-8] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:08:18,201  WARN [Worker-8] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:18,202  WARN [Worker-8] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:08:18,225  WARN [Worker-8] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:08:18,225  WARN [Worker-8] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:23,818  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:23,818  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:23,840  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:23,841  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:23,865  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:23,865  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:24,948  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:24,949  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:24,968  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:24,968  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:18:24,986  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:18:24,987  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:46,615 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-29 12:21:46,616 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-29 12:21:46,617 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-09-29 12:21:52,037  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:52,037  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:52,061  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:52,062  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:52,081  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:52,081  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:58,578  WARN [Worker-13] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:58,578  WARN [Worker-13] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:58,595  WARN [Worker-13] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:58,596  WARN [Worker-13] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:58,615  WARN [Worker-13] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:58,615  WARN [Worker-13] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:59,685  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:59,685  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:59,702  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:59,702  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:21:59,720  WARN [Worker-10] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:21:59,721  WARN [Worker-10] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:20,685  WARN [Worker-18] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:20,685  WARN [Worker-18] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:20,715  WARN [Worker-18] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:20,716  WARN [Worker-18] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:20,747  WARN [Worker-18] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:20,747  WARN [Worker-18] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:22,163  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:22,164  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:22,180  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:22,180  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:22,198  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:22,198  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:40,350  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:40,351  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:40,405  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:40,405  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:40,433  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:40,433  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:41,549  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:41,550  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:41,566  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:41,566  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:28:41,584  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:28:41,584  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:16,494  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:16,495  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:16,520  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:16,521  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:16,545  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:16,545  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:17,584  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:17,584  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:17,601  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:17,601  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:17,617  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:17,618  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:25,421  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:25,422  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:25,505  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:25,505  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:25,527  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:25,527  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:26,636  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:26,636  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:26,660  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:26,660  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:29:26,684  WARN [Worker-16] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:29:26,684  WARN [Worker-16] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:32,393  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:32,393  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:32,413  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:32,413  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:32,435  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:32,436  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:33,695  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:33,696  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:33,711  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:33,711  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:30:33,728  WARN [Worker-19] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-09-29 12:30:33,729  WARN [Worker-19] - ScalaProject - Project MathLab runs on platform default installation.
+2015-09-29 12:51:53,945  WARN [ModalContext] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:51:53,946  WARN [ModalContext] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:51:54,451  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:51:54,452  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:51:54,468  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:51:54,468  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:51:54,486  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:51:54,486  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:21,656  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:21,656  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:21,694  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:21,694  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:21,714  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:21,714  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:21,752  WARN [bundle-324-ActorSystem-akka.actor.default-dispatcher-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:21,752  WARN [bundle-324-ActorSystem-akka.actor.default-dispatcher-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:23,835  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:23,835  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:23,852  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:23,852  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:23,867  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:23,867  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:49,093  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:49,094  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:49,109  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:49,109  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:52:49,124  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:52:49,125  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:54,247  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:54,247  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:54,273  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:54,274  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:54,293  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:54,294  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:55,364  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:55,364  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:55,378  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:55,378  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:55,394  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:55,394  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:58,575  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:58,575  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:58,590  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:58,591  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:58,607  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:58,607  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:59,674  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:59,674  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:59,687  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:59,687  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:53:59,701  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:53:59,701  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:01,069  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:01,069  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:01,084  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:01,085  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:01,099  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:01,099  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:02,118  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:02,118  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:02,132  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:02,132  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:02,145  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:02,145  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:07,624  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:07,624  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:07,638  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:07,638  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:07,653  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:07,653  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:08,723  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:08,723  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:08,739  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:08,739  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:08,755  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:08,755  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:12,967  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:12,967  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:12,985  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:12,985  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:13,008  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:13,009  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:14,076  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:14,076  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:14,091  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:14,091  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:14,108  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:14,108  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:15,178  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:15,178  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:15,191  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:15,191  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:15,203  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:15,203  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:18,932  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:18,932  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:18,947  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:18,947  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:18,971  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:18,971  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:20,037  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:20,037  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:20,049  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:20,050  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:20,065  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:20,065  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:23,744  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:23,744  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:23,759  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:23,759  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:23,774  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:23,774  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:24,842  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:24,842  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:24,854  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:24,854  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:24,869  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:24,870  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:26,962  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:26,962  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:26,978  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:26,978  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:27,009  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:27,009  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:28,058  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:28,058  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:28,071  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:28,072  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:28,085  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:28,085  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:58,505  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:58,505  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:58,518  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:58,518  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:58,531  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:58,531  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:59,819  WARN [Worker-27] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:59,819  WARN [Worker-27] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:59,837  WARN [Worker-27] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:59,837  WARN [Worker-27] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:54:59,851  WARN [Worker-27] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:54:59,851  WARN [Worker-27] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:26,949  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:26,949  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:26,964  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:26,964  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:26,978  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:26,979  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:28,045  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:28,045  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:28,057  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:28,057  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:28,069  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:28,070  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:34,749  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:34,749  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:34,763  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:34,763  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:55:34,777  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:55:34,777  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:13,726  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:13,726  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:13,742  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:13,742  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:13,756  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:13,757  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:14,899  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:14,899  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:14,913  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:14,914  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:14,929  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:14,929  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:25,392  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:25,393  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:25,406  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:25,407  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:25,420  WARN [Worker-28] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:25,420  WARN [Worker-28] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:26,553  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:26,553  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:26,565  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:26,565  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:56:26,577  WARN [Worker-26] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:56:26,577  WARN [Worker-26] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:10,839  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:10,839  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:10,851  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:10,851  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:10,867  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:10,867  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:11,931  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:11,931  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:11,943  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:11,943  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:57:11,956  WARN [Worker-23] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:57:11,957  WARN [Worker-23] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:03,743  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:03,743  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:03,757  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:03,757  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:03,770  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:03,771  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:04,814  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:04,814  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:04,827  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:04,827  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 12:58:04,841  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 12:58:04,841  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:27,486  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:27,486  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:27,503  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:27,508  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:27,527  WARN [Worker-22] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:27,527  WARN [Worker-22] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:28,549  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:28,549  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:28,561  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:28,561  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:02:28,574  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:02:28,574  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:40,773  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:40,773  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:40,804  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:40,804  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:40,822  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:40,822  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:42,090  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:42,090  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:42,106  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:42,106  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:05:42,122  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:05:42,122  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:21,601  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:21,601  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:21,616  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:21,616  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:21,629  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:21,629  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:29,609  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:29,609  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:29,624  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:29,624  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:29,638  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:29,638  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:30,797  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:30,797  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:30,809  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:30,809  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:06:30,823  WARN [Worker-20] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:06:30,823  WARN [Worker-20] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:00,276  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:00,276  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:00,293  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:00,293  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:00,309  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:00,309  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:01,491  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:01,491  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:01,506  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:01,506  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:01,520  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:01,520  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:11,790  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:11,791  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:11,871  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:11,871  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:11,936  WARN [Worker-25] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:11,936  WARN [Worker-25] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:13,703  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:13,704  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:13,721  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:13,721  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:07:13,737  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:07:13,737  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:01,306  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:01,307  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:01,325  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:01,325  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:01,342  WARN [Worker-24] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:01,342  WARN [Worker-24] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:02,611  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:02,611  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:02,625  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:02,625  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:02,639  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:02,639  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:29,449  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:29,449  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:29,467  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:29,467  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:29,494  WARN [Worker-30] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:29,494  WARN [Worker-30] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:30,742  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:30,742  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:30,756  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:30,756  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.
+2015-09-29 13:09:30,770  WARN [Worker-29] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-09-29 13:09:30,770  WARN [Worker-29] - ScalaProject - Project StringLab runs on platform default installation.

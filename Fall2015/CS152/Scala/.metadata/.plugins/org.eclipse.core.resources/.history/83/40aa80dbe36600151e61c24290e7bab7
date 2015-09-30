@@ -1,0 +1,8 @@
+object stringSession {
+  println("Welcome to the Scala worksheet")
+	
+	def isPal(word: String)Double == {
+	
+	}
+	
+}
