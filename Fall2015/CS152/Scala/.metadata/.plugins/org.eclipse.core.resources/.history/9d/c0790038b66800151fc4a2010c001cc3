@@ -1,0 +1,89 @@
+import scala.util._
+
+object stringSession {
+  println("Welcome to the Scala worksheet")
+	
+	//1.
+	def isPal(word: String) = word.trim.toLowerCase == word.trim.toLowerCase.reverse
+	isPal("rotator")
+	isPal("mom ")
+	isPal("Racecar")
+	
+	
+	def isLetter(c: Char) = 'a' <= c && c <= 'z' || 'A' <= c && c <= 'Z'
+	//2.
+	def isPal2(phrase: String) = isPal(phrase.filter(isLetter _))
+	
+	isPal2("rotator")
+	isPal2("mom ")
+	isPal2("Racecar")
+	isPal2("A man, a plan, a canal, Panama!")
+	
+	//example
+	def echo(word: String = "hello") = word
+	//default things are neato
+	echo("football")
+	echo()
+	
+	//3.
+	def mkPal(word: String) = word+word.reverse
+	
+	mkPal("mars")
+	// => "marssram"
+	
+	//4.
+	def mkWord(length: Int = 10) =  {
+	val string = new StringBuilder(length)
+	val alphabet = "abcdefghijklmnopqrstuvwxyz"
+	for(i <-0 until length){
+	string.append(alphabet(Random.nextInt(alphabet.length)))
+	}
+	string.toString
+	}
+
+mkWord()
+//   => a1  : String = ltikizlrbmx
+mkWord()
+//   => a2  : String = iceqyxdtcqx
+mkWord()
+//   => a3  : String = dcjjqsecegi
+mkWord(20)
+// => a4  : String = erlazfucnscevefzaaviv
+
+//5.
+def mkSentence(length: Int = 10) = {
+var result = mkWord().capitalize
+for(i <- 1 until length){
+result += " " + mkWord(Random.nextInt(10))
+}
+result += "."
+result
+}
+
+mkSentence()
+mkSentence()
+mkSentence()
+mkSentence(5)
+
+//6.
+def shuffle(word: String) = word.drop(word.length/2)+word.take(word.length/2)
+
+
+shuffle("abcdefghij")
+// = fghijabcde
+shuffle("abcdefghijk")
+// = fghijkabcde
+
+//7.
+def countSubstrings(piece: String, phrase: String) = piece.r.findAllMatchIn(phrase).length
+
+countSubstrings("is", "Mississippi")
+// => 2
+
+//10.
+def first(array: Array[String]) = {array.min}
+
+first(Array("cat", "rat", "bat"))
+// = "bat"
+
+}

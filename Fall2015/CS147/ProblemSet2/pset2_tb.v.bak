@@ -69,15 +69,15 @@ pass_test = 0;
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 /////////////////////////////////////////////////////////////////////// multiply
 //test 5*5 = 25
-#5  op1_reg=15;
+#5  op1_reg=5;
     op2_reg=5;
-    oprn_reg=`ALU_OPRN_WIDTH'h01;
+    oprn_reg=`ALU_OPRN_WIDTH'h03;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 //test 5*2 = 10
-#5  op1_reg=15;
-    op2_reg=5;
-    oprn_reg=`ALU_OPRN_WIDTH'h01;
+#5  op1_reg=5;
+    op2_reg=2;
+    oprn_reg=`ALU_OPRN_WIDTH'h03;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 //////////////////////////////////////////////////////////////////////// and

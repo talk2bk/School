@@ -1,0 +1,93 @@
+import scala.math._
+
+object mathSession {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+ //1.
+  def solve(a: Double, b: Double, c: Double) = {
+  //discriminant is either negative (no answer), 0 (??), positive(calculate square root)
+  
+  val disc = b*b - 4*a*c
+ 	if(disc < 0) {
+ 	Double.NaN
+ 	} else if (disc == 0){
+ 		-b / (2*a)
+ 	} else{
+ 		val sol1 = (-b + math.sqrt(disc)) / (2*a)
+ 		val sol2 = (-b - math.sqrt(disc)) / (2*a)
+ 			(sol1, sol2)
+ 	}
+  }                                               //> solve: (a: Double, b: Double, c: Double)Any
+
+solve(1.0, 6, 8)                                  //> res0: Any = (-2.0,-4.0)
+// Any = (-2.0,-4.0)
+solve(1, -8 , 16)                                 //> res1: Any = 4.0
+// Any = 4.0
+solve(1, 0, 16)                                   //> res2: Any = NaN
+ //Any = NaN
+
+//2.
+def dist(point1: (Int,Int), point2: (Int,Int)) = {
+	var (point1X, point1Y) = point1
+	var (point2X, point2Y) = point2
+	Math.sqrt(Math.pow(point2X - point1X,2)+Math.pow(point2Y-point1Y,2))
+	
+	
+	
+}                                                 //> dist: (point1: (Int, Int), point2: (Int, Int))Double
+
+dist((3, 0), (0, 0))                              //> res3: Double = 3.0
+//3.0
+dist((1, 1), (0, 0))                              //> res4: Double = 1.4142135623730951
+//1.4142135623730951
+
+//3.
+def dot(matrix1: (Double, Double, Double), matrix2: (Double, Double, Double)) = {
+var (v1, v2, v3) = matrix1
+var (v4, v5, v6) = matrix2
+
+v1*v4 + v2*v5 + v3*v6
+}                                                 //> dot: (matrix1: (Double, Double, Double), matrix2: (Double, Double, Double))D
+                                                  //| ouble
+
+dot((2.0, 3, 4), (2, 2.0, 2))                     //> res5: Double = 18.0
+// = 18.0
+
+//4.
+def force(m1: Int, m2: Int, d: Int) = {
+(m1*m2)/d
+}                                                 //> force: (m1: Int, m2: Int, d: Int)Int
+//5.
+def mean(array: Array[Double])= {
+var result = 0.0;
+for(i <- array){
+	result+=i
+}
+result/array.length
+}                                                 //> mean: (array: Array[Double])Double
+
+def stdDev(array: Array[Double]) = {
+var m = mean(array);
+var moreMeans = new Array[Double](array.length)
+for(i <- array){
+moreMeans = moreMeans :+  Math.pow(i-m,2)
+}
+
+}                                                 //> stdDev: (array: Array[Double])Unit
+
+mean(Array(2.0, 3, 4, 5))                         //> res6: Double = 3.5
+//= 3.5
+stdDev(Array(2, 3.0, 4, 5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
