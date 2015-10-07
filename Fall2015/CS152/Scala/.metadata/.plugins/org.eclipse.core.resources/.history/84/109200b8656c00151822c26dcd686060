@@ -1,0 +1,17 @@
+object functionSession {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+  //1.
+  def compose[A,B,C] (f: B=>C, g: A=>B): A=>C = {
+  	def r(x: A) = f(g(x))
+  	r _
+  }
+  
+  def square(x: Int) = x * x
+  
+  def len(s: String) = s.length
+  
+  def h = compose(square _, len _)
+  
+  h("12345678")
+}
