@@ -5514,3 +5514,589 @@ Standard error:
 2015-10-06 13:08:20,539  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
 2015-10-06 13:08:20,556  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
 2015-10-06 13:08:20,556  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-06 17:58:19,689  WARN [Worker-71] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-06 17:58:19,691  WARN [Worker-71] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-06 17:58:19,698  WARN [Worker-71] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-06 17:58:19,698  WARN [Worker-71] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-06 17:58:19,726  WARN [Worker-71] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-06 17:58:19,726  WARN [Worker-71] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-06 17:58:19,752  WARN [Worker-71] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-06 17:58:19,752  WARN [Worker-71] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-06 17:59:03,778  WARN [Worker-73] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:03,779  WARN [Worker-73] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:03,790  WARN [Worker-73] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:03,790  WARN [Worker-73] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:03,836  WARN [Worker-73] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:03,836  WARN [Worker-73] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:03,885  WARN [Worker-73] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:03,885  WARN [Worker-73] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:06,000  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:06,000  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:06,018  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:06,019  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 17:59:06,038  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 17:59:06,038  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:31,105  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:31,105  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:31,131  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:31,131  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:31,155  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:31,155  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:32,227  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:32,227  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:32,245  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:32,245  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:01:32,262  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:01:32,262  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:28,032  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:28,033  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:28,057  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:28,058  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:28,080  WARN [Worker-70] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:28,080  WARN [Worker-70] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:29,458  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:29,459  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:29,477  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:29,477  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:02:29,496  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:02:29,496  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:02,786  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:02,786  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:02,807  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:02,807  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:02,865  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:02,865  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:38,282  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:38,283  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:38,389  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:38,389  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:38,429  WARN [Worker-59] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:38,430  WARN [Worker-59] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:40,339  WARN [Worker-75] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:40,340  WARN [Worker-75] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:40,360  WARN [Worker-75] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:40,360  WARN [Worker-75] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:40,380  WARN [Worker-75] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:06:40,381  WARN [Worker-75] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:06:45,039 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,040 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,040 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,040 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,040 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,040 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:06:45,043 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-06 18:18:19,213  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:19,214  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:18:19,236  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:19,236  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:18:19,256  WARN [Worker-72] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:19,256  WARN [Worker-72] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:18:21,191  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:21,192  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:18:21,209  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:21,210  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-06 18:18:21,233  WARN [Worker-71] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-06 18:18:21,233  WARN [Worker-71] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:33:48,336  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:33:48,347  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:33:48,364  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:33:48,365  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:33:52,062  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-07 10:33:52,063  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-07 10:33:52,064  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-07 10:33:52,064  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-07 10:33:52,065  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-07 10:33:52,065  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-07 10:33:52,066  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-07 10:33:52,066  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-07 10:34:10,066  WARN [Worker-1] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:10,066  WARN [Worker-1] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:10,193  WARN [Worker-1] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:10,194  WARN [Worker-1] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:10,431  WARN [Worker-1] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:10,431  WARN [Worker-1] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:10,476  WARN [Worker-1] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:10,477  WARN [Worker-1] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:14,567  WARN [Worker-0] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:14,568  WARN [Worker-0] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:14,604  WARN [Worker-0] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:14,605  WARN [Worker-0] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:34:14,635  WARN [Worker-0] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:34:14,636  WARN [Worker-0] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:51,213  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:51,214  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:51,271  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:51,271  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:51,299  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:51,300  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:52,418  WARN [Worker-7] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:52,418  WARN [Worker-7] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:52,443  WARN [Worker-7] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:52,443  WARN [Worker-7] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 10:49:52,469  WARN [Worker-7] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 10:49:52,470  WARN [Worker-7] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:09,049  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:09,049  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:09,085  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:09,086  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:09,111  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:09,111  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:10,199  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:10,199  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:10,219  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:10,220  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 14:48:10,239  WARN [Worker-14] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 14:48:10,239  WARN [Worker-14] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:21:32,911  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:21:32,914  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:21:32,921  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:21:32,922  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:21:34,371  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-07 19:21:34,498  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-07 19:21:34,499  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-07 19:21:34,499  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-07 19:21:34,500  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-07 19:21:34,500  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-07 19:21:34,503  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-07 19:21:34,505  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-07 19:22:30,901 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:30,901 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:30,901 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:41,257 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:41,257 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:41,257 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:22:51,900  WARN [Worker-6] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:51,901  WARN [Worker-6] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:51,953  WARN [Worker-6] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:51,953  WARN [Worker-6] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:52,161  WARN [Worker-6] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:52,161  WARN [Worker-6] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:52,190  WARN [Worker-6] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:52,190  WARN [Worker-6] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:53,296  WARN [Worker-3] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:53,296  WARN [Worker-3] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:53,326  WARN [Worker-3] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:53,327  WARN [Worker-3] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:22:53,352  WARN [Worker-3] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:22:53,353  WARN [Worker-3] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:07,778 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:24:07,778 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:24:07,779 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:24:55,041  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:55,042  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:55,075  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:55,075  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:55,122  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:55,122  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:56,210  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:56,211  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:56,231  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:56,232  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:24:56,255  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:24:56,258  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:46,628  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:46,633  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:46,684  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:46,684  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:46,722  WARN [Worker-8] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:46,723  WARN [Worker-8] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:49,184  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:49,184  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:49,206  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:49,206  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:26:49,224  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:26:49,225  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:24,072  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:24,073  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:24,131  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:24,132  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:24,162  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:24,163  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:29,946 ERROR [Worker-11] - ProgramExecutor$ - Worksheet process has terminated unexpectedly (exit value 1
+At the time of termination, the following text was available in the output streams:
+Standard output:
+  69 Welcome to the Scala worksheet
+95 inc: (n: Int)Int
+121 dec: (n: Int)Int
+288 add: (n: Int, m: Int)Int
+303 res0: Int = 3
+314 res1: Int = 5
+325 res2: Int = 7
+502 mul: (n: Int, m: Int)Int
+516 res3: Int = 0
+527 res4: Int = 2
+538 res5: Int = 6
+549 res6: Int = 12
+723 exp2: (m: Int)Int
+736 res7: Int = 1
+746 res8: Int = 2
+756 res9: Int = 4
+766 res10: Int = 8
+973 hyperExp: (m: Int)Int
+990 res11: Int = 2
+1004 res12: Int = 4
+1018 res13: Int = 16
+1032 res14: Int = 65536
+1046 res15: Int = 0
+1683 REPL: ()Double
+1695 
+Standard error:
+  
+
+2015-10-07 19:40:30,109  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:30,109  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:30,131  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:30,131  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:30,153  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:30,154  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:40,873  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:40,875  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:40,908  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:40,908  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:40:40,940  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:40:40,941  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:17,724 ERROR [Worker-11] - ProgramExecutor$ - Worksheet process has terminated unexpectedly (exit value 1
+At the time of termination, the following text was available in the output streams:
+Standard output:
+  69 Welcome to the Scala worksheet
+95 inc: (n: Int)Int
+121 dec: (n: Int)Int
+288 add: (n: Int, m: Int)Int
+303 res0: Int = 3
+314 res1: Int = 5
+325 res2: Int = 7
+502 mul: (n: Int, m: Int)Int
+516 res3: Int = 0
+527 res4: Int = 2
+538 res5: Int = 6
+549 res6: Int = 12
+723 exp2: (m: Int)Int
+736 res7: Int = 1
+746 res8: Int = 2
+756 res9: Int = 4
+766 res10: Int = 8
+973 hyperExp: (m: Int)Int
+990 res11: Int = 2
+1004 res12: Int = 4
+1018 res13: Int = 16
+1032 res14: Int = 65536
+1046 res15: Int = 0
+1683 REPL: ()Double
+1695 
+Standard error:
+  
+
+2015-10-07 19:41:17,895  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:17,896  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:17,924  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:17,926  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:17,953  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:17,953  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:24,916  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:24,919  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:24,948  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:24,949  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:25,019  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:25,019  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:31,093 ERROR [Worker-12] - ProgramExecutor$ - Worksheet process has terminated unexpectedly (exit value 1
+At the time of termination, the following text was available in the output streams:
+Standard output:
+  69 Welcome to the Scala worksheet
+95 inc: (n: Int)Int
+121 dec: (n: Int)Int
+288 add: (n: Int, m: Int)Int
+303 res0: Int = 3
+314 res1: Int = 5
+325 res2: Int = 7
+502 mul: (n: Int, m: Int)Int
+516 res3: Int = 0
+527 res4: Int = 2
+538 res5: Int = 6
+549 res6: Int = 12
+723 exp2: (m: Int)Int
+736 res7: Int = 1
+746 res8: Int = 2
+756 res9: Int = 4
+766 res10: Int = 8
+973 hyperExp: (m: Int)Int
+990 res11: Int = 2
+1004 res12: Int = 4
+1018 res13: Int = 16
+1032 res14: Int = 65536
+1046 res15: Int = 0
+1683 REPL: ()Double
+1695 
+Standard error:
+  
+
+2015-10-07 19:41:31,236  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:31,236  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:31,256  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:31,256  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:31,285  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:31,285  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:36,411  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:36,411  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:36,432  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:36,434  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:41:36,477  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:41:36,478  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:18,025  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:18,025  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:18,046  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:18,046  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:18,073  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:18,074  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:20,988  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:20,991  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:21,020  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:21,020  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:21,041  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:21,041  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:50,747  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:50,747  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:50,770  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:50,770  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:44:50,792  WARN [Worker-13] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:44:50,792  WARN [Worker-13] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:45:26,152  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:45:26,152  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:45:26,204  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:45:26,204  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:45:26,234  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:45:26,234  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:45:26,702 ERROR [Worker-11] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-10-07 19:45:26,702 ERROR [Worker-11] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-10-07 19:45:26,702 ERROR [Worker-11] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-10-07 19:49:48,530 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:49:48,530 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:49:48,530 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-10-07 19:50:22,749 ERROR [Worker-16] - ProgramExecutor$ - Worksheet process has terminated unexpectedly (exit value 1
+At the time of termination, the following text was available in the output streams:
+Standard output:
+  69 Welcome to the Scala worksheet
+95 inc: (n: Int)Int
+121 dec: (n: Int)Int
+288 add: (n: Int, m: Int)Int
+303 res0: Int = 3
+314 res1: Int = 5
+325 res2: Int = 7
+502 mul: (n: Int, m: Int)Int
+516 res3: Int = 0
+527 res4: Int = 2
+538 res5: Int = 6
+549 res6: Int = 12
+723 exp2: (m: Int)Int
+736 res7: Int = 1
+746 res8: Int = 2
+756 res9: Int = 4
+766 res10: Int = 8
+973 hyperExp: (m: Int)Int
+990 res11: Int = 2
+1004 res12: Int = 4
+1018 res13: Int = 16
+1032 res14: Int = 65536
+1046 res15: Int = 0
+1683 REPL: ()Double
+1695 
+Standard error:
+  
+
+2015-10-07 19:50:22,934  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:22,934  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:22,961  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:22,962  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:22,981  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:22,982  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:34,566  WARN [Worker-20] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:34,567  WARN [Worker-20] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:34,582  WARN [Worker-20] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:34,582  WARN [Worker-20] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:34,597  WARN [Worker-20] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:34,597  WARN [Worker-20] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:35,664  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:35,664  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:35,682  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:35,682  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:35,696  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:35,696  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:43,716  WARN [Worker-19] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:43,716  WARN [Worker-19] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:43,730  WARN [Worker-19] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:43,730  WARN [Worker-19] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:43,747  WARN [Worker-19] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:43,747  WARN [Worker-19] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:51,263  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:51,263  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:51,280  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:51,281  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:51,298  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:51,298  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:52,367  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:52,367  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:52,383  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:52,383  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:50:52,400  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:50:52,400  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:05,854  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:05,854  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:05,870  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:05,870  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:05,886  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:05,886  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:19,748  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:19,749  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:19,766  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:19,767  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:19,785  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:19,786  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:21,032  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:21,033  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:21,048  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:21,049  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:51:21,065  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:51:21,065  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:23,783  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:23,783  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:23,802  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:23,802  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:23,819  WARN [Worker-11] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:23,819  WARN [Worker-11] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:24,893  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:24,894  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:24,908  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:24,909  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:24,925  WARN [Worker-16] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:24,927  WARN [Worker-16] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:59,613  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:59,613  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:59,627  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:59,628  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:53:59,644  WARN [Worker-12] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:53:59,644  WARN [Worker-12] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:33,207  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:33,207  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:33,225  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:33,226  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:33,243  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:33,244  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:34,278  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:34,278  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:34,292  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:34,292  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:54:34,307  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:54:34,307  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:06,204  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:06,205  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:06,226  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:06,226  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:06,244  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:06,244  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:07,584  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:07,584  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:07,601  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:07,601  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:57:07,617  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:57:07,617  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:59:18,430  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:59:18,430  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:59:18,456  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:59:18,456  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 19:59:18,478  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 19:59:18,478  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:21,916  WARN [Worker-22] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:21,916  WARN [Worker-22] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:21,935  WARN [Worker-22] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:21,935  WARN [Worker-22] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:21,953  WARN [Worker-22] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:21,953  WARN [Worker-22] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:49,858  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:49,858  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:49,880  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:49,883  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:49,906  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:49,906  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:50,938  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:50,938  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:50,952  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:50,952  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:08:50,967  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:08:50,967  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:22,046  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:22,047  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:22,063  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:22,063  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:22,081  WARN [Worker-15] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:22,081  WARN [Worker-15] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:23,459  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:23,459  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:23,476  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:23,477  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:23,491  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:23,492  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:42,099  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:42,099  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:42,116  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:42,116  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:42,134  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:42,134  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:43,194  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:43,194  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:43,210  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:43,210  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:09:43,226  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:09:43,227  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:34,553  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:34,553  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:34,570  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:34,570  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:34,586  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:34,586  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:36,048  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:36,048  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:36,063  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:36,063  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:10:36,079  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:10:36,079  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:38,101  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:38,102  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:38,120  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:38,120  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:38,136  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:38,137  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:39,188  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:39,188  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:39,202  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:39,202  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:12:39,216  WARN [Worker-17] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:12:39,216  WARN [Worker-17] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:16,514  WARN [Worker-25] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:16,514  WARN [Worker-25] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:16,534  WARN [Worker-25] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:16,534  WARN [Worker-25] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:16,553  WARN [Worker-25] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:16,553  WARN [Worker-25] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:43,912  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:43,912  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:43,928  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:43,928  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:14:43,942  WARN [Worker-23] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:14:43,942  WARN [Worker-23] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:18:53,441  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:18:53,441  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:18:53,473  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:18:53,473  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:18:53,493  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:18:53,493  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:21,143  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:21,143  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:21,159  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:21,159  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:21,175  WARN [Worker-18] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:21,175  WARN [Worker-18] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:22,577  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:22,577  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:22,591  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:22,591  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-07 20:19:22,605  WARN [Worker-29] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-07 20:19:22,605  WARN [Worker-29] - ScalaProject - Project RecursionLab runs on platform default installation.

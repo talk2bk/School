@@ -1,0 +1,121 @@
+object recursionSession {
+  println("Welcome to the Scala worksheet")
+  def inc(n: Int) = n + 1
+  def dec(n: Int) = n - 1
+  
+  //5.
+  //n + m
+  def add(n: Int, m: Int) = {
+  
+  def addHelp(n: Int, count: Int): Int = if(count <= 0) n else addHelp(inc(n), dec(count))
+  
+  addHelp(n,m)
+  }
+   
+  add(1,2)
+  add(2,3)
+  add(3,4)
+   
+  //n * m
+  def mul(n: Int, m: Int) = {
+  
+  def mulHelp(result: Int, count: Int): Int = if(count <= 0) result else mulHelp(add(result,n), dec(count))
+  
+  mulHelp(0,m)
+  }
+  
+  mul(3,0)
+  mul(1,2)
+  mul(2,3)
+  mul(3,4)
+  
+  //2^m, pow(2,m)
+  def exp2(m: Int) = {
+  
+  def expHelp(result: Int, count: Int): Int = if(count <= 0) result else expHelp(mul(result,2), dec(count))
+  expHelp(1,m)
+  }
+  
+  exp2(0)
+  exp2(1)
+  exp2(2)
+  exp2(3)
+  
+  //exp(exp(exp(exp(1))))
+  def hyperExp(m: Int) = {
+  
+ def hyperExpHelper(result: Int, count: Int): Int = if(count <= 0) result else hyperExpHelper(exp2(result), dec(count))
+ 
+ hyperExpHelper(2, m)
+  }
+  
+  hyperExp(0)
+  hyperExp(1)
+  hyperExp(2)
+  hyperExp(3)
+  hyperExp(4)
+  
+  //7.
+  
+	def REPL(): Double = {
+	var cmmd = readLine("-> ").split("\\s+")
+	var continue = true;
+	if (cmmd(0).equals("quit")) {
+        continue = false;
+        } else
+           if (cmmd.length != 3) {
+             throw new Exception("syntax = NUMBER OPERATOR NUMBER")
+           }
+	
+	def replHelper(arg1: Double, operation: String, arg2: Double) = {
+						if (operation == "+") {println("result = " + (arg1 + arg2)); arg1 + arg2}
+						else if (operation == "*") { println("result = " + (arg1 * arg2)); (arg1 * arg2)}
+						else if (operation == "-") { println("result = " + (arg1 - arg2)); (arg1 - arg2)}
+						else if (operation == "/") { println("result = " + (arg1 / arg2)); (arg1 / arg2)}
+						else {throw new Exception("unrecognized operator: " + operation) }
+	}
+	
+	replHelper(cmmd(0).toDouble, cmmd(1).toString, cmmd(2).toDouble)
+	if(continue) {REPL()}
+	}
+  
+  
+  /*
+  //9.
+  //recursive
+  def fib1(n: Int): Int = {
+  if(n <= 1) 1 else fib1(n-1) + fib1(n-2)
+  }
+  
+  //tail
+  def fib3(n: Int) = {
+  	def helper(fib1: Int, fib2: Int, i: Int): Int = {
+  	if(i <= 0) fib2 else helper(fib2, fib2+fib1, i - 1)
+  	}
+  	helper(1,1,n)
+  }
+ 
+ for(i <- 0 to 10){
+ println(fib3(i))
+   }
+  
+  
+  
+  //10.
+  def choose(n: Int, m: Int) = {
+  	
+  }
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+}

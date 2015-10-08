@@ -2,6 +2,7 @@ object recursionSession {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
   def inc(n: Int) = n + 1                         //> inc: (n: Int)Int
   def dec(n: Int) = n - 1                         //> dec: (n: Int)Int
+  
   //5.
   //n + m
   def add(n: Int, m: Int) = {
@@ -43,33 +44,41 @@ object recursionSession {
   //exp(exp(exp(exp(1))))
   def hyperExp(m: Int) = {
   
- def hyperExpHelper(result: Int, count: Int): Int =
- hyperExpHelper(0, m)
-  }                                               //> hyperExp: (m: Int)Unit
+ def hyperExpHelper(result: Int, count: Int): Int = if(count <= 0) result else hyperExpHelper(exp2(result), dec(count))
+ 
+ hyperExpHelper(2, m)
+  }                                               //> hyperExp: (m: Int)Int
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  hyperExp(0)                                     //> res11: Int = 2
+  hyperExp(1)                                     //> res12: Int = 4
+  hyperExp(2)                                     //> res13: Int = 16
+  hyperExp(3)                                     //> res14: Int = 65536
+  hyperExp(4)                                     //> res15: Int = 0
   
   //7.
   
-  //?????
+	def REPL(): Double = {
+	var cmmd = readLine("-> ").split("\\s+")
+	var continue = true;
+  if (cmmd.length != 3) {throw new Exception("syntax = NUMBER OPERATOR NUMBER")}
+	
+	def replHelper(arg1: Double, operation: String, arg2: Double) = {
+						if (operation == "+") {println("result = " + (arg1 + arg2)); arg1 + arg2}
+						else if (operation == "*") { println("result = " + (arg1 * arg2)); (arg1 * arg2)}
+						else if (operation == "-") { println("result = " + (arg1 - arg2)); (arg1 - arg2)}
+						else if (operation == "/") { println("result = " + (arg1 / arg2)); (arg1 / arg2)}
+						else {throw new Exception("unrecognized operator: " + operation) }
+	}
+	
+	replHelper(cmmd(0).toDouble, cmmd(1).toString, cmmd(2).toDouble)
+	REPL()
+	}                                         //> REPL: ()Double
   
-  /*
-    //9.
+  //9.
   //recursive
   def fib1(n: Int): Int = {
   if(n <= 1) 1 else fib1(n-1) + fib1(n-2)
-  }
+  }                                               //> fib1: (n: Int)Int
   
   //tail
   def fib3(n: Int) = {
@@ -77,19 +86,36 @@ object recursionSession {
   	if(i <= 0) fib2 else helper(fib2, fib2+fib1, i - 1)
   	}
   	helper(1,1,n)
-  }
+  }                                               //> fib3: (n: Int)Int
  
  for(i <- 0 to 10){
- println(fib3(i))
+ println(fib3(i))                                 //> 1
+                                                  //| 2
+                                                  //| 3
+                                                  //| 5
+                                                  //| 8
+                                                  //| 13
+                                                  //| 21
+                                                  //| 34
+                                                  //| 55
+                                                  //| 89
+                                                  //| 144
    }
   
   
-  */
   
   //10.
+  def choose(n: Int, m: Int) = {
+  if(n == 0) 0
+  def fact(n: Int): Int = fact2(n,1)
+  def fact2(n: Int, result: Int): Int = if(n==0) result else fact2(n-1, n*result)
+ 	fact(n)/fact(m)*fact(n-m)
+  }                                               //> choose: (n: Int, m: Int)Int
   
-  //?????
-  
+  choose(1,0)                                     //> res16: Int = 1
+  choose(2,1)                                     //> res17: Int = 2
+  choose(4,3)                                     //> res18: Int = 4
+  choose(5,4)                                     //> res19: Int = 5
   
   
   
