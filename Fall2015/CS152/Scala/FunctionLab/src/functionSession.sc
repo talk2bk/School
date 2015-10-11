@@ -18,4 +18,29 @@ object functionSession {
   def g = compose(math.sqrt, math.sqrt)           //> g: => Double => Double
   
   g(81)                                           //> res1: Double = 3.0
+  
+  //2.
+  def selfIter[T] (f: T=> T, n: Int) = compose(f,f)
+                                                  //> selfIter: [T](f: T => T, n: Int)T => T
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }

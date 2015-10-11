@@ -17,5 +17,29 @@ object functionSession {;import org.scalaide.worksheet.runtime.library.Worksheet
   
   def g = compose(math.sqrt, math.sqrt);System.out.println("""g: => Double => Double""");$skip(11); val res$1 = 
   
-  g(81);System.out.println("""res1: Double = """ + $show(res$1))}
+  g(81);System.out.println("""res1: Double = """ + $show(res$1));$skip(62); 
+  
+  //2.
+  def selfIter[T] (f: T=> T, n: Int) = compose(f,f);System.out.println("""selfIter: [T](f: T => T, n: Int)T => T""")}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
