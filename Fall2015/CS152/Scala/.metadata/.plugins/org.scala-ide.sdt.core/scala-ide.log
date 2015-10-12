@@ -6424,3 +6424,165 @@ Standard error:
 2015-10-08 19:40:23,075  WARN [Worker-21] - ScalaProject - Project RecursionLab runs on platform default installation.
 2015-10-08 19:40:23,089  WARN [Worker-21] - ScalaProject - Project RecursionLab has platform default sourceLevel.
 2015-10-08 19:40:23,089  WARN [Worker-21] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 08:41:48,701  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 08:41:48,705  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 08:41:48,713  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 08:41:48,713  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 08:41:50,047  WARN [Worker-3] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 08:41:50,050  WARN [Worker-3] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 08:41:50,050  WARN [Worker-3] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 08:41:50,051  WARN [Worker-3] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 08:41:50,051  WARN [Worker-3] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 08:41:50,052  WARN [Worker-3] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 08:41:50,052  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 08:41:50,053  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 08:41:50,053  WARN [Worker-3] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 08:41:50,053  WARN [Worker-3] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 08:42:03,494  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 08:42:03,495  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:15:12,791  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:12,795  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:15:12,812  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:12,812  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:15:13,700  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 10:15:13,710  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 10:15:13,710  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:15:13,711  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:15:13,712  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 10:15:13,712  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 10:15:13,713  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 10:15:13,713  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 10:15:13,714  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 10:15:13,714  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 10:15:59,444  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:59,444  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:15:59,523  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:59,524  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:15:59,827  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:59,827  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:15:59,863  WARN [Worker-2] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:15:59,864  WARN [Worker-2] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:16:01,572  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 10:16:01,573  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 10:16:01,593  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 10:16:01,593  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 10:16:01,647  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 10:16:01,648  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 10:16:02,304  WARN [Worker-2] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-12 10:16:02,305  WARN [Worker-2] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-12 10:16:02,521  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:16:02,521  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:16:02,531  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:16:02,532  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:16:02,559  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:16:02,560  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:16:02,596  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:16:02,596  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:16:02,657  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 10:16:02,657  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 10:16:02,665  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 10:16:02,665  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 10:16:02,693  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 10:16:02,693  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 10:16:02,720  WARN [Worker-2] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-12 10:16:02,720  WARN [Worker-2] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-12 10:16:02,776  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 10:16:02,777  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 10:16:02,785  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 10:16:02,785  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 10:16:02,810  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 10:16:02,810  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 10:16:02,831  WARN [Worker-2] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-12 10:16:02,831  WARN [Worker-2] - ScalaProject - Project RecursionLab runs on platform default installation.
+2015-10-12 10:16:02,900  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 10:16:02,900  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 10:16:02,907  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 10:16:02,907  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 10:16:02,947  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 10:16:02,947  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 10:16:02,970  WARN [Worker-2] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-12 10:16:02,970  WARN [Worker-2] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-12 10:16:04,130  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:16:04,130  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:16:04,157  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:16:04,157  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:16:04,177  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:16:04,177  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:19:20,789  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:19:20,789  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:19:20,812  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:19:20,812  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:19:20,831  WARN [Worker-2] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-12 10:19:20,832  WARN [Worker-2] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-12 10:20:34,472  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:34,472  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:20:34,508  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:34,508  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:20:34,546  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:34,546  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:20:35,609  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:35,609  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:20:35,624  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:35,624  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:20:35,641  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:20:35,641  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:47,037  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:47,037  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:47,104  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:47,105  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:47,124  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:47,124  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:48,151  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:48,151  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:48,167  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:48,167  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:21:48,183  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:21:48,183  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:16,581  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:16,582  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:16,600  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:16,600  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:16,616  WARN [Worker-3] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:16,616  WARN [Worker-3] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:17,803  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:17,803  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:17,819  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:17,819  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:22:17,835  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:22:17,836  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:52,830  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:52,830  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:52,871  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:52,872  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:52,893  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:52,894  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:53,961  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:53,961  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:53,979  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:53,979  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:23:53,997  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:23:53,997  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:53,218  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:53,218  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:53,239  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:53,239  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:53,257  WARN [Worker-5] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:53,257  WARN [Worker-5] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:54,283  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:54,283  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:54,327  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:54,327  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:24:54,343  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:24:54,344  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:10,982  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:10,983  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:11,015  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:11,015  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:11,034  WARN [Worker-6] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:11,034  WARN [Worker-6] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:12,107  WARN [Worker-0] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:12,107  WARN [Worker-0] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:12,125  WARN [Worker-0] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:12,126  WARN [Worker-0] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-12 10:29:12,148  WARN [Worker-0] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-12 10:29:12,148  WARN [Worker-0] - ScalaProject - Project FunctionLab runs on platform default installation.

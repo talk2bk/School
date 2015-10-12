@@ -1,0 +1,47 @@
+object functionSessionTemp {
+  println("Welcome to the Scala worksheet")
+  
+  def S = {
+  var state = 0;
+  }
+  
+  def update(currentState: S, cycle: Int) = {}
+  
+  def halt(currentState: S, cycle: Int) {}//if() true else false
+  
+  def controlLoop[S] (state: S, cycle: Int, half: (S, Int)=>Boolean, update: (S,Int)=>S): S = {}
+  
+  //5.
+  
+  //6.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
