@@ -20,12 +20,33 @@ object functionSession {
   g(81)                                           //> res1: Double = 3.0
   
   //2.
-  def selfIter[T] (f: T=> T, n: Int) = compose(f,f)
+  def selfIter[T] (f: T=> T, n: Int): T=>T = if(n == 0) f else selfIter(compose(f,f), n-1)
                                                   //> selfIter: [T](f: T => T, n: Int)T => T
   
+  def inc(x: Double) = x + 1                      //> inc: (x: Double)Double
+  def double(x: Double) = 2 * x                   //> double: (x: Double)Double
   
+  selfIter(inc, 2)                                //> res2: Double => Double = <function1>
+  selfIter(inc, 0)                                //> res3: Double => Double = <function1>
+  selfIter(double, 2)                             //> res4: Double => Double = <function1>
+  selfIter(double, 0)                             //> res5: Double => Double = <function1>
   
+  //3.
+  def countPass[T] (pred: T=>Boolean, array: Array[T]) = {
+  var pass = 0;
+  for(item <- array){ if(pred(item)){pass = pass + 1}}
+  pass
+  }                                               //> countPass: [T](pred: T => Boolean, array: Array[T])Int
   
+  def greaterThan2(num: Int) = {
+  if(num > 2) true
+  else false
+  }                                               //> greaterThan2: (num: Int)Boolean
+  
+  val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3)   //> numbers  : Array[Int] = Array(0, -1, 2, 1, 2, 3, 4, 5, 6, 3)
+  countPass(greaterThan2,numbers)                 //> res6: Int = 5
+  
+  //5.
   
   
   

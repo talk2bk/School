@@ -3015,3 +3015,92 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-10 19:50:42.144 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\GitHub\School\Fall2015\CS152\Scala
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-10 19:51:00.058
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-10 19:51:00.059
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CuTs'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-10-10 19:51:00.348
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:322)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:978)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:120)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2015-10-10 19:51:00.349
+!MESSAGE Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2015-10-10 19:51:00.349
+!MESSAGE Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
+
+!ENTRY org.eclipse.core.resources 4 75 2015-10-10 19:51:00.516
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.scala-ide.sdt.core 4 75 2015-10-10 19:51:00.516
+!MESSAGE Errors running builder 'Scala Builder' on project 'Lab1'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:49)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1$$anonfun$apply$2.apply(TaskManager.scala:47)
+	at scala.Option.foreach(Option.scala:257)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:47)
+	at org.scalaide.core.internal.builder.TaskManager$$anonfun$updateTasks$1.apply(TaskManager.scala:46)
+	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:322)
+	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:978)
+	at org.scalaide.core.internal.builder.TaskManager$.updateTasks(TaskManager.scala:46)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:120)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2015-10-10 19:51:00.516
+!MESSAGE Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2015-10-10 19:51:00.516
+!MESSAGE Resource is out of sync with the file system: '/Lab1/src/Mystery.scala'.
