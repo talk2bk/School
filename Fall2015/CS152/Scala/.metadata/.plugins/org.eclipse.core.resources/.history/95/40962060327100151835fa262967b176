@@ -1,0 +1,27 @@
+object listSession {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+  //1.
+  //iterative
+  def sumOfCubes(list: Array[Int]) = {
+  var result = 0.0
+  for(x <- list){if(x%2 != 0){result = result + math.pow(x,3)}}
+  result
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}

@@ -20,22 +20,22 @@ object functionSession {;import org.scalaide.worksheet.runtime.library.Worksheet
   g(81);System.out.println("""res1: Double = """ + $show(res$1));$skip(102); 
   
   //2.
-  def selfIter[T] (f: T=> T, n: Int): T=>T = if(n == 0) f else selfIter(compose(f,f), n-1);System.out.println("""selfIter: [T](f: T => T, n: Int)T => T""");$skip(32); 
+  def selfIter[T] (f: T=> T, n: Int): T=>T = if(n == 0) f else selfIter(compose(f,f), n-1);System.out.println("""selfIter: [T](f: T => T, n: Int)T => T""");$skip(33); 
   
   def inc(x: Double) = x + 1;System.out.println("""inc: (x: Double)Double""");$skip(32); 
-  def double(x: Double) = 2 * x;System.out.println("""double: (x: Double)Double""");$skip(22); val res$2 = 
+  def double(x: Double) = 2 * x;System.out.println("""double: (x: Double)Double""");$skip(23); val res$2 = 
   
   selfIter(inc, 2);System.out.println("""res2: Double => Double = """ + $show(res$2));$skip(19); val res$3 = 
   selfIter(inc, 0);System.out.println("""res3: Double => Double = """ + $show(res$3));$skip(22); val res$4 = 
   selfIter(double, 2);System.out.println("""res4: Double => Double = """ + $show(res$4));$skip(22); val res$5 = 
-  selfIter(double, 0);System.out.println("""res5: Double => Double = """ + $show(res$5));$skip(151); 
+  selfIter(double, 0);System.out.println("""res5: Double => Double = """ + $show(res$5));$skip(152); 
   
   //3.
   def countPass[T] (pred: T=>Boolean, array: Array[T]) = {
   var pass = 0;
   for(item <- array){ if(pred(item)){pass = pass + 1}}
   pass
-  };System.out.println("""countPass: [T](pred: T => Boolean, array: Array[T])Int""");$skip(72); 
+  };System.out.println("""countPass: [T](pred: T => Boolean, array: Array[T])Int""");$skip(73); 
   
   def greaterThan2(num: Int) = {
   if(num > 2) true
@@ -43,9 +43,26 @@ object functionSession {;import org.scalaide.worksheet.runtime.library.Worksheet
   };System.out.println("""greaterThan2: (num: Int)Boolean""");$skip(52); 
   
   val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3);System.out.println("""numbers  : Array[Int] = """ + $show(numbers ));$skip(34); val res$6 = 
-  countPass(greaterThan2,numbers);System.out.println("""res6: Int = """ + $show(res$6))}
+  countPass(greaterThan2,numbers);System.out.println("""res6: Int = """ + $show(res$6));$skip(100); 
+  
+  //DDS
+  def S = {
+  var state = 0
+  var finalState = false
+  
+  def isFinal = finalState
+  };System.out.println("""S: => Unit""");$skip(54); 
+  
+  def update[S](currentState: S, cycle: Int) = {};System.out.println("""update: [S](currentState: S, cycle: Int)Unit""");$skip(116); 
+  
+  def halt[S] (currentState: S, cycle: Int) {if(currentState("isFinal")) true else false};System.out.println("""halt: [S](currentState: S, cycle: Int)Unit""");$skip(106); //if() true else false
+  
+  def controlLoop[S] (state: S, cycle: Int, half: (S, Int)=>Boolean, update: (S,Int)=>S): S = {state};System.out.println("""controlLoop: [S](state: S, cycle: Int, half: (S, Int) => Boolean, update: (S, Int) => S)S""")}
   
   //5.
+  
+  //6.
+  
   
   
   

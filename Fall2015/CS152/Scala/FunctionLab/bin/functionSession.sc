@@ -1,52 +1,68 @@
 object functionSession {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  println("Welcome to the Scala worksheet")
   
   //1.
   def compose[A,B,C] (f: B=>C, g: A=>B): A=>C = {
   	def r(x: A) = f(g(x))
   	r _
-  }                                               //> compose: [A, B, C](f: B => C, g: A => B)A => C
+  }
   
-  def square(x: Int) = x * x                      //> square: (x: Int)Int
+  def square(x: Int) = x * x
   
-  def len(s: String) = s.length                   //> len: (s: String)Int
+  def len(s: String) = s.length
   
-  def h = compose(square, len)                    //> h: => String => Int
+  def h = compose(square, len)
   
-  h("12345678")                                   //> res0: Int = 64
+  h("12345678")
   
-  def g = compose(math.sqrt, math.sqrt)           //> g: => Double => Double
+  def g = compose(math.sqrt, math.sqrt)
   
-  g(81)                                           //> res1: Double = 3.0
+  g(81)
   
   //2.
   def selfIter[T] (f: T=> T, n: Int): T=>T = if(n == 0) f else selfIter(compose(f,f), n-1)
-                                                  //> selfIter: [T](f: T => T, n: Int)T => T
   
-  def inc(x: Double) = x + 1                      //> inc: (x: Double)Double
-  def double(x: Double) = 2 * x                   //> double: (x: Double)Double
+  def inc(x: Double) = x + 1
+  def double(x: Double) = 2 * x
   
-  selfIter(inc, 2)                                //> res2: Double => Double = <function1>
-  selfIter(inc, 0)                                //> res3: Double => Double = <function1>
-  selfIter(double, 2)                             //> res4: Double => Double = <function1>
-  selfIter(double, 0)                             //> res5: Double => Double = <function1>
+  selfIter(inc, 2)
+  selfIter(inc, 0)
+  selfIter(double, 2)
+  selfIter(double, 0)
   
   //3.
   def countPass[T] (pred: T=>Boolean, array: Array[T]) = {
   var pass = 0;
   for(item <- array){ if(pred(item)){pass = pass + 1}}
   pass
-  }                                               //> countPass: [T](pred: T => Boolean, array: Array[T])Int
+  }
   
   def greaterThan2(num: Int) = {
   if(num > 2) true
   else false
-  }                                               //> greaterThan2: (num: Int)Boolean
+  }
   
-  val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3)   //> numbers  : Array[Int] = Array(0, -1, 2, 1, 2, 3, 4, 5, 6, 3)
-  countPass(greaterThan2,numbers)                 //> res6: Int = 5
+  val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3)
+  countPass(greaterThan2,numbers)
+  
+  //DDS
+  def S = {
+  var state = 0
+  var finalState = false
+  
+  def isFinal = finalState
+  }
+  
+  def update[S](currentState: S, cycle: Int) = {}
+  
+  def halt[S] (currentState: S, cycle: Int) {if(currentState("isFinal")) true else false}//if() true else false
+  
+  def controlLoop[S] (state: S, cycle: Int, half: (S, Int)=>Boolean, update: (S,Int)=>S): S = {state}
   
   //5.
+  
+  //6.
+  
   
   
   
