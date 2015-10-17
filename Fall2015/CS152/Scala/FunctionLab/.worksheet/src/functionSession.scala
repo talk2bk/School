@@ -43,27 +43,21 @@ object functionSession {;import org.scalaide.worksheet.runtime.library.Worksheet
   };System.out.println("""greaterThan2: (num: Int)Boolean""");$skip(52); 
   
   val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3);System.out.println("""numbers  : Array[Int] = """ + $show(numbers ));$skip(34); val res$6 = 
-  countPass(greaterThan2,numbers);System.out.println("""res6: Int = """ + $show(res$6));$skip(100); 
+  countPass(greaterThan2,numbers);System.out.println("""res6: Int = """ + $show(res$6));$skip(216); 
   
   //DDS
-  def S = {
-  var state = 0
-  var finalState = false
-  
-  def isFinal = finalState
-  };System.out.println("""S: => Unit""");$skip(54); 
-  
-  def update[S](currentState: S, cycle: Int) = {};System.out.println("""update: [S](currentState: S, cycle: Int)Unit""");$skip(116); 
-  
-  def halt[S] (currentState: S, cycle: Int) {if(currentState("isFinal")) true else false};System.out.println("""halt: [S](currentState: S, cycle: Int)Unit""");$skip(106); //if() true else false
-  
-  def controlLoop[S] (state: S, cycle: Int, half: (S, Int)=>Boolean, update: (S,Int)=>S): S = {state};System.out.println("""controlLoop: [S](state: S, cycle: Int, half: (S, Int) => Boolean, update: (S, Int) => S)S""")}
   
   //5.
+  def controlLoop[S] (state: S, cycle: Int, halt: (S, Int)=>Boolean, update: (S,Int)=>S): S = {
+  if(halt(state,cycle)) state else controlLoop(update(state,cycle+1), cycle+1, halt, update)
+  };System.out.println("""controlLoop: [S](state: S, cycle: Int, halt: (S, Int) => Boolean, update: (S, Int) => S)S""");$skip(133); 
   
   //6.
+  def amoebaHalt[S] (state: Int, cycle: Int): Int = {
+  if(state > 10000) cycle else amoebaHalt(state*state, cycle+1)
+  };System.out.println("""amoebaHalt: [S](state: Int, cycle: Int)Int""")}
   
-  
+  //7.
   
   
   
