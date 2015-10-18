@@ -1,0 +1,99 @@
+object functionSession {
+  println("Welcome to the Scala worksheet")
+  
+  //1.
+  def compose[A,B,C] (f: B=>C, g: A=>B): A=>C = {
+  	def r(x: A) = f(g(x))
+  	r _
+  }
+  
+  def square(x: Int) = x * x
+  
+  def len(s: String) = s.length
+  
+  def h = compose(square, len)
+  
+  h("12345678")
+  
+  def g = compose(math.sqrt, math.sqrt)
+  
+  g(81)
+  
+  //2.
+  def selfIter[T] (f: T=> T, n: Int): T=>T = if(n == 0) f else selfIter(compose(f,f), n-1)
+  
+  def inc(x: Double) = x + 1
+  def double(x: Double) = 2 * x
+  
+  selfIter(inc, 2)
+  selfIter(inc, 0)
+  selfIter(double, 2)
+  selfIter(double, 0)
+  
+  //3.
+  def countPass[T] (pred: T=>Boolean, array: Array[T]) = {
+  var pass = 0;
+  for(item <- array){ if(pred(item)){pass = pass + 1}}
+  pass
+  }
+  
+  def greaterThan2(num: Int) = {
+  if(num > 2) true
+  else false
+  }
+  
+  val numbers = Array(0,-1,2, 1, 2, 3, 4,5,6,3)
+  countPass(greaterThan2,numbers)
+  
+  //DDS
+  
+  //5.
+  def controlLoop[S] (state: S, cycle: Int, halt: (S, Int)=>Boolean, update: (S,Int)=>S): S = {
+  if(halt(state,cycle)) state else controlLoop(update(state,cycle+1), cycle+1, halt, update)
+  }
+  
+  //6.
+  def amoebaHalt[S] (state: Int, cycle: Int): Int = {
+  if(state > 10000) cycle else amoebaHalt(state*state, cycle+1)
+  }
+  
+  //7.
+  
+  def solve(f: Double => Double) =  {
+  //guess = guess - f(guess)/f'(guess)
+  val delta = 1e-5
+  def newtonHalt(guess: Double, cycle: Int) = { math.abs(f(guess)) <= delta }
+  def derivative(x:Double) = { (f(x+delta) - f(x))/delta  }
+  def newtonUpdate(guess: Double, cycle: Int) = { guess - f(guess)/derivative(guess) }
+  
+  controlLoop(1.0, 0, newtonHalt _, newtonUpdate _)
+ 
+  }
+  
+  //8.
+  def squareRoot(x: Double) = solve(math.sqrt _)
+  
+  //9.
+  def cubeRoot(x: Double) = solve(math.cbrt _)
+  
+  //10.
+  //math.pow(x, 1.0/n)
+  def nthRoot(x: Double, n: Int) = {
+  def root(x: Double) = math.pow(x, 1.0/n)
+  
+  solve(root _)
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}

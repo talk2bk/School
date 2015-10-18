@@ -55,13 +55,49 @@ object functionSession {;import org.scalaide.worksheet.runtime.library.Worksheet
   //6.
   def amoebaHalt[S] (state: Int, cycle: Int): Int = {
   if(state > 10000) cycle else amoebaHalt(state*state, cycle+1)
-  };System.out.println("""amoebaHalt: [S](state: Int, cycle: Int)Int""")}
+  };System.out.println("""amoebaHalt: [S](state: Int, cycle: Int)Int""");$skip(398); 
   
   //7.
   
+  def solve(f: Double => Double) =  {
+  //guess = guess - f(guess)/f'(guess)
+  val delta = 1e-5
+  def newtonHalt(guess: Double, cycle: Int) = { math.abs(f(guess)) < delta }
+  def derivative(x:Double) = { (f(x+delta) - f(x))/delta  }
+  def newtonUpdate(guess: Double, cycle: Int) = { guess - f(guess)/derivative(guess) }
   
+  controlLoop(1.0, 0, newtonHalt _, newtonUpdate _)
+ 
+  };System.out.println("""solve: (f: Double => Double)Double""");$skip(112); 
   
+  //8.
+  def squareRoot(x: Double) = {
+  def root(temp: Double) = math.pow(temp,2)-x
   
+  solve(root _)
+  };System.out.println("""squareRoot: (x: Double)Double""");$skip(16); val res$7 = 
+  squareRoot(4);System.out.println("""res7: Double = """ + $show(res$7));$skip(16); val res$8 = 
+  squareRoot(9);System.out.println("""res8: Double = """ + $show(res$8));$skip(109); 
+  
+  //9.
+  def cubeRoot(x: Double) = {
+  def root(temp: Double) = math.pow(temp,3)-x
+  
+  solve(root _)
+  };System.out.println("""cubeRoot: (x: Double)Double""");$skip(14); val res$9 = 
+  cubeRoot(8);System.out.println("""res9: Double = """ + $show(res$9));$skip(15); val res$10 = 
+  cubeRoot(27);System.out.println("""res10: Double = """ + $show(res$10));$skip(141); 
+  
+  //10.
+  //math.pow(x, 1.0/n)
+  def nthRoot(x: Double, n: Int) = {
+  def root(temp: Double) = math.pow(temp, n)-x
+  
+  solve(root _)
+  };System.out.println("""nthRoot: (x: Double, n: Int)Double""");$skip(15); val res$11 = 
+  nthRoot(9,2);System.out.println("""res11: Double = """ + $show(res$11));$skip(16); val res$12 = 
+  nthRoot(27,3);System.out.println("""res12: Double = """ + $show(res$12))}
+
   
   
   

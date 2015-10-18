@@ -61,9 +61,45 @@ object functionSession {
   
   //7.
   
+  def solve(f: Double => Double) =  {
+  //guess = guess - f(guess)/f'(guess)
+  val delta = 1e-5
+  def newtonHalt(guess: Double, cycle: Int) = { math.abs(f(guess)) < delta }
+  def derivative(x:Double) = { (f(x+delta) - f(x))/delta  }
+  def newtonUpdate(guess: Double, cycle: Int) = { guess - f(guess)/derivative(guess) }
   
+  controlLoop(1.0, 0, newtonHalt _, newtonUpdate _)
+ 
+  }                                               //> solve: (f: Double => Double)Double
   
+  //8.
+  def squareRoot(x: Double) = {
+  def root(temp: Double) = math.pow(temp,2)-x
   
+  solve(root _)
+  }                                               //> squareRoot: (x: Double)Double
+  squareRoot(4)                                   //> res7: Double = 2.0000000944796694
+  squareRoot(9)                                   //> res8: Double = 3.0000000015508212
+  
+  //9.
+  def cubeRoot(x: Double) = {
+  def root(temp: Double) = math.pow(temp,3)-x
+  
+  solve(root _)
+  }                                               //> cubeRoot: (x: Double)Double
+  cubeRoot(8)                                     //> res9: Double = 2.000000000036784
+  cubeRoot(27)                                    //> res10: Double = 3.000000000001917
+  
+  //10.
+  //math.pow(x, 1.0/n)
+  def nthRoot(x: Double, n: Int) = {
+  def root(temp: Double) = math.pow(temp, n)-x
+  
+  solve(root _)
+  }                                               //> nthRoot: (x: Double, n: Int)Double
+  nthRoot(9,2)                                    //> res11: Double = 3.0000000015508212
+  nthRoot(27,3)                                   //> res12: Double = 3.000000000001917
+
   
   
   
