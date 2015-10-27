@@ -8923,3 +8923,17 @@ Standard error:
 2015-10-17 19:28:27,991  WARN [Worker-133] - ScalaProject - Project FunctionLab runs on platform default installation.
 2015-10-17 19:28:27,995  WARN [Worker-133] - ScalaProject - Project FunctionLab has platform default sourceLevel.
 2015-10-17 19:28:27,995  WARN [Worker-133] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-17 21:40:14,718  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-17 21:40:14,722  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-17 21:40:14,739  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-10-17 21:40:14,741  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-10-17 21:40:15,394  WARN [Worker-3] - ScalaProject - Project StringLab has platform default sourceLevel.
+2015-10-17 21:40:15,394  WARN [Worker-3] - ScalaProject - Project StringLab runs on platform default installation.
+2015-10-17 21:40:15,395  WARN [Worker-3] - ScalaProject - Project ListLab has platform default sourceLevel.
+2015-10-17 21:40:15,395  WARN [Worker-3] - ScalaProject - Project ListLab runs on platform default installation.
+2015-10-17 21:40:15,395  WARN [Worker-3] - ScalaProject - Project MathLab has platform default sourceLevel.
+2015-10-17 21:40:15,396  WARN [Worker-3] - ScalaProject - Project MathLab runs on platform default installation.
+2015-10-17 21:40:15,396  WARN [Worker-3] - ScalaProject - Project Lab1 has platform default sourceLevel.
+2015-10-17 21:40:15,396  WARN [Worker-3] - ScalaProject - Project Lab1 runs on platform default installation.
+2015-10-17 21:40:15,396  WARN [Worker-3] - ScalaProject - Project RecursionLab has platform default sourceLevel.
+2015-10-17 21:40:15,396  WARN [Worker-3] - ScalaProject - Project RecursionLab runs on platform default installation.
