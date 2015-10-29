@@ -25,12 +25,9 @@ input [`DATA_INDEX_LIMIT:0] OP2; // operand 2
 input [`ALU_OPRN_INDEX_LIMIT:0] OPRN; // operation code
 
 // output list
-output OUT; // result of the operation.
+output  reg[`DATA_INDEX_LIMIT:0] OUT; // result of the operation.
 output ZERO;
-//assign ZERO = (OUT === 0) ? 1 : 0; //if out = 0 0 else 1
-
-output reg [`DATA_INDEX_LIMIT:0]OUT;
-output reg [`DATA_INDEX_LIMIT:0]ZERO;
+assign ZERO = (OUT === 0) ? 1 : 0; //if out = 0 0 else 1
 
 always @(OP1 or OP2 or OPRN)
 begin	
@@ -48,12 +45,8 @@ case(OPRN)
 
 	default: OUT = `DATA_WIDTH'hxxxxxxxx;
 endcase
+
+
 end
 
-always @*
-begin
-if(OUT == 0) ZERO = 1;
-else ZERO = 0;
-end
 endmodule
-

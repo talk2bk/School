@@ -1,0 +1,36 @@
+C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/alu.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/print_task.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/print_task.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/clk_gen.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/clk_gen.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/register_file.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/register_file.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/processor.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/processor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/prj_definition.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/prj_definition.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/control_unit.v {0 {vlog -work work -stats=none C:/Users/CuTs/Documents/GitHub/School/Fall2015/CS147/ProblemSet3/control_unit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}}

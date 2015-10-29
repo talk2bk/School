@@ -47,7 +47,7 @@ reg [`DATA_INDEX_LIMIT:0] DATA_R1;
 reg [`DATA_INDEX_LIMIT:0] DATA_R2;
 reg [`DATA_INDEX_LIMIT:0] STORAGE [0:`MEM_INDEX_LIMIT]; // memory storage
 
-// Parameter for the memory initialization file name
+/ Parameter for the memory initialization file name
 //parameter mem_init_file = "mem_content_01.dat";
 
 //what am I supposed to be assigning to?

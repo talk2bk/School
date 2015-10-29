@@ -39,7 +39,7 @@ wire zero;
 
 // instantiation section
 // Control unit
-CONTROL_UNIT cu_inst (.INST(instruction), .RF_DATA_W(rf_data_w),   .RF_ADDR_W(rf_addr_w),   .RF_ADDR_R1(rf_addr_r1), 
+CONTROL_UNIT cu_inst (.MEM_DATA(DATA), .RF_DATA_W(rf_data_w),   .RF_ADDR_W(rf_addr_w),   .RF_ADDR_R1(rf_addr_r1), 
  .RF_ADDR_R2(rf_addr_r2), .RF_READ(rf_read),       .RF_WRITE(rf_write),     .ALU_OP1(alu_op1), .ALU_OP2(alu_op2),      .ALU_OPRN(alu_oprn), .RF_DATA_R1(rf_data_r1), .RF_DATA_R2(rf_data_r2), .ALU_RESULT(alu_result), .ZERO(zero),  .CLK(CLK), .RST(RST));
 // register file
 

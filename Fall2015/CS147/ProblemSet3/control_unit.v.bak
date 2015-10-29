@@ -60,6 +60,7 @@ reg [4:0] rt;
 
 
 
+// State nets
 wire [2:0] proc_state;
 
 PROC_SM state_machine(.STATE(proc_state),.CLK(CLK),.RST(RST));
@@ -69,13 +70,15 @@ PROC_SM state_machine(.STATE(proc_state),.CLK(CLK),.RST(RST));
 		
 always @ (proc_state)
 begin
+// TBD: Code for the control unit model
 	case(proc_state)
 		`PROC_FETCH:
 		begin
-			
+			//Advance program counter by 4
 			PC_REG = PC_REG + 4;
-			RF_WRITE = 0;
+			//Set register file control to hold (00 or 11)
 			RF_READ = 0;
+			RF_WRITE = 0;
 		end
 		`PROC_DECODE:
 		begin
@@ -98,24 +101,24 @@ begin
 					ALU_OP1 = RF_DATA_R1;
 					ALU_OP2 = RF_DATA_R2;
 					case(funct)
-						6'h20: 
-							ALU_OPRN = 'h01;
-						6'h22: 
-							ALU_OPRN = 'h02; 
-						6'h2c:
-							ALU_OPRN = 'h03; 
-						6'h24: 
-							ALU_OPRN = 'h06; 
-						6'h25: 
-							ALU_OPRN = 'h07;
-						6'h27: 
-							ALU_OPRN = 'h08; 
-						6'h2a:
-							ALU_OPRN = 'h09; 
-						6'h00: 
-							ALU_OPRN = 'h04; 
-						6'h02: 
-							ALU_OPRN = 'h05; 
+						6'h20: /*Print Addition*/
+							ALU_OPRN = 'h01; //Execute Addition
+						6'h22: /*Print Subtraction*/
+							ALU_OPRN = 'h02; //Execute Subtraction
+						6'h2c: /*Print Multiply*/
+							ALU_OPRN = 'h03; //Execute Multiply
+						6'h24: /*Print And*/
+							ALU_OPRN = 'h06; //Execute And
+						6'h25: /*Print Or*/
+							ALU_OPRN = 'h07; //Execute Or
+						6'h27: /*Print Nor*/
+							ALU_OPRN = 'h08; //Execute Nor
+						6'h2a: /*Print Set Less Than*/
+							ALU_OPRN = 'h09; //Execute Set Less Than
+						6'h00: /*Print Shift Left Logical*/
+							ALU_OPRN = 'h04; //Execute Shift Left Logical
+						6'h02: /*Print Shift Right Logical*/
+							ALU_OPRN = 'h05; //Execute Shift Right Logical
 						default:/*Error*/$write("Error: Instruction does not exist\n");
 					endcase
 				end
@@ -159,12 +162,13 @@ begin
     NEXT_STATE=`PROC_FETCH;
 end
 
+    //On negative edge of RST, reset values of state and next_state
     always @ (negedge RST)
     begin
        STATE = 2'bxx;
        NEXT_STATE=`PROC_FETCH;
     end
-	   
+	    //On positive edge of clock cycle
     always @ (posedge CLK)
     begin
 
