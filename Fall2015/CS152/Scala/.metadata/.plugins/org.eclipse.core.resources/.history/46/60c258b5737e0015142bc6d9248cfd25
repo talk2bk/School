@@ -1,0 +1,15 @@
+
+
+/**
+ * @author CuTs
+ */
+class Dragon {
+ private val name 
+ private var health = 100
+ 
+ def attack[T] (target: [T]) = {
+   
+   
+ }
+
+}

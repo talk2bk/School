@@ -1,0 +1,10 @@
+
+
+/**
+ * @author CuTs
+ */
+class Knight (var name: String, var health: Integer = 100){
+  def attack (target: Dragon, damage: Integer) = { 
+    println(name + "is stabbing " + target.name)
+    target.health -=damage}
+}

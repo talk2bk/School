@@ -1,0 +1,13 @@
+
+
+/**
+ * @author CuTs
+ */
+object Dungeon (val dragon: Dragon, val knight: Knight){
+  val random = new scala.util.Random(System.nanoTime())
+  
+  def main(args: Array[String]) {
+    
+    
+  }
+}

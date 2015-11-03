@@ -1,0 +1,19 @@
+
+
+/**
+ * @author CuTs
+ */
+object Dungeon {
+  val random = new scala.util.Random(System.nanoTime())
+  
+  def main(args: Array[String]) {
+    val dragon = new Dragon("hotsman")
+    val knight = new Knight("slashlord")
+    
+    while(dragon.health > 0 || knight.health > 0){
+    dragon.attack(knight)
+    knight.attack(dragon)
+    }
+    
+  }
+}

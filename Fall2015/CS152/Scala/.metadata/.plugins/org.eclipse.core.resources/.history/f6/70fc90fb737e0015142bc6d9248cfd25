@@ -1,0 +1,9 @@
+
+
+/**
+ * @author CuTs
+ */
+class Dragon (val name: String, val health: Integer) {
+ def attack (target: Knight) = { print(name + "is flaming " + target.name) }
+
+}

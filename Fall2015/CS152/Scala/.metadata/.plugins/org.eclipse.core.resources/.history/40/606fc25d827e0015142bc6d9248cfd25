@@ -1,0 +1,12 @@
+
+
+/**
+ * @author CuTs
+ */
+object queueObject{
+  def main(args: Array[String]){
+  
+    
+  }
+  def apply(){}
+}
