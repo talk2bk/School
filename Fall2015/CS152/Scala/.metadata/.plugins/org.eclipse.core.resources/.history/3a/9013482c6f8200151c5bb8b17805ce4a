@@ -1,0 +1,12 @@
+
+
+/**
+ * @author CuTs
+ */
+class Jawa {
+  trait Value {}
+  trait Expression { def execute: Value}
+  trait Literal extends Value with Expression { def execute = this}
+  
+  
+}

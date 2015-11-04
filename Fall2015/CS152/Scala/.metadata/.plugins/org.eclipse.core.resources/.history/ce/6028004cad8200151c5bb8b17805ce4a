@@ -1,0 +1,8 @@
+import scala.collection.mutable.ArrayBuffer
+
+object Indus extends App{
+var inventory = new ArrayBuffer[Item]
+inventory.append(new Item(new Description("The Matrix DVD", 15.50, "DVD World")))
+inventory.append(new Item(new Description("The Terminator DVD", 13.25, "DVD World")))
+inventory.append(new Item(new Description("Ironman DVD", 18.00, "DVD Planet")))
+}

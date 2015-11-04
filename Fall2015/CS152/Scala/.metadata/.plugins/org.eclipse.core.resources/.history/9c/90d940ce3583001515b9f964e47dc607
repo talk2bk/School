@@ -1,0 +1,18 @@
+trait IThermometer {
+  // = avg degrees Farenheit
+  def getMeanTemperature(cities: List[String]): Double
+}
+
+class CenTherm extends IThermometer{
+// = degrees Centigrade
+  def computeTemp(city: String) = { city }
+  def getMeanTemperature(cities: List[String]): Double = {
+    for(place <- cities){
+      computeTemp(place)
+    }
+  }
+}
+
+object CenTherm extends App{
+val thermometer = new CenTherm with IThermometer
+}

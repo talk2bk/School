@@ -1,0 +1,20 @@
+
+
+/**
+ * @author CuTs
+ */
+class Item(private var id:Int = Item.nextId+1, private var description: Description) {
+
+
+
+}
+
+object Item{
+def id = 0
+def  description = ""
+def apply(id: Int, description: Description) = {
+new Item(nextId+1, description)
+}
+def nextId = id
+
+}

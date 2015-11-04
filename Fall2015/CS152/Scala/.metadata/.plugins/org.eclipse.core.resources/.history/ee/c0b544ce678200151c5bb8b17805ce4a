@@ -1,0 +1,9 @@
+
+
+/**
+ * @author CuTs
+ */
+class Item(private var id: Int, private var description: Description) {
+  
+
+}

@@ -1,0 +1,7 @@
+class CenTherm {
+// = degrees Centigrade
+  def computerTemp(city: String) = {
+    
+    
+  }
+}

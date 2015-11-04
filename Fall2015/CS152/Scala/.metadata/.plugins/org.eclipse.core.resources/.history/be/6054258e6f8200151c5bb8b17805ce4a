@@ -1,0 +1,15 @@
+
+
+/**
+ * @author CuTs
+
+ */
+class Jawa {
+  trait Value {}
+  trait Expression { def execute: Value}
+  trait Literal extends Value with Expression { def execute = this}
+  
+  class Number(val value: Double) extends Literal { }
+  class Boole(val value: Boolean) extends Literal { }
+  
+}

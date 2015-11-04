@@ -1,0 +1,12 @@
+trait IThermometer {
+  // = avg degrees Farenheit
+  def getMeanTemperature(cities: List[String]): Double
+}
+
+class CenTherm {
+// = degrees Centigrade
+  def computerTemp(city: String) = {
+    
+    
+  }
+}

@@ -1,0 +1,11 @@
+
+
+/**
+ * @author CuTs
+ */
+class Jawa {
+  trait Value {}
+  trait Expression { def execute: Value}
+  
+  
+}
