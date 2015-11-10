@@ -8,7 +8,12 @@ class CenTherm {
 // = degrees Centigrade
 def computeTemp(city: String): Double = { city.length() }
 }
-
+object CenTherm {
+def apply(city: String) = {
+val temp = new CenTherm
+temp.computeTemp(city)
+}
+}
 
 class Thermometer(val cen: CenTherm) extends IThermometer{
 def getMeanTemperature(cities: List[String]): Double = { 
@@ -18,10 +23,7 @@ total/cities.length
 }
 }
 
-object CenTherm extends App {
-val therm = new Thermometer(new CenTherm)
-println(therm.getMeanTemperature(List("Milpitas", "San Jose")))
-}
+
 
 /*
 trait IThermometer {

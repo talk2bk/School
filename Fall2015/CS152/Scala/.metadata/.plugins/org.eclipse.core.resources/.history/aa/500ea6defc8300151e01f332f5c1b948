@@ -19,8 +19,10 @@ total/cities.length
 }
 
 object CenTherm extends App {
-val therm = new Thermometer(new CenTherm)
-println(therm.getMeanTemperature(List("Milpitas", "San Jose")))
+def apply(city: String) = {
+val temp = new CenTherm
+temp.computeTemp(city)
+}
 }
 
 /*
