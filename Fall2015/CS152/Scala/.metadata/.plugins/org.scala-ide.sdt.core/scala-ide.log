@@ -11028,3 +11028,38 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2015-11-09 17:08:12,773 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 2015-11-09 17:08:12,774 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
 2015-11-09 17:08:12,774 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-11-09 20:12:29,645  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:29,646  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:29,649  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:29,649  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:30,111  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:30,111  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:30,434  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:30,435  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:30,550  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:30,550  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:31,046  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:31,046  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:36,094  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:36,094  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:48,176  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:48,176  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:48,189  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:48,189  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:48,201  WARN [Worker-3] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 20:12:48,201  WARN [Worker-3] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 20:12:58,299 ERROR [Worker-2] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-11-09 20:12:58,300 ERROR [Worker-2] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-11-09 20:12:58,300 ERROR [Worker-2] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-11-09 22:11:03,500  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:03,500  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 22:11:03,504  WARN [main] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:03,504  WARN [main] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 22:11:36,923  WARN [Worker-5] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:36,923  WARN [Worker-5] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 22:11:36,941  WARN [Worker-5] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:36,941  WARN [Worker-5] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 22:11:37,003  WARN [Worker-5] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:37,003  WARN [Worker-5] - ScalaProject - Project DnD runs on platform default installation.
+2015-11-09 22:11:39,962  WARN [Worker-5] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-11-09 22:11:39,963  WARN [Worker-5] - ScalaProject - Project DnD runs on platform default installation.
