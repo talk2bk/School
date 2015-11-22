@@ -1,9 +1,0 @@
-package expression
-import values._
-
-/**
- * @author CuTs
- */
-trait Expression {
-def execute(env: Environment): Value
-}

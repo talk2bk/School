@@ -1,8 +1,0 @@
-package values
-
-/**
- * @author CuTs
- */
-class Notification(message: String) extends Value{
-  
-}

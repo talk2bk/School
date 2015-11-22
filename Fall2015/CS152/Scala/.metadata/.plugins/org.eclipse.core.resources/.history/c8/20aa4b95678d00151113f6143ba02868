@@ -1,8 +1,0 @@
-package values
-
-/**
- * @author CuTs
- */
-class Environment extends HashMap[Identifier, Value] with Value{
-  
-}

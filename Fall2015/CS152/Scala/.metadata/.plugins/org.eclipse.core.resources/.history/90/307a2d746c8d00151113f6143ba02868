@@ -1,9 +1,0 @@
-package expression
-
-/*
- * represents expressions of the form:
- *      if(a) b else c
- */
-class Conditional extends SpecialForm {
-  
-}

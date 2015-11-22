@@ -6,6 +6,7 @@ trait IThermometer {
   def getMeanTemperature(cities: List[String]): Double
 }
 
+
 class CenTherm {
 // = degrees Centigrade
 def computeTemp(city: String): Double = { city.length() }

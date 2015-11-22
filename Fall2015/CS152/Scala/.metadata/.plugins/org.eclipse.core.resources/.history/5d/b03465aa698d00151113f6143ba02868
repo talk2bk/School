@@ -1,8 +1,0 @@
-package values
-import expression._
-/**
- * @author CuTs
- */
-case class Number extends Literal {
-
-}

@@ -1,7 +1,0 @@
-package values
-
-import
-
-trait Value extends Serializable{
-  
-}
