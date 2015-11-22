@@ -1,6 +1,0 @@
-import scala.collection.mutable.ArrayBuffer
-
-object Indus extends App{
-var inventory = new ArrayBuffer[Item]
-
-}

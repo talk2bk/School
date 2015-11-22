@@ -1,0 +1,10 @@
+package expression
+
+/*
+ * represents expressions of the forms:
+ *      if(a) b else c
+ *      if(a) b 
+ */
+class Conditional extends SpecialForm {
+  
+}

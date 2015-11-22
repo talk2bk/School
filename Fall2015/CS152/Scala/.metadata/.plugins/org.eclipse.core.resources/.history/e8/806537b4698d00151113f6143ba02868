@@ -1,0 +1,8 @@
+package values
+import expression._
+/**
+ * @author CuTs
+ */
+class Boole extends Literal {
+  
+}

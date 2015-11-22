@@ -1,0 +1,9 @@
+package expression
+import values._
+
+/**
+ * @author CuTs
+ */
+class Identifier (value: String) extends Expression{
+  def execute(env: Environment) = null
+}

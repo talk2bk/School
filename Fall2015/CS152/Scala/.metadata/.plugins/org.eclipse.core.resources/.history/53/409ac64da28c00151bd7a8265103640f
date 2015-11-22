@@ -1,0 +1,31 @@
+class Lex {
+  trait Expression { def execute }
+  
+  class Number(value: Double) extends Expression{
+    def execute = value
+  }
+  
+  class FunCall( operand1: Expression, operation: String, operand2: Expression) extends Expression{
+    def execute = {
+      var result = 0
+    operation match {
+      case plus => result =  operand1.execute + operand2.execute
+      case times => result =  operand1.execute * operand2.execute
+    }
+    result
+    }
+  }
+}
+
+object Lex extends App {
+ 
+  val plus = "+"
+  val times = "*"
+  def execute(e: Expression) = e.execute
+ 
+  val exp1 = FunCall(Number(3.14), plus, Number(2.71)) // 3.14 + 2.71
+  println(execute(exp1))// prints 5.85
+  val exp2 = FunCall(Number(5.0), times, exp1) // 5.0 * (3.14 + 2.71)
+  println(execute(exp2)) // prints 29.25
+ 
+}

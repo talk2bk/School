@@ -1,8 +1,0 @@
-
-
-/**
- * @author CuTs
- */
-class Description(private description: String, private price: Int, private supplier: String) {
-  
-}

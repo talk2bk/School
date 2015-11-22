@@ -1,0 +1,67 @@
+object Lex extends App {
+trait Expression {  }
+  
+case class Number(val value: Double) extends Expression{
+    def execute = value
+  }
+  
+case class FunCall(val operand1: Expression, val operation: String, val operand2: Expression) extends Expression{
+    def execute = {
+      operation match {
+        case "+" => operand1.execute + operand2.execute
+        case "*" => operand1.execute * operand2.execute
+        case _  => throw new Exception("operator isn't + or *") 
+      }
+    }
+  }
+  
+  val plus = "+"
+  val times = "*"
+  def execute(e: Expression) = {
+    e match {
+      case e.isInstanceOf[Number] => e.asInstanceOf[Number].value
+      case e.isInstanceOf[FunCall] => e.asInstanceOf[FunCall].operand1
+    }
+    
+  }
+ 
+  val exp1 = FunCall(Number(3.14), plus, Number(2.71)) // 3.14 + 2.71
+  println(execute(exp1))// prints 5.85
+  
+  val exp2 = FunCall(Number(5.0), times, exp1) // 5.0 * (3.14 + 2.71)
+  println(execute(exp2)) // prints 29.25
+ 
+}
+
+/*
+
+object Lex extends App {
+trait Expression { def execute: Double }
+  
+case class Number(val value: Double) extends Expression{
+    def execute = value
+  }
+  
+case class FunCall(val operand1: Expression, val operation: String, val operand2: Expression) extends Expression{
+    def execute = {
+      operation match {
+        case "+" => operand1.execute + operand2.execute
+        case "*" => operand1.execute * operand2.execute
+        case _  => throw new Exception("operator isn't + or *") 
+      }
+    }
+  }
+  
+  val plus = "+"
+  val times = "*"
+  def execute(e: Expression) = e.execute
+ 
+  val exp1 = FunCall(Number(3.14), plus, Number(2.71)) // 3.14 + 2.71
+  println(execute(exp1))// prints 5.85
+  
+  val exp2 = FunCall(Number(5.0), times, exp1) // 5.0 * (3.14 + 2.71)
+  println(execute(exp2)) // prints 29.25
+ 
+}
+
+*/

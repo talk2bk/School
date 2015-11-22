@@ -1,8 +1,0 @@
-import scala.collection.mutable.ArrayBuffer
-
-/**
- * @author CuTs
- */
-object Indus extends App{
-
-}

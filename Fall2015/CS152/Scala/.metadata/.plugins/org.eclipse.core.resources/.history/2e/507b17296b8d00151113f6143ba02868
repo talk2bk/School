@@ -1,0 +1,8 @@
+package ui
+
+/**
+ * @author CuTs
+ */
+object console {
+  
+}
