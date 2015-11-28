@@ -12,10 +12,7 @@ def declaration: Parser[Expression] = "def"~identifier~"="~expression ^^
 {
    case "def"~id~"="~exp => Declaration(id, exp)
 }
-def identifier: Parser[Identifier] = """[a-zA-z][a-zA-Z0-9]*""".r ^^
-{
-  case id => Identifier(id)
-}
+
 def conditional: Parser[Conditional] = "if"~"("~expression~")"~expression~opt("else"~expression) ^^
   {
      case "if"~"("~exp1~")"~exp2~None => Conditional(exp1, exp2)
@@ -34,20 +31,17 @@ def disjunction: Parser[Expression] = conjunction ~ rep("||" ~> conjunction) ^^
 def operands: Parser[List[Expression]] = "(" ~> opt(expression ~ rep("," ~> expression)) <~")" ^^
   {
     case None => Nil 
-    case Some(t~Nil) => List(t)
-    case Some(t~z) => t :: z
-    /*
-     * some(things~Nil) => List(things)
-     * some(things~moreThings) => things :: moreThings
-     */
+    case Some(e~Nil) => List(e)
+    case Some(e~exps) => e::exps
+    case _ => Nil
+    
   }
   
   def funcall: Parser[Expression] = term ~ opt(operands) ^^
   {
     case t~None => t
     case t ~ Some(Nil) => FunCall(t.asInstanceOf[Identifier], Nil)
-    case t~Some(ops) => FunCall(t.asInstanceOf[Identifier], ops.asInstanceOf[List[Expression]])
-    case t~literal => throw new JediException
+    case t~Some(ops) => FunCall(t.asInstanceOf[Identifier], ops)
   }
  
   
@@ -88,7 +82,7 @@ def operands: Parser[List[Expression]] = "(" ~> opt(expression ~ rep("," ~> expr
       case p~rest=>FunCall(Identifier("add"), p::rest)
    }
   
-  def term: Parser[Expression] = literal | identifier | "("~>expression<~")" | failure("Invalid expression")
+  def term: Parser[Expression] = literal | identifier | "("~>expression<~")"
 
   def literal: Parser[Literal] = boole | numeral
   
@@ -100,5 +94,8 @@ def operands: Parser[List[Expression]] = "(" ~> opt(expression ~ rep("," ~> expr
   {
     case e => new Boole(e.toBoolean)
   }
-
+  def identifier: Parser[Identifier] = """[a-zA-z][a-zA-Z0-9]*""".r ^^
+{
+  case id => Identifier(id)
+}
 }

@@ -3,6 +3,6 @@ package ui
 /**
  * @author CuTs
  */
-class JediException(val msg: String = "default error") extends Exception(msg){
+class JediException(val msg: String = "Your force is weak") extends Exception(msg){
   
 }

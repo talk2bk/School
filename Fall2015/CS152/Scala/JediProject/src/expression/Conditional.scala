@@ -1,5 +1,6 @@
 package expression
 import values._
+import ui._
 /*
  * represents expressions of the forms:
  *      if(a) b else c
@@ -7,14 +8,15 @@ import values._
  */
 case class Conditional(condition: Expression, consequence: Expression, alternative: Expression = null)  extends SpecialForm {
   //conditional execution
-  def execute(env: Environment): Value  = {
-    val a = condition.execute(env)
-    //type checking
-    if(!a.isInstanceOf[Boole]) throw new Exception("Condition must be a Boole")
-    val aVal = a.asInstanceOf[Boole]
-    if(aVal.value) consequence.execute(env)
-    else if (alternative != null) alternative.execute(env)
-    else Notification("unspecified")
-    
+  def execute(env: Environment) = {
+    condition.execute(env) match {
+      case Boole(value) =>
+        if(value) consequence.execute(env)
+        else if (alternative != null) alternative.execute(env) 
+        else Notification.UNSPECIFIED
+      case _ => throw new TypeException("if condition must be Boole")
+    }
   }
+
 }
+
