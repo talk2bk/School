@@ -1,3 +1,1 @@
-CREATE VIEW `authors` AS 
-SELECT lastname,firstname
-FROM authors
+SELECT lastname, firstname FROM mydb.authors ORDER BY lastname
