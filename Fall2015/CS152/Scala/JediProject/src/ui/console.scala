@@ -3,7 +3,7 @@ import expression._
 import values._
 
 object console {
-   val parsers = new EwokParsers // for now
+   val parsers = new WookieParsers // for now
    val globalEnv = new Environment()
 
    def execute(cmmd: String): String = {

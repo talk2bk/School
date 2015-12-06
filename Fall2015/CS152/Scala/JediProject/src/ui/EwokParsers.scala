@@ -40,8 +40,8 @@ def operands: Parser[List[Expression]] = "(" ~> opt(expression ~ rep("," ~> expr
   def funcall: Parser[Expression] = term ~ opt(operands) ^^
   {
     case t~None => t
-    case t ~ Some(Nil) => FunCall(t.asInstanceOf[Identifier], Nil)
-    case t~Some(ops) => FunCall(t.asInstanceOf[Identifier], ops)
+    case t ~ Some(Nil) => FunCall(t, Nil)
+    case t~Some(ops) => FunCall(t, ops)
   }
  
   

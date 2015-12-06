@@ -1,3 +1,2 @@
-INDEX VERSION 1.127+C:\Users\CuTs\Documents\GitHub\School\Fall2015\CS152\Scala\.metadata\.plugins\org.eclipse.jdt.core
-3029013274.index
+INDEX VERSION 1.127+D:\GitHub\School\Fall2015\CS152\Scala\.metadata\.plugins\org.eclipse.jdt.core
 4072931977.index

@@ -1,12 +1,13 @@
 package ui
 import values._
+import expression._
 /**
  * @author CuTs
  */
 object system {
     // the dispatcher
-  def execute(operator: String, args: List[Value]):Value = {
-    operator match {
+  def execute(operator: Identifier, args: List[Value]):Value = {
+    operator.value match {
       case "sum" => sum(args)
       case "sub" => sub(args)
       case "mul" => mul(args)
@@ -16,7 +17,7 @@ object system {
       case "not" => not(args)
       case "add" => sum(args)
        //
-      case _ => throw new UndefinedException(operator)
+      case _ => throw new UndefinedException(operator.value)
     }
   }
   

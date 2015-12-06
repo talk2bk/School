@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Nick/Desktop/School Stuff/Computer Science/CS152/scala-parser-combinators-2.11.0-M4.jar"/>
+	<classpathentry kind="lib" path="D:/GitHub/School/Fall2015/CS152/Scala/scala-parser-combinators-2.11.0-M4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
