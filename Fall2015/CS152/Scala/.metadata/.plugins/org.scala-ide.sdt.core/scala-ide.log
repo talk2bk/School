@@ -15217,3 +15217,77 @@ java.util.NoSuchElementException: key not found: C:\Users\CuTs\Desktop\Jedi\src\
 2015-12-05 21:05:08,463  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
 2015-12-05 21:05:09,825  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
 2015-12-05 21:05:09,825  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:41,707  WARN [ModalContext] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:41,708  WARN [ModalContext] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:42,003  WARN [ModalContext] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:42,003  WARN [ModalContext] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:43,812  WARN [Worker-2] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:43,812  WARN [Worker-2] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:43,924  WARN [Worker-2] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:43,924  WARN [Worker-2] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:44,122  WARN [Worker-2] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:44,123  WARN [Worker-2] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:47,331  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:01:47,331  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:01:52,618 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-12-06 21:01:52,618 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-12-06 21:01:52,618 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-12-06 21:05:32,468  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:05:32,468  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:05:33,984  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:05:33,998  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 276
+2015-12-06 21:05:34,002  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 386
+2015-12-06 21:05:34,003  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 403
+2015-12-06 21:05:35,051  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:05:35,061  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 276
+2015-12-06 21:05:35,065  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 386
+2015-12-06 21:05:35,066  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 403
+2015-12-06 21:06:19,713  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:06:19,713  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:06:19,732  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:06:19,732  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:06:19,913  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:06:19,920  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
+2015-12-06 21:06:19,921  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
+2015-12-06 21:06:23,126  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:06:23,126  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:06:32,934  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:06:32,942  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
+2015-12-06 21:06:32,943  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
+2015-12-06 21:06:36,950  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:06:36,952  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
+2015-12-06 21:06:36,952  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
+2015-12-06 21:06:51,461  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:06:51,464  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
+2015-12-06 21:06:51,464  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
+2015-12-06 21:10:00,773  WARN [Worker-7] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:00,773  WARN [Worker-7] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:00,782  WARN [Worker-7] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:00,783  WARN [Worker-7] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:09,306  WARN [Worker-3] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:09,306  WARN [Worker-3] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:09,314  WARN [Worker-3] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:09,314  WARN [Worker-3] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:12,068  WARN [Worker-3] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:12,069  WARN [Worker-3] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:12,077  WARN [Worker-3] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:12,077  WARN [Worker-3] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:18,257  WARN [Worker-8] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:18,257  WARN [Worker-8] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:18,266  WARN [Worker-8] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:18,266  WARN [Worker-8] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:10:21,311  WARN [Worker-8] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:10:21,311  WARN [Worker-8] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:34:51,377  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:34:51,377  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:34:51,380  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-06 21:34:51,380  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-06 21:34:53,906 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-06 21:34:53,918 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-06 21:36:20,470  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2015-12-06 21:36:49,914 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-12-06 21:36:49,914 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-12-06 21:36:49,914 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-12-06 21:41:25,549  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
+2015-12-06 21:41:25,565  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
+2015-12-06 21:41:25,567  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
