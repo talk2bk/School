@@ -12,6 +12,7 @@ case class Notification(msg: String) extends Value {
 
 object Notification {
 		val UNKNOWN = new Notification("unknown")
+    val UNSPECIFIED = new Notification("UNSPECIFIED")
 		val OK = new Notification("ok")
 		val UPDATE = new Notification("variable updated")
 		val BIND = new Notification("binding created")

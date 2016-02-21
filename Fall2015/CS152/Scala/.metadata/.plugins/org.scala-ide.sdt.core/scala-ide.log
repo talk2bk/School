@@ -15291,3 +15291,178 @@ java.util.NoSuchElementException: key not found: C:\Users\CuTs\Desktop\Jedi\src\
 2015-12-06 21:41:25,549  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 115
 2015-12-06 21:41:25,565  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 392
 2015-12-06 21:41:25,567  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 409
+2015-12-11 09:45:44,432  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:44,452  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:45:44,457  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:44,458  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:45:45,468  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:45,469  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:45:46,235  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:46,242  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:45:46,944  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:46,944  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:45:48,937  WARN [main] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:45:48,937  WARN [main] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:19,676  WARN [Worker-2] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:19,676  WARN [Worker-2] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:19,972  WARN [Worker-5] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:19,972  WARN [Worker-5] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:20,703  WARN [Worker-5] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:20,703  WARN [Worker-5] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:20,714  WARN [Worker-5] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:20,714  WARN [Worker-5] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:20,743  WARN [Worker-5] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:20,743  WARN [Worker-5] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:50,495  WARN [Worker-3] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:50,495  WARN [Worker-3] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:50,667  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:50,667  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:50,690  WARN [Worker-0] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:50,690  WARN [Worker-0] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:46:52,866  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 09:46:52,866  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 09:47:04,367 ERROR [Worker-6] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-12-11 09:47:04,367 ERROR [Worker-6] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-12-11 09:47:04,367 ERROR [Worker-6] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-12-11 10:18:50,679  WARN [Worker-17] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:18:50,680  WARN [Worker-17] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:18:50,715  WARN [Worker-17] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:18:50,715  WARN [Worker-17] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:18:50,994  WARN [Java indexing] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:18:50,994  WARN [Java indexing] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:18:52,562  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:18:52,562  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:18:52,625  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:18:52,625  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:19:35,273 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-11 10:19:35,277 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-11 10:19:35,277 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-11 10:19:35,277 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2015-12-11 10:19:36,548  WARN [Worker-7] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:19:36,548  WARN [Worker-7] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:19:36,571  WARN [Worker-7] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:19:36,572  WARN [Worker-7] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:19:59,749  WARN [Worker-9] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:19:59,749  WARN [Worker-9] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:19:59,769  WARN [Worker-9] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:19:59,770  WARN [Worker-9] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:20:58,273  WARN [ModalContext] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:20:58,274  WARN [ModalContext] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:20:58,275  WARN [ModalContext] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:20:58,275  WARN [ModalContext] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:20:58,323  WARN [ModalContext] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:20:58,324  WARN [ModalContext] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:20:58,340  WARN [ModalContext] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:20:58,341  WARN [ModalContext] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:20:58,999  WARN [Worker-19] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:20:58,999  WARN [Worker-19] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:20:59,019  WARN [Worker-19] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:20:59,019  WARN [Worker-19] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:20:59,037  WARN [Worker-19] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:20:59,037  WARN [Worker-19] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:20:59,382  WARN [Worker-19] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:20:59,382  WARN [Worker-19] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:20:59,404  WARN [Worker-19] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:20:59,405  WARN [Worker-19] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:00,089  WARN [Java indexing] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:21:00,089  WARN [Java indexing] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:00,662  WARN [Worker-19] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:21:00,663  WARN [Worker-19] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:01,755  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:21:01,755  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:21:01,783  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:21:01,783  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:21:01,811  WARN [Worker-4] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:21:01,811  WARN [Worker-4] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:21:01,855  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:21:01,855  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:21:01,944  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:21:01,945  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:21:02,544  WARN [Worker-4] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:21:02,544  WARN [Worker-4] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:02,571  WARN [Worker-4] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:21:02,571  WARN [Worker-4] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:02,626  WARN [Worker-4] - ScalaProject - Project OOPLabs has platform default sourceLevel.
+2015-12-11 10:21:02,626  WARN [Worker-4] - ScalaProject - Project OOPLabs runs on platform default installation.
+2015-12-11 10:21:03,893  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab has platform default sourceLevel.
+2015-12-11 10:21:03,893  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project FunctionLab runs on platform default installation.
+2015-12-11 10:23:02,426  WARN [ModalContext] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:02,427  WARN [ModalContext] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:02,427  WARN [ModalContext] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:02,427  WARN [ModalContext] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:02,428  WARN [ModalContext] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:02,428  WARN [ModalContext] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:02,641  WARN [ModalContext] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:02,641  WARN [ModalContext] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:02,653  WARN [ModalContext] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:02,653  WARN [ModalContext] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:02,667  WARN [ModalContext] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:02,667  WARN [ModalContext] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:03,271  WARN [Worker-4] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:03,271  WARN [Worker-4] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:03,297  WARN [Worker-4] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:03,297  WARN [Worker-4] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:04,717  WARN [Java indexing] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:04,717  WARN [Java indexing] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:05,707  WARN [Java indexing] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:05,707  WARN [Java indexing] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:05,791  WARN [Worker-4] - ScalaProject - Project DnD has platform default sourceLevel.
+2015-12-11 10:23:05,791  WARN [Worker-4] - ScalaProject - Project DnD runs on platform default installation.
+2015-12-11 10:23:05,851  WARN [Worker-4] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:05,851  WARN [Worker-4] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:05,869  WARN [Worker-4] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:05,869  WARN [Worker-4] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:07,902  WARN [Java indexing] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:07,902  WARN [Java indexing] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:08,050  WARN [Worker-4] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:08,050  WARN [Worker-4] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:08,069  WARN [Worker-4] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:08,069  WARN [Worker-4] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:09,103  WARN [Worker-4] - ScalaProject - Project Lab7 has platform default sourceLevel.
+2015-12-11 10:23:09,104  WARN [Worker-4] - ScalaProject - Project Lab7 runs on platform default installation.
+2015-12-11 10:23:41,975  WARN [Worker-5] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:41,975  WARN [Worker-5] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:42,136  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:42,136  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:42,154  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:42,154  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:23:48,865  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:23:48,865  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:25:47,499  WARN [Worker-18] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:25:47,499  WARN [Worker-18] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:25:47,518  WARN [Worker-18] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:25:47,518  WARN [Worker-18] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:26:03,169  WARN [main] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:26:03,169  WARN [main] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:26:49,225  WARN [Worker-19] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:26:49,225  WARN [Worker-19] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:26:49,243  WARN [Worker-19] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:26:49,243  WARN [Worker-19] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:26:56,333  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:26:56,333  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:26:56,350  WARN [Worker-4] - ScalaProject - Project JediProject has platform default sourceLevel.
+2015-12-11 10:26:56,350  WARN [Worker-4] - ScalaProject - Project JediProject runs on platform default installation.
+2015-12-11 10:27:42,400  WARN [Worker-19] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:27:42,400  WARN [Worker-19] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:27:42,429  WARN [Worker-19] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:27:42,429  WARN [Worker-19] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:27:42,748  WARN [Java indexing] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:27:42,749  WARN [Java indexing] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:27:52,476  WARN [Worker-22] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:27:52,477  WARN [Worker-22] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:27:52,491  WARN [Worker-22] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:27:52,491  WARN [Worker-22] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:09,117  WARN [Worker-22] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:09,117  WARN [Worker-22] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:09,132  WARN [Worker-22] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:09,132  WARN [Worker-22] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:46,069  WARN [Worker-19] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:46,069  WARN [Worker-19] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:46,087  WARN [Worker-19] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:46,087  WARN [Worker-19] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:57,567  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:57,567  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:57,582  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:57,582  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.
+2015-12-11 10:28:59,824  WARN [Worker-18] - ScalaProject - Project Jedi has platform default sourceLevel.
+2015-12-11 10:28:59,824  WARN [Worker-18] - ScalaProject - Project Jedi runs on platform default installation.

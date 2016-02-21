@@ -1,0 +1,74 @@
+                          CS152 Final Exam Solutions
+                          Name: Benjamin Klunpaitoon
+                          
+**********
+Problem 1
+
+   A. fun(5) = 20
+   
+   B. Diagram turned in as hard copy or image file
+   
+**********
+Problem 2
+
+A. Decaration of class Switch:
+case class Switch(selector: Expression, operands: List[Expression]) extends SpecialForm{
+	def execute(env: Environment) = {
+	val select = selector.execute(env)
+	if(!select.isInstanceOf[Number]) {throw new TypeException("Must be a Number")}
+	else if(select.asInstanceOf[Number] < operands.length) {Notification.UNSPECIFIED}
+	else{
+	operands(select.asInstanceOf[Number]).execute(env)
+	}
+	}
+}
+
+
+
+
+SWITCH ::= switch~(~EXPRESSION~)~{~EXPRESSION~(;~EXPRESSION)*~}
+B. Declaration of switch parser:
+def switch: Parser[Expression] = "switch" ~ "(" ~ expression ~ ")" ~ "{" ~> (expression ~ rep(";" ~> expression)) <~ "}" ^^{
+case exp ~ Nil => Switch(exp, Nil)
+case exp ~ expList => Switch(exp, expList)
+}
+
+**********
+Problem 3
+
+Sith declaration of account function:
+def amount = var(0)
+def account = {lambda(x,y) if(x ==0) amount = [amount] + y else amount = [amount] - y}
+
+
+**********
+Problem 4
+
+Definition of condition extractor:
+
+   package ui
+   import expression._
+   import value._
+
+   object NoOp extends Expression { def execute(env: Environment) = Notification.UNSPECIFIED }
+
+   object codeTools {
+	def conditionExtractor(exp: Expression): Expression = {
+	exp match {
+      case exp: Conditional => exp.condition
+      case exp: Iteration => exp.condition
+      case _ => NoOp
+    }
+	}
+	
+   }
+
+**********
+Problem 5
+
+Critique of myIf function:
+Creating an if function using integers is bad because integers can mean anything. If statements generally follow a if this, do that else do this other thing, but with integers they don't mean anything. If we are checking to see if an object exists and then trying to do something, if(object) 1 else 2 doesnt tell the programmer anything. It isn't an expression that can be parsed intuitively. 
+
+
+   
+   
